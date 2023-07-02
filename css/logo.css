@@ -159,9 +159,8 @@ body{
     align-items: center;
 }
 .header_burger {
-    display: ;
     position: fixed;
-    color:var(--color_text)
+    color:var(--color_text);
     margin-top: 4px;
 }
 .header_burger_line {
