@@ -105,7 +105,7 @@ body{
     max-width: 1170px;
     height: 1500px;
     margin: 0 auto;
-    background-color: #d1f5bc;   
+    /* background-color: #d1f5bc;    */
 }
 .container_second{
    max-width: 1064px;
@@ -145,8 +145,11 @@ body{
   position: relative;
 }
 .header_fix{
-  position: fixed;
-width: 96%;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 1064px;
+    width: 100%;
 }
 .header_head {
     display: flex;
@@ -154,7 +157,7 @@ width: 96%;
     align-items: center;
     max-width: 1064px;
     margin-top: px;
-    height: 39px;
+    height: 50px;
      background-color: rgba(241, 241, 235, 0.8); 
 }
 .header_left {
@@ -171,16 +174,17 @@ width: 96%;
     display: none;
     color:var(--color_text);
     margin-right: 5px;
+    margin-top: 6px;
 }
 .header_burger_line {
     margin-right: 16px;
 }
 .header_burger_item {
     display: block;
-    width: 32px;
+    width: 25px;
     height: 2px;
     background-color:#333;
-    margin-bottom: 7px;
+    margin-bottom: 5px;
 }
 .header_burger_item:last-child{
     margin-bottom: 0;
@@ -189,7 +193,7 @@ width: 96%;
     margin-left: 10px;
 }
 .header_logo-p {
-    font-size: 28px;
+    font-size: 35px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 700;
@@ -225,7 +229,6 @@ width: 96%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-     /* display: none;  */
 }
 .header_money {
      margin-right: 15px; 
@@ -248,16 +251,16 @@ width: 96%;
 
 /* banner */
 .banner {
-   padding-top: 40px;
+   padding-top: 48px;
 }
 .banner_img {
-    min-height: 450px;
+    min-height: 520px;
     background-image: url('../logoimg/mainfhoto.avif');
     background-repeat: no-repeat;
     background-size: cover;
 }
 .banner_text {
-    padding-top: 63px;
+    padding-top: 90px;
     padding-left: 67px;
 }
 .text-h1 {
@@ -279,7 +282,7 @@ width: 96%;
     font-style: normal;
     font-weight: 500;
     line-height: 30px;
-    margin-top: 16px;
+    margin-top: 40px;
 }
 .banner-h4-mobaile{
     max-width: 450px;
@@ -815,6 +818,7 @@ nav ul a.btn > .material-icons, nav ul a.btn-large > .material-icons, nav ul a.b
     .header_enter {
      display: none;
     }
+  
     .search_left {
         width: 190px;
     }
@@ -824,7 +828,17 @@ nav ul a.btn > .material-icons, nav ul a.btn-large > .material-icons, nav ul a.b
     .search_menu {
        max-width: 400px;
     }
-}
+  @media screen and (max-width: 800px){
+    .banner_text {
+      padding-left: 30px;
+    }
+  }
+  
+  @media screen and (max-width: 610px){
+    .banner_text {
+      padding-left: 10px;
+    }
+  }
 @media only screen and (min-width: 601px){
     nav.nav-extended .nav-wrapper {
       min-height: 64px;
@@ -835,8 +849,8 @@ nav ul a.btn > .material-icons, nav ul a.btn-large > .material-icons, nav ul a.b
     }
 }
 @media screen and (max-width: 500px){
-    .header_logo-p {
-        font-size: 26px;
+    .header_burger {
+     margin-right: 15px;
     }
     .header_burger_line {
         margin-right: 7px;
@@ -845,6 +859,7 @@ nav ul a.btn > .material-icons, nav ul a.btn-large > .material-icons, nav ul a.b
         width: 25px;
         height: 25px;
     }
+  }
     .banner_img {
         min-height: px;
         background-image: url('../logoimg/mainfhoto.avif');
@@ -853,33 +868,30 @@ nav ul a.btn > .material-icons, nav ul a.btn-large > .material-icons, nav ul a.b
     }
     .banner_text {
         padding-top: 70px;
-        padding-left: 20px;
     }
     .banner-h1 {
-        max-width: 328px;
-        max-height: 50px;
-        color: var(--color-text, #262729);
-        font-size: 30px;
+        max-width: 350px;
+       color: var(--color-text, #262729);
+        font-size: 33px;
         font-family: Montserrat;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
-       
     }
     .text-h4 {
         display: none;
     }
     .banner-h4-mobaile{
-        max-width: 210px;
+        max-width: 180px;
         color: var(--color-text, #262729);
-        font-size: 18px;
+        font-size: 20px;
         font-family: Montserrat;
         font-style: normal;
         font-weight: 500;
-        line-height: 20px;
-        margin-top: 100px;
+        line-height: 25px;
+        margin-top: 40px;
         display: block;
-        margin-left: 30px;
+         margin-left: 50px; 
     }
     
     .search_right {
@@ -889,6 +901,7 @@ nav ul a.btn > .material-icons, nav ul a.btn-large > .material-icons, nav ul a.b
        max-width: 250px;
        height: 50px;
        padding-top: 8px;
+       margin-top: -50px;
     }
     .search_left {
         max-width: 176px;
@@ -900,9 +913,6 @@ nav ul a.btn > .material-icons, nav ul a.btn-large > .material-icons, nav ul a.b
       height: 30px;
   }
 }
-
-
-
 
 
 
