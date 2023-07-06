@@ -837,21 +837,24 @@ nav ul a.btn > .material-icons, nav ul a.btn-large > .material-icons, nav ul a.b
   @media screen and (max-width: 610px){
       
   .banner_img {
-        min-height: 300pxpx;
+        min-height: 300px;
         background-image: url('../logoimg/mainfhoto.avif');
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
     }
     .banner_text {
       padding-top: 40px;
       padding-left: 30px;
    }
     .banner-h1 {
-      max-width: 380px;
-      font-size: 38px;
+      max-width: 295px;
+      font-size: 30px;
    }
+   .text-h4 {
+    display: none;
+}
    .search_menu {
-    position: relative;
+    position: ;
     
    
    
@@ -893,7 +896,7 @@ nav ul a.btn > .material-icons, nav ul a.btn-large > .material-icons, nav ul a.b
     }
     .banner-h1 {
         max-width: px;
-       font-size: 33px;
+       font-size: px;
        font-style: normal;
       line-height: normal;
     }
@@ -941,9 +944,7 @@ nav ul a.btn > .material-icons, nav ul a.btn-large > .material-icons, nav ul a.b
    font-style: normal;
   line-height: normal;
 }
-.text-h4 {
-    display: none;
-}
+
 
 }
 
