@@ -1232,7 +1232,8 @@ btn-flat {
   background-color: #fff;
   margin: 0;
   display: none;
-  min-width: 100px;
+  min-width: 140px;
+  min-height: 100px;
   overflow-y: auto;
   opacity: 0;
   position: absolute;
@@ -1251,10 +1252,10 @@ btn-flat {
   clear: both;
   color: rgba(0, 0, 0, 0.87);
   cursor: pointer;
-  min-height: 50px;
+  min-height: 20px;
   line-height: 1.5rem;
   width: 100%;
-  text-align: left;
+  text-align:center;
 }
 
 .dropdown-content li:hover, .dropdown-content li.active {
@@ -1267,15 +1268,18 @@ btn-flat {
 
 .dropdown-content li.divider {
   min-height: 0;
-  height: 1px;
+  height: 2px;
 }
 
 .dropdown-content li > a, .dropdown-content li > span {
   font-size: 16px;
   color: #10309c;
   display: block;
-  line-height: 22px;
+  line-height: 16px;
   padding: 14px 16px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
 }
 
 .dropdown-content li > span > label {
@@ -1455,10 +1459,3 @@ body.keyboard-focused .dropdown-content li:focus {
     font-size: 28px;
   }
 }
-
-/*
-<div class="search_buttontoo">
-<button class="search_go"  type="submit">
-    <a href="#!"><i class="material-icons search_icons">search</i></a>
-</button>
-</div>
