@@ -212,7 +212,7 @@ body{
     padding-left: 67px;
 }
 .banner-h1 {
-    max-width: 494px;
+    max-width: 528px;
     color: var(--color-text, #262729);
     font-size: 43px;
     font-family: Montserrat;
@@ -237,7 +237,7 @@ body{
     left: 50%;
     transform: translateX(-50%);
     height: 60px;
-    max-width: 970px;
+    max-width: 1000px;
     width: 100%;
     /* background-color: rgb(124, 146, 161); */
     top: -35px;
@@ -253,17 +253,17 @@ body{
     min-height: 100px;
   }
   .search_righttoo{
-    width: 280px;
+    width: 290px;
     height: 60px;
     background-color: #8ccef5;
     /* background-color: rgb(42, 144, 217, 0.5);  */
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     border-radius: 5px;
     font-size: 15px;
     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.16);  
-    padding-left: 12px;
+    padding-left: 0px;
   }
   .search_right_img{
      color: #000; 
@@ -439,9 +439,10 @@ body{
   }
   
   .sidenav li > a {
-    color: rgba(0, 0, 0, 0.87);
+    /* color: rgba(0, 0, 0, 0.87); */
+    color: #000;
     display: block;
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 500;
     height: 48px;
     line-height: 48px;
@@ -1272,7 +1273,7 @@ btn-flat {
 }
 
 .dropdown-content li > a, .dropdown-content li > span {
-  font-size: 16px;
+  font-size: 20x;
   color: #10309c;
   display: block;
   line-height: 16px;
@@ -1411,7 +1412,7 @@ body.keyboard-focused .dropdown-content li:focus {
      display: none;
     }
   }
-  @media screen and (max-width: 610px){
+  @media screen and (max-width: 700px){
     .banner_img {
          min-height: 300px;
          background-image: url('../logoimg/mainfhoto.avif');
