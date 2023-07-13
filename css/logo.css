@@ -62,6 +62,7 @@ body{
     --color_interaction:#EE685F;
     --color_white:#FFFFFF;
     --color_green: rgb(57, 150, 57);
+    --color_main:rgba(158, 206, 240, 0.9);
 }
 .text-h1{
 }
@@ -253,8 +254,8 @@ body{
     min-height: 100px;
   }
   .search_righttoo{
-    width: 290px;
-    height: 60px;
+    min-width: 100px;
+    min-height: 60px;
     background-color: #8ccef5;
     /* background-color: rgb(42, 144, 217, 0.5);  */
     display: flex;
@@ -263,10 +264,12 @@ body{
     border-radius: 5px;
     font-size: 15px;
     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.16);  
-    padding-left: 0px;
+    padding: 10px 10px;
   }
   .search_right_img{
      color: #000; 
+     border: 1px solid #233507 ;
+     box-shadow: 0px 0px 2px 1px  rgb(26, 226, 240);
     /* width: 30px; */
     /* height: 30px; */
   }
@@ -287,7 +290,37 @@ body{
     background-color: rgba(158, 206, 240, 0.9);
     margin-left: 5px;
     font-size: 20px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    appearance: none;
+    -moz-appearence:;
+    -webkit-appearance:;
+    border: 1px solid #233507 ;
+    background-color: transparent;/*Прозрачній*/
+    outline: none;
+    min-width: 100px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 9px 9px;
+    color: rgb(6, 37, 5);
+    background-color: rgba(158, 206, 240, 0.9);
+    box-shadow: 0px 0px 2px 1px  rgb(26, 226, 240);
   }
+  .search_sel:hover{
+    background-color: rgb(84, 173, 236);
+  }
+  .search_sel:focus{
+    outline: none;
+    box-shadow: 0px 0px 3px 1px #453881;
+}
+
+  /* Для єксплорера */
+.select::-ms-expand{
+  display: none;
+}
   .search_clean{
     background-color: rgba(158, 206, 240, 0.9);
     margin-left: 5px;
@@ -295,18 +328,28 @@ body{
     /* background-color: rgb(77, 167, 147, 0.5); */
     border-radius: 5px;
     border: solid 1px rgb(56, 61, 10);
-    font-size: 20px;
+    font-size: 19px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    padding: 7px 0px;
   }
+  .search_clean:hover{
+    background-color: rgb(84, 173, 236);
+  }
+  .search_clean:focus{
+    outline: none;
+    box-shadow: 0px 0px 3px 1px #453881;
+}
   .search_erase_clean{
     width: 180px;
     /* border: #000 solid 1px; */
    background-color: rgba(158, 206, 240, 0.9);
     margin-left: 5px;
     font-size: 20px;
+    color: rgb(6, 37, 5);
+    
   }
   .search_buttontoo{
     display: flex;
@@ -315,11 +358,18 @@ body{
     width: 60px;
     height: 60px;
     border-radius: 5px;
-    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.16); 
     background-color: #8ccef5;
+    box-shadow: 0px 0px 2px 1px  rgb(26, 226, 240);
     /* background-color: rgb(42, 144, 217, 0.5);  */
     /* background-color: aqua; */
   }
+  .search_buttontoo:hover{
+    background-color: rgb(84, 173, 236);
+  }
+  .search_buttontoo:focus{
+    outline: none;
+    box-shadow: 0px 0px 3px 1px #453881;
+}
   .search_erase{
     background-color: rgba(158, 206, 240, 0.9);
     width: 40px;
@@ -1328,6 +1378,9 @@ body.keyboard-focused .dropdown-content li:focus {
     align-items: center;
     display: none;
   }
+  .search_righttoo{
+    margin-bottom: 5px;
+  }
   .where_but{
     display: block;
     width: 200px;
@@ -1366,15 +1419,31 @@ body.keyboard-focused .dropdown-content li:focus {
  .modal_where {
     width: 90%;
     min-height: 90%;
+    background-color: #70c7fa;
    }
+   .modal_footer{
+      background-color: transparent;/*Прозрачній*/
+      background-color: #26a69a;
+   }
+   .modal .modal-footer {
+     background-color:  #70c7fa;
+    text-align:right;
+  }
    .modal_footer_where{
     color:  rgb(11, 38, 58);
     font-size: 20px;
     font-family: Montserrat;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     line-height: normal;
    }
+   .modal_footer_where:hover{
+    background-color: rgb(84, 173, 236);
+  }
+  .modal_footer_where:focus{
+    outline: none;
+    box-shadow: 0px 0px 3px 1px #453881;
+}
 }
 
 @media only screen and (min-width: 993px) {
