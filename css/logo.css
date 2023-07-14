@@ -62,7 +62,10 @@ body{
     --color_interaction:#EE685F;
     --color_white:#FFFFFF;
     --color_green: rgb(57, 150, 57);
-    --color_main:rgba(158, 206, 240, 0.9);
+    --color_main: #8ccef5;
+    --color_main-hover:rgb(127, 195, 243);
+    --color_fovus-icons:#a797e4;
+    --color_main-active: rgb(223, 236, 148);
 }
 .text-h1{
 }
@@ -91,6 +94,15 @@ body{
 /*Настройка end*/
 
 /* Header */
+.material-icons:hover{
+  background-color: var(--color_main-hover);
+}
+.material-icons:focus{
+  background-color: var(--color_fovus-icons);
+}
+.material-icons:active{
+  background-color: var(--color_main-active);
+}
 /* head */
 .header_rel{
   position: relative;
@@ -143,6 +155,15 @@ body{
 .header_logo {
     margin-left: 10px;
 }
+.header_logo:hover{
+  background-color: var(--color_main-hover);
+}
+.header_logo:focus{
+  background-color: var(--color_fovus-icons);
+}
+.header_logo:active{
+  background-color: var(--color_main-active);
+}
 .header_logo-p {
     font-size: 35px;
     font-family: Montserrat;
@@ -173,6 +194,15 @@ body{
 .menu-h5:last-child {
     margin-right: 0;
 }
+.menu-h5:hover{
+  background-color: var(--color_main-hover);
+}
+.menu-h5:active{
+  background-color: var(--color_main-active);
+}
+.main{
+  text-decoration: underline;
+}
 .header_right {
    display: flex;
 }
@@ -184,14 +214,44 @@ body{
 .header_money {
      margin-right: 15px; 
      color: var(--color_green);
+     width: 25px;
+}
+.header_money:hover{
+  background-color: var(--color_main-hover);
+}
+.header_money:focus{
+  background-color: var(--color_fovus-icons);
+}
+.header_money:active{
+  background-color: var(--color_main-active);
 }
 .header_language {
      margin-right: 15px;
      color:var(--color_accent);
+     width: 25px;
+}
+.header_language:hover{
+  background-color: var(--color_main-hover);
+}
+.header_language:focus{
+  background-color: var(--color_fovus-icons);
+}
+.header_language:active{
+  background-color: var(--color_main-active);
 }
 .header_enter {
   color: var(--color_text);
   margin-right: 4px;
+  width: 25px;
+}
+.header_enter:hover{
+  background-color: var(--color_main-hover);
+}
+.header_enter:focus{
+  background-color: var(--color_fovus-icons);
+}
+.header_enter:active{
+  background-color: var(--color_main-active);
 }
 .header_enter_img {}
 /* head end */
@@ -277,6 +337,7 @@ body{
   .search_icons{
     color: rgb(56, 61, 10);
   }
+
   .search_backspace{
     padding-left: 6px;
   }
@@ -295,7 +356,7 @@ body{
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-
+    /* Настройка Select */
     appearance: none;
     -moz-appearence:;
     -webkit-appearance:;
@@ -311,11 +372,14 @@ body{
     box-shadow: 0px 0px 2px 1px  rgb(26, 226, 240);
   }
   .search_sel:hover{
-    background-color: rgb(84, 173, 236);
+    background-color: var(--color_main-hover);
   }
   .search_sel:focus{
     outline: none;
-    box-shadow: 0px 0px 3px 1px #453881;
+    box-shadow: 0px 0px 3px 1px var(--color_fovus-icons);
+}
+.search_sel:active{
+  background-color: var(--color_main-active);
 }
 
   /* Для єксплорера */
@@ -337,7 +401,7 @@ body{
     padding: 7px 0px;
   }
   .search_clean:hover{
-    background-color: rgb(84, 173, 236);
+    background-color: var(--color_main-hover)
   }
   .search_clean:focus{
     outline: none;
@@ -365,11 +429,11 @@ body{
     /* background-color: aqua; */
   }
   .search_buttontoo:hover{
-    background-color: rgb(84, 173, 236);
+    background-color: var(--color_main-hover);
   }
   .search_buttontoo:focus{
     outline: none;
-    box-shadow: 0px 0px 3px 1px #453881;
+    box-shadow: 0px 0px 3px 1px var(--color_fovus-icons)
 }
   .search_erase{
     background-color: rgba(158, 206, 240, 0.9);
@@ -1289,8 +1353,9 @@ btn-flat {
   overflow-y: auto;
   opacity: 0;
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 70px;
+  top: -45px;
+  background-color: var(--color_main);
   z-index: 9999;
   -webkit-transform-origin: 0 0;
           transform-origin: 0 0;
@@ -1381,6 +1446,7 @@ body.keyboard-focused .dropdown-content li:focus {
   }
   .search_righttoo{
     margin-bottom: 5px;
+    background-color: #fff;
   }
   .where_but{
     display: block;
@@ -1419,15 +1485,15 @@ body.keyboard-focused .dropdown-content li:focus {
   }
  .modal_where {
     width: 90%;
-    min-height: 90%;
-    background-color: #70c7fa;
+    min-height: 73%;
+    background-color: ;
    }
    .modal_footer{
       background-color: transparent;/*Прозрачній*/
       background-color: #26a69a;
    }
    .modal .modal-footer {
-     background-color:  #70c7fa;
+     background-color: ;
     text-align:right;
   }
    .modal_footer_where{
@@ -1468,7 +1534,7 @@ body.keyboard-focused .dropdown-content li:focus {
       padding: 16px 16px 0;
     }
   }
-  @media screen and (max-width: 900px){
+  @media screen and (max-width: 950px){
     .header_burger {
         display: block;
     }
