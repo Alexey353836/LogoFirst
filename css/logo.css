@@ -63,9 +63,11 @@ body{
     --color_white:#FFFFFF;
     --color_green: rgb(57, 150, 57);
     --color_main: #8ccef5;
-    --color_main-hover:rgb(127, 195, 243);
-    --color_fovus-icons:#a797e4;
-    --color_main-active: rgb(223, 236, 148);
+    --color_main-hover:rgba(22, 146, 235, 0.2);
+    --color_cecond-hover: rgba(158, 206, 240); 
+    --color_main-focus:rgba(158, 206, 240);
+    --color_main-active: rgba(241, 94, 94, 0.2); 
+    --color-main-background:  rgba(158, 206, 240, 0.8); 
 }
 .text-h1{
 }
@@ -91,18 +93,14 @@ body{
 }
 .text-p-min{
 }
+
+
 /*Настройка end*/
 
+
+
 /* Header */
-.material-icons:hover{
-  background-color: var(--color_main-hover);
-}
-.material-icons:focus{
-  background-color: var(--color_fovus-icons);
-}
-.material-icons:active{
-  background-color: var(--color_main-active);
-}
+
 /* head */
 .header_rel{
   position: relative;
@@ -155,15 +153,7 @@ body{
 .header_logo {
     margin-left: 10px;
 }
-.header_logo:hover{
-  background-color: var(--color_main-hover);
-}
-.header_logo:focus{
-  background-color: var(--color_fovus-icons);
-}
-.header_logo:active{
-  background-color: var(--color_main-active);
-}
+
 .header_logo-p {
     font-size: 35px;
     font-family: Montserrat;
@@ -194,12 +184,7 @@ body{
 .menu-h5:last-child {
     margin-right: 0;
 }
-.menu-h5:hover{
-  background-color: var(--color_main-hover);
-}
-.menu-h5:active{
-  background-color: var(--color_main-active);
-}
+
 .main{
   text-decoration: underline;
 }
@@ -216,43 +201,19 @@ body{
      color: var(--color_green);
      width: 25px;
 }
-.header_money:hover{
-  background-color: var(--color_main-hover);
-}
-.header_money:focus{
-  background-color: var(--color_fovus-icons);
-}
-.header_money:active{
-  background-color: var(--color_main-active);
-}
+
 .header_language {
      margin-right: 15px;
      color:var(--color_accent);
      width: 25px;
 }
-.header_language:hover{
-  background-color: var(--color_main-hover);
-}
-.header_language:focus{
-  background-color: var(--color_fovus-icons);
-}
-.header_language:active{
-  background-color: var(--color_main-active);
-}
+
 .header_enter {
   color: var(--color_text);
   margin-right: 4px;
   width: 25px;
 }
-.header_enter:hover{
-  background-color: var(--color_main-hover);
-}
-.header_enter:focus{
-  background-color: var(--color_fovus-icons);
-}
-.header_enter:active{
-  background-color: var(--color_main-active);
-}
+
 .header_enter_img {}
 /* head end */
 
@@ -287,11 +248,16 @@ body{
 .search {
     position: relative;
     height: 70px;
-    /* background-color: #EE685F; */
 }
+
 .search_erase{
-  background-color: rgb(42, 144, 217, 0.1);
+  width: 40px;
+  height: 40px;
+  border: rgb(10, 9, 9, 0.5) solid 1px;
+  padding-top: 7px;
+  border-radius: 5px;
   text-align: center;
+  margin-top: 2px;
 }
 .search_menutoo{
     position: absolute;
@@ -300,11 +266,7 @@ body{
     height: 60px;
     max-width: 1050px;
     width: 100%;
-    /* background-color: rgb(124, 146, 161); */
     top: -35px;
-    /* border: 2px solid #D6D6D6; */
-    /* background: var(--color-white, #FFF); */
-   
   }
   .search_flaxtoo{
     display: flex;
@@ -317,22 +279,12 @@ body{
   .search_righttoo{
     min-width: 100px;
     min-height: 60px;
-    background-color: #8ccef5;
-    /* background-color: rgb(42, 144, 217, 0.5);  */
+    background-color: ;
     display: flex;
     justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    font-size: 15px;
-    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.16);  
     padding: 6px 6px;
   }
   .search_right_img{
-     color: #000; 
-     border: 1px solid #233507 ;
-     box-shadow: 0px 0px 2px 1px  rgb(26, 226, 240);
-    /* width: 30px; */
-    /* height: 30px; */
   }
   .search_icons{
     color: rgb(56, 61, 10);
@@ -349,7 +301,6 @@ body{
     height: 40px;
   }
   .search_sel{
-    background-color: rgba(158, 206, 240, 0.9);
     margin-left: 5px;
     font-size: 20px;
     font-family: Montserrat;
@@ -358,8 +309,6 @@ body{
     line-height: normal;
     /* Настройка Select */
     appearance: none;
-    -moz-appearence:;
-    -webkit-appearance:;
     border: 1px solid #233507 ;
     background-color: transparent;/*Прозрачній*/
     outline: none;
@@ -368,29 +317,15 @@ body{
     cursor: pointer;
     padding: 9px 9px;
     color: rgb(6, 37, 5);
-    background-color: rgba(158, 206, 240, 0.9);
-    box-shadow: 0px 0px 2px 1px  rgb(26, 226, 240);
   }
-  .search_sel:hover{
-    background-color: var(--color_main-hover);
-  }
-  .search_sel:focus{
-    outline: none;
-    box-shadow: 0px 0px 3px 1px var(--color_fovus-icons);
-}
-.search_sel:active{
-  background-color: var(--color_main-active);
-}
 
   /* Для єксплорера */
 .select::-ms-expand{
   display: none;
 }
   .search_clean{
-    background-color: rgba(158, 206, 240, 0.9);
     margin-left: 5px;
     font-size: 20px;
-    /* background-color: rgb(77, 167, 147, 0.5); */
     border-radius: 5px;
     border: solid 1px rgb(56, 61, 10);
     font-size: 19px;
@@ -400,22 +335,21 @@ body{
     line-height: normal;
     padding: 7px 0px;
   }
-  .search_clean:hover{
-    background-color: var(--color_main-hover)
-  }
-  .search_clean:focus{
-    outline: none;
-    box-shadow: 0px 0px 3px 1px #453881;
-}
   .search_erase_clean{
-    width: 180px;
-    /* border: #000 solid 1px; */
-   background-color: rgba(158, 206, 240, 0.9);
+    width: 200px;
     margin-left: 5px;
     font-size: 20px;
-    color: rgb(6, 37, 5);
+    /* color: rgb(6, 37, 5); */
     
   }
+  .search_erase_search{
+    width: 170px;
+    margin-left: 5px;
+    font-size: 20px;
+    /* color: rgb(6, 37, 5); */
+    
+  }
+ 
   .search_buttontoo{
     display: flex;
     align-items: center;
@@ -423,29 +357,9 @@ body{
     width: 60px;
     height: 60px;
     border-radius: 5px;
-    background-color: #8ccef5;
-    box-shadow: 0px 0px 2px 1px  rgb(26, 226, 240);
-    /* background-color: rgb(42, 144, 217, 0.5);  */
-    /* background-color: aqua; */
   }
-  .search_buttontoo:hover{
-    background-color: var(--color_main-hover);
-  }
-  .search_buttontoo:focus{
-    outline: none;
-    box-shadow: 0px 0px 3px 1px var(--color_fovus-icons)
-}
-  .search_erase{
-    background-color: rgba(158, 206, 240, 0.9);
-    width: 40px;
-    height: 40px;
-    border: rgb(10, 9, 9, 0.5) solid 1px;
-    padding-top: 7px;
-    border-radius: 5px;
-  }
-  
-  .search_go{
-    background-color: rgba(158, 206, 240, 0.9);
+
+ .search_go{
     width: 40px;
     height: 40px;
     border: rgb(10, 9, 9, 0.5) solid 1px;
@@ -950,7 +864,7 @@ nav ul a.btn > .material-icons, nav ul a.btn-large > .material-icons, nav ul a.b
   position: fixed;
   left: 0;
   right: 0;
-  background-color: #fafafa;
+   background-color: #fafafa; 
   padding: 0;
   max-height: 70%;
   width: 55%;
@@ -1424,8 +1338,31 @@ body.keyboard-focused .dropdown-content li:focus {
   -webkit-transform: none;
           transform: none;
 }
-
 /* Выдвежное меню end */
+
+/* Общие настройки для классов */
+.search_erase,.search_sel, .search_go,.search_erase_clean, .search_erase_search{
+  background-color: var(--color-main-background);
+}
+.header_logo:hover, .material-icons:hover,.menu-h5:hover{
+  background-color: var(--color_main-hover);
+}
+.search_sel:hover,.search_erase_clean:hover,.search_erase_search:hover,.modal_footer_where:hover{
+  background-color: var(--color_cecond-hover);
+}
+.header_logo:focus,.material-icons:focus,menu-h5:focus, .search_sel:focus, .search_erase_clean:focus,
+.search_erase_search:focus,.modal_footer_where:focus{
+  background-color: var(--color_main-focus);
+}
+
+.header_logo:active,.material-icons:active, .menu-h5:active, .search_sel:active,.search_erase_clean:active,
+.search_erase_search:active,.modal_footer_where:active{
+  background-color: var(--color_main-active);
+}
+
+/* Общие настройки для классов end */
+
+
 
 @media screen and (max-width: 1090px){
     .container{
@@ -1446,7 +1383,7 @@ body.keyboard-focused .dropdown-content li:focus {
   }
   .search_righttoo{
     margin-bottom: 5px;
-    background-color: #fff;
+    /* background-color: #fff; */
   }
   .where_but{
     display: block;
@@ -1455,7 +1392,7 @@ body.keyboard-focused .dropdown-content li:focus {
     margin-left: 0px;
     margin-top: 50px;
     color:#000;
-    background-color: rgb(77, 167, 147, 0.5);
+    /* background-color: rgb(77, 167, 147, 0.5); */
     border-radius: 10px;
     border: solid 1px rgb(56, 61, 10);
     font-size: 20px;
@@ -1490,7 +1427,7 @@ body.keyboard-focused .dropdown-content li:focus {
    }
    .modal_footer{
       background-color: transparent;/*Прозрачній*/
-      background-color: #26a69a;
+      /* background-color: #26a69a; */
    }
    .modal .modal-footer {
      background-color: ;
@@ -1504,13 +1441,8 @@ body.keyboard-focused .dropdown-content li:focus {
     font-weight: 500;
     line-height: normal;
    }
-   .modal_footer_where:hover{
-    background-color: rgb(84, 173, 236);
-  }
-  .modal_footer_where:focus{
-    outline: none;
-    box-shadow: 0px 0px 3px 1px #453881;
-}
+  
+
 }
 
 @media only screen and (min-width: 993px) {
