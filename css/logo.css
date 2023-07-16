@@ -279,10 +279,10 @@ body{
   .search_righttoo{
     min-width: 100px;
     min-height: 60px;
-    background-color: ;
     display: flex;
     justify-content: center;
-    padding: 6px 6px;
+    padding: 9px 6px;
+    border-radius: 5px;
   }
   .search_right_img{
   }
@@ -333,7 +333,7 @@ body{
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    padding: 7px 0px;
+    padding: 9px 0px;
   }
   .search_erase_clean{
     width: 200px;
@@ -355,7 +355,7 @@ body{
     align-items: center;
     justify-content: center;
     width: 60px;
-    height: 60px;
+    height: 63px;
     border-radius: 5px;
   }
 
@@ -469,7 +469,7 @@ body{
   
   .sidenav li > a {
     /* color: rgba(0, 0, 0, 0.87); */
-    color: #000;
+    color: var(--color-text);
     display: block;
     font-size: 20px;
     font-weight: 500;
@@ -864,7 +864,9 @@ nav ul a.btn > .material-icons, nav ul a.btn-large > .material-icons, nav ul a.b
   position: fixed;
   left: 0;
   right: 0;
-   background-color: #fafafa; 
+  background-image: url(../logoimg/mainfhoto.avif);
+ background-repeat: no-repeat;
+  background-size: cover;
   padding: 0;
   max-height: 70%;
   width: 55%;
@@ -996,7 +998,8 @@ datepicker-container.modal-content {
 }
 .modal .modal-footer {
   border-radius: 0 0 2px 2px;
-  background-color: #fafafa;
+  background-color: none;
+  background-color: transparent;/*Прозрачній*/
   padding: 4px 6px;
   height: 56px;
   width: 100%;
@@ -1341,22 +1344,24 @@ body.keyboard-focused .dropdown-content li:focus {
 /* Выдвежное меню end */
 
 /* Общие настройки для классов */
-.search_erase,.search_sel, .search_go,.search_erase_clean, .search_erase_search{
+.search_righttoo,.search_erase,.search_sel, .search_go,.search_erase_clean,
+.search_erase_search,.search_buttontoo,.modal_footer_where,.modal-h2{
   background-color: var(--color-main-background);
 }
-.header_logo:hover, .material-icons:hover,.menu-h5:hover{
+.header_logo:hover, .material-icons:hover,.menu-h5:hover,.sidenav li > a:hover{
   background-color: var(--color_main-hover);
 }
-.search_sel:hover,.search_erase_clean:hover,.search_erase_search:hover,.modal_footer_where:hover{
+.search_sel:hover,.search_erase_clean:hover,.search_erase_search:hover,
+.modal_footer_where:hover{
   background-color: var(--color_cecond-hover);
 }
 .header_logo:focus,.material-icons:focus,menu-h5:focus, .search_sel:focus, .search_erase_clean:focus,
-.search_erase_search:focus,.modal_footer_where:focus{
+.search_erase_search:focus,.modal_footer_where:focus,.sidenav li > a:focus{
   background-color: var(--color_main-focus);
 }
 
 .header_logo:active,.material-icons:active, .menu-h5:active, .search_sel:active,.search_erase_clean:active,
-.search_erase_search:active,.modal_footer_where:active{
+.search_erase_search:active,.modal_footer_where:active,.sidenav li > a:active{
   background-color: var(--color_main-active);
 }
 
@@ -1383,7 +1388,7 @@ body.keyboard-focused .dropdown-content li:focus {
   }
   .search_righttoo{
     margin-bottom: 5px;
-    /* background-color: #fff; */
+   background-color: #fff; 
   }
   .where_but{
     display: block;
@@ -1407,9 +1412,13 @@ body.keyboard-focused .dropdown-content li:focus {
     display: block;
   }
   .modal-h2{
-    text-align: center;
+    margin: 0 auto;
     margin-bottom: 10px;
+    text-align: center;
     font-size: 25px;
+    max-width: 580px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 0px 2px #fff;
    }
  .search_menutoo{
      top: 0px; 
@@ -1440,9 +1449,12 @@ body.keyboard-focused .dropdown-content li:focus {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    border-radius: 3px;
+    box-shadow: 0px 0px 0px 5px #fff;
    }
-  
-
+   .modal_footer_where:hover{
+      box-shadow: 0px 0px 0px 5px #fff;
+   }
 }
 
 @media only screen and (min-width: 993px) {
