@@ -323,32 +323,7 @@ body{
 .select::-ms-expand{
   display: none;
 }
-  .search_clean{
-    margin-left: 5px;
-    font-size: 20px;
-    border-radius: 5px;
-    border: solid 1px rgb(56, 61, 10);
-    font-size: 18px;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    padding: 9px 0px;
-  }
-  .search_erase_clean{
-    width: 200px;
-    margin-left: 5px;
-    font-size: 20px;
-    /* color: rgb(6, 37, 5); */
-    
-  }
-  .search_erase_search{
-    width: 170px;
-    margin-left: 5px;
-    font-size: 20px;
-    /* color: rgb(6, 37, 5); */
-    
-  }
+  
  
   .search_buttontoo{
     display: flex;
@@ -1396,6 +1371,7 @@ body.keyboard-focused .dropdown-content li:focus {
     align-items: flex-start;
     background-color: transparent;/*Прозрачній*/
     padding: 0px 0px;
+    margin-left: 5px;
   }
   .where_but{
     display: block;
@@ -1414,6 +1390,29 @@ body.keyboard-focused .dropdown-content li:focus {
     line-height: normal;
     margin: 70px auto 0px;
   }
+  .search_clean{
+    border-radius: 5px;
+    border: solid 1px rgb(56, 61, 10);
+    font-size: 18px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 6px 0px;
+  }
+  .search_erase_clean{
+    width: 130px;
+    margin-left: 5px; 
+    /* color: rgb(6, 37, 5); */
+    
+  }
+  .search_erase_search{
+    width: 130px;
+    margin-left: 5px;
+    font-size: 18px;
+    /* color: rgb(6, 37, 5); */
+  }
+
   .modal-content{
     display: block;
     padding-left: 0px;
@@ -1437,10 +1436,21 @@ body.keyboard-focused .dropdown-content li:focus {
     min-height: 76%;
    }
    .modal_footer{
-      background-color: transparent;/*Прозрачній*/
+     /* background-color: transparent;/*Прозрачній*/*/
+
    }
-   .modal .modal-footer {
+   .modal.modal-footer {
     text-align:left;
+    width: 100px;
+    height: 38px;
+    padding: 0;
+    text-align: center;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-top:10px;
+    border: solid 1px rgb(56, 61, 10);
+    font-size: 18px;
+   
   }
    .modal_footer_where{
     color:  rgb(11, 38, 58);
@@ -1449,8 +1459,29 @@ body.keyboard-focused .dropdown-content li:focus {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    border-radius: 3px;
+   
+    /* border-radius: 3px; */
    }
+   .close_but{
+    text-align:left;
+    width: 100px;
+    height: 38px;
+    padding: 0;
+    text-align: center;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-top:10px;
+    border: solid 1px rgb(56, 61, 10);
+    font-size: 18px;
+  
+    /* font-size: 18px; */
+    /* font-family: Montserrat; */
+    /* font-style: normal; */
+    /* font-weight: 500; */
+    /* line-height: normal; */
+    /* width: 100px; */
+   
+  }
  
 }
 
