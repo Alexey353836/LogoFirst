@@ -1361,26 +1361,27 @@ body.keyboard-focused .dropdown-content li:focus {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin: 70px auto 0px;
+    margin: 120px auto 0px;
   }
 /* Модальное окно Where */
    .modal_where {
-    width: 280px;
-    height: 100%;
+    width: 100%;
+    min-height: 100%;
     margin: 0 auto;
-    margin-top: 30px;
-    background-image: url(../logoimg/mainfhoto.avif);
+    background-color: rgba(11, 61, 97, 0.9);
     background-repeat: no-repeat;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     background-size: cover;
-    padding: 0;
-    border-radius: 5px;
+    padding: 50px 10px;
+    border-radius: 8px;
     will-change: top, opacity;
     overflow-y: auto;
     overflow-x: hidden;
+
+    
    }
 
    .search_flaxtoo{
@@ -1394,57 +1395,35 @@ body.keyboard-focused .dropdown-content li:focus {
       display: flex;
       flex-direction: column;
       margin: 0 auto;
-      width: 280px;
+      /* margin-top: 50px; */
+      min-height: 100%;
+       align-items: center;    
+       justify-content: center;
+       max-width: 800px; 
+        padding: 30px 0px; 
+      /* min-height: 100px; */
+      /* border: #000 solid 1px; */
+      /* padding-top: 20px; */
+      /* padding: 0px 0px; */
+    
+    
   }
 
-  .search_righttoo{
+  .modal_search_box{
+    width: 100%;  
+    padding: 20px;
+    background-image: url(../logoimg/old.avif);
+    border-radius: 8px;
+  }
+
+ .search_righttoo{
     flex-direction: column;
     align-items: flex-start;
     background-color: transparent;/*Прозрачній*/
-    padding: 0px 0px;
+    padding: 20px 0px;
     margin-left: 5px;
   } 
-   .modal_where {
-    width: 280px;
-    height: 100%;
-    margin: 0 auto;
-    margin-top: 30px;
-    background-image: url(../logoimg/mainfhoto.avif);
-    background-repeat: no-repeat;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-size: cover;
-    padding: 0;
-    border-radius: 5px;
-    will-change: top, opacity;
-    overflow-y: auto;
-    overflow-x: hidden;
-   }
-
-   .search_flaxtoo{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    display: none;
-  }
-
-  .modal_search_flaxtoo{
-      display: flex;
-      flex-direction: column;
-      margin: 0 auto;
-      width: 280px;
-  }
-
-  .search_righttoo{
-    flex-direction: column;
-    align-items: flex-start;
-    background-color: transparent;/*Прозрачній*/
-    padding: 0px 0px;
-    margin-left: 5px;
-  }
-
+  
   .search_clean{
     border-radius: 5px;
     border: solid 1px rgb(56, 61, 10);
@@ -1470,6 +1449,7 @@ body.keyboard-focused .dropdown-content li:focus {
   .foter_but{
     width: 100px;
     margin-right: 5px;
+    
   }
 
   .modal-content{
@@ -1478,12 +1458,12 @@ body.keyboard-focused .dropdown-content li:focus {
   }
  
   .search_menutoo{
-      top: 0px; 
-      padding-top: 20px;
-    }
+     top: 0px; 
+  }
+  
 
   .search_close-flex{
-    width: 280px;
+    width: 100%; 
     display: flex;
     justify-content: flex-end;
     }
@@ -1495,12 +1475,13 @@ body.keyboard-focused .dropdown-content li:focus {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+
     }
 
   .close_but{
     text-align:left;
     width: 100px;
-    height: 38px;
+    height: 37px;
     padding-top: 7px;
     text-align: center;
     margin-left: 0px;
@@ -1543,6 +1524,7 @@ body.keyboard-focused .dropdown-content li:focus {
     .header_enter {
      display: none;
     }
+    
   }
   @media screen and (max-width: 700px){
     .banner_img {
@@ -1552,14 +1534,21 @@ body.keyboard-focused .dropdown-content li:focus {
          background-size: cover;
      }
      .banner_text {
-       padding-top: 40px;
+       padding-top: 60px;
        padding-left: 30px;
+       width: 250px;
+       margin-bottom: px;
     }
      .banner-h1 {
        max-width: 295px;
        font-size: 30px;
     }
- }
+    .where_but{
+      margin: 35px auto 0px;
+      width: 170px;
+    }
+  }
+  
  @media only screen and (min-width: 601px){
   nav.nav-extended .nav-wrapper {
     min-height: 64px;
@@ -1585,7 +1574,20 @@ body.keyboard-focused .dropdown-content li:focus {
     width: 30px;
     height: 30px;
 }
+  .modal_search_flaxtoo{
+    max-width: 100%; 
+    /* align-items: center; */
+  }
+
+  .modal_search_box{
+    /* max-width: 800px;  */
+    padding: 0px;
+    background-color: rgba(19, 80, 120, 0.3);
+    border-radius: 8px;
+  }
+  
 }
+
 @media screen and (max-width: 400px){
   .banner-h1 {
     max-width: 300px;
