@@ -1368,14 +1368,14 @@ body.keyboard-focused .dropdown-content li:focus {
     width: 100%;
     min-height: 100%;
     margin: 0 auto;
-    background-color: rgba(11, 61, 97, 0.9);
+     background-color: rgba(17, 18, 19, 0.4); 
     background-repeat: no-repeat;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     background-size: cover;
-    padding: 50px 10px;
+    padding: 20px 10px;
     border-radius: 8px;
     will-change: top, opacity;
     overflow-y: auto;
@@ -1412,7 +1412,8 @@ body.keyboard-focused .dropdown-content li:focus {
   .modal_search_box{
     width: 100%;  
     padding: 20px;
-    background-image: url(../logoimg/old.avif);
+    background-image: url(../logoimg/old.avif); 
+    /* background-color: #fff; */
     border-radius: 8px;
   }
 
@@ -1582,7 +1583,7 @@ body.keyboard-focused .dropdown-content li:focus {
   .modal_search_box{
     /* max-width: 800px;  */
     padding: 0px;
-    background-color: rgba(19, 80, 120, 0.3);
+    /* background-color: rgba(19, 80, 120, 0.3); */
     border-radius: 8px;
   }
   
