@@ -47,7 +47,6 @@ body{
 }
 .container{
     max-width: 1170px;
-    height: 1500px;
     margin: 0 auto;
     /* background-color: #d1f5bc;    */
 }
@@ -69,8 +68,18 @@ body{
     --color_main-active: rgba(241, 94, 94, 0.2); 
     --color-main-background:  rgba(158, 206, 240, 0.8); 
 }
+
 .text-h1{
+  color: var(--color-text, #262729);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
 }
+
 .text-h2{
     color: var(--color-text, #262729);
     font-size: 22px;
@@ -78,12 +87,21 @@ body{
     font-style: normal;
     font-weight: 500;
 }
+.text-h3{
+  color: #333;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
 .text-h4{
   color: var(--color-text, #262729);
-    font-size: 18px;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
+  font-size: 18px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
 }
 .text-h5{
 }
@@ -94,11 +112,7 @@ body{
 .text-p-min{
 }
 
-
 /*Настройка end*/
-
-
-
 /* Header */
 
 /* head */
@@ -215,11 +229,10 @@ body{
 }
 
 .header_enter_img {}
+
 /* head end */
-
-
-
 /* banner */
+
 .banner {
    padding-top: 48px;
 }
@@ -242,9 +255,10 @@ body{
     font-weight: 700;
     line-height: normal;
 }
-/* baner end */
 
+/* baner end */
 /* Search */
+
 .search {
     position: relative;
     height: 70px;
@@ -340,9 +354,10 @@ body{
     padding-top: 7px;
     border-radius: 5px;
   }
+  
 /* Search end */
-
 /* Материалайз выдвижное меню бургер */
+
 .z-depth-1, nav, .card-panel, .card, .toast, .btn, .btn-large, .btn-small, .btn-floating, .dropdown-content, .collapsible, .sidenav {
     -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
             box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
@@ -754,9 +769,10 @@ nav ul a.btn > .material-icons, nav ul a.btn-large > .material-icons, nav ul a.b
     min-height: 0;
     height: 1px;
   }
-/* Выдвижное меню бургер end */
 
+/* Выдвижное меню бургер end */
 /* Ьатериалайз модальное окно Where */
+
 .waves-effect .waves-ripple {
   position: absolute;
   border-radius: 50%;
@@ -1189,9 +1205,10 @@ btn-flat {
 .sidenav li > a.btn-flat {
   color: #343434;
 }
-/* Модальное окно Where end */
 
+/* Модальное окно Where end */
 /* Кногпка модального менбю  Where*/
+
 .where_but{
   width: 250px;
   height: 50px;
@@ -1219,9 +1236,10 @@ btn-flat {
 .modal-content{
   display: none;
 }
-/* Кногпка модального менбю  Where end */
 
+/* Кногпка модального менбю  Where end */
 /* Материалайз выдвежное меню Язык */
+
 .dropdown-trigger {
   cursor: pointer;
 }
@@ -1310,9 +1328,10 @@ body.keyboard-focused .dropdown-content li:focus {
   -webkit-transform: none;
           transform: none;
 }
-/* Выдвежное меню  язык end */
 
+/* Выдвежное меню  язык end */
 /* Общие настройки для классов */
+
 .search_righttoo,.search_erase,.search_sel, .search_go,.search_erase_clean,
 .search_erase_search,.search_buttontoo,.modal_footer_where{
   background-color: var(--color-main-background);
@@ -1335,6 +1354,75 @@ body.keyboard-focused .dropdown-content li:focus {
 }
 /* Общие настройки для классов end */
 
+
+/* Why */
+
+.why {
+  max-width: 1170px;
+  min-height: 569px;
+  margin: 0 auto;
+  margin-left: 20px;
+  padding-top: 70px;
+  margin-top: -70px;
+}
+.why-text {
+  padding: 0px 5px;
+}
+.why-h1 {
+  max-width: 530px;
+  min-height: 49px;
+  margin: 0 auto;
+}
+.why-h3 {
+  max-width: 570px;
+  margin: 26px auto 0px;
+}
+.advantages-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  justify-items: center;
+  align-items: center;
+  margin-top: 35px;
+  height: 216px;
+}
+.advantages-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0px;
+  width: 270px;
+  height: 230px;
+}
+.why-img{
+  margin-top: -30px;
+}
+.advantages-text {
+  margin-top: 20px;
+}
+.advantages-h3 {
+  text-transform: capitalize;
+}
+.advantages-h5 {
+  margin-top: 10px;
+  text-align: center;
+  text-transform:none;
+  line-height: 18px;
+}
+/* Why end*/
+
+/* media */
+@media screen and (max-width: 1200px) {
+  .advantages-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    /* justify-items: center; */
+    /* align-items: center; */
+  }
+}
 
 @media screen and (max-width: 1090px){
     .container{
@@ -1489,6 +1577,9 @@ body.keyboard-focused .dropdown-content li:focus {
     margin-top: 0px;
   }
   /* Модальное окно Where end*/
+  .why{
+    margin-top: -90px;
+  }
 }
 
 @media only screen and (min-width: 993px) {
@@ -1512,7 +1603,7 @@ body.keyboard-focused .dropdown-content li:focus {
       padding: 16px 16px 0;
     }
   }
-  @media screen and (max-width: 950px){
+ @media screen and (max-width: 950px){
     .header_burger {
         display: block;
     }
@@ -1525,9 +1616,9 @@ body.keyboard-focused .dropdown-content li:focus {
     .header_enter {
      display: none;
     }
-    
+  
   }
-  @media screen and (max-width: 700px){
+ @media screen and (max-width: 700px){
     .banner_img {
          min-height: 300px;
          background-image: url('../logoimg/mainfhoto.avif');
@@ -1548,9 +1639,17 @@ body.keyboard-focused .dropdown-content li:focus {
       margin: 35px auto 0px;
       width: 170px;
     }
+    .advantages-grid {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      gap: 10px;
+      /* justify-items: center; */
+      /* align-items: center; */
+    }
   }
   
- @media only screen and (min-width: 601px){
+@media only screen and (min-width: 601px){
   nav.nav-extended .nav-wrapper {
     min-height: 64px;
   }
@@ -1560,7 +1659,6 @@ body.keyboard-focused .dropdown-content li:focus {
   }
 }
  
-
 @media screen and (max-width: 500px){
   .header_burger {
    margin-right: 15px;
@@ -1586,7 +1684,13 @@ body.keyboard-focused .dropdown-content li:focus {
     /* background-color: rgba(19, 80, 120, 0.3); */
     border-radius: 8px;
   }
+  .why-h1 {
+    font-size: 22px;
   
+  }
+  .why-h3{
+    font-size: 18px;
+  }
 }
 
 @media screen and (max-width: 400px){
@@ -1595,3 +1699,5 @@ body.keyboard-focused .dropdown-content li:focus {
     font-size: 28px;
   }
 }
+
+/* media end */
