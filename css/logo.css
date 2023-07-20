@@ -1361,7 +1361,6 @@ body.keyboard-focused .dropdown-content li:focus {
   max-width: 1170px;
   min-height: 569px;
   margin: 0 auto;
-  margin-left: 20px;
   padding-top: 70px;
   margin-top: -70px;
 }
