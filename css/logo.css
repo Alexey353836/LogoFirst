@@ -1374,7 +1374,7 @@ body.keyboard-focused .dropdown-content li:focus {
 }
 .why-h3 {
   max-width: 570px;
-  margin: 26px auto 0px;
+  margin: 8px auto 0px;
 }
 .advantages-grid {
   display: grid;
@@ -1689,6 +1689,7 @@ body.keyboard-focused .dropdown-content li:focus {
   }
   .why-h3{
     font-size: 18px;
+      margin-top: 4px;
   }
 }
 
