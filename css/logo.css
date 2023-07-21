@@ -104,6 +104,13 @@ body{
   font-weight: 500;
 }
 .text-h5{
+color: var(--color-text, #262729);
+text-align: center;
+font-family: Montserrat;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px; 
 }
 .text-h6{
 }
@@ -281,6 +288,7 @@ body{
     max-width: 1050px;
     width: 100%;
     top: -35px;
+    bottom: 0;
   }
   .search_flaxtoo{
     display: flex;
@@ -1361,7 +1369,7 @@ body.keyboard-focused .dropdown-content li:focus {
   max-width: 1170px;
   min-height: 569px;
   margin: 0 auto;
-  padding-top: 70px;
+  padding-top: 75px;
   margin-top: -70px;
 }
 .why-text {
@@ -1374,31 +1382,27 @@ body.keyboard-focused .dropdown-content li:focus {
 }
 .why-h3 {
   max-width: 570px;
-  margin: 8px auto 0px;
+  margin: 6px auto 0px;
 }
 .advantages-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
+  gap: 5px;
   justify-items: center;
   align-items: center;
-  margin-top: 35px;
-  height: 216px;
+  margin-top: 30px;
+  height: px;
 }
 .advantages-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-top: 0px;
-  width: 270px;
-  height: 230px;
+  padding: 5px 5px;
+  width: 290px;
+  height: 220px;
 }
 .why-img{
-  margin-top: -30px;
+  margin: 0 auto;
 }
 .advantages-text {
-  margin-top: 20px;
+  margin-top: 15px;
 }
 .advantages-h3 {
   text-transform: capitalize;
@@ -1418,8 +1422,6 @@ body.keyboard-focused .dropdown-content li:focus {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 10px;
-    /* justify-items: center; */
-    /* align-items: center; */
   }
 }
 
@@ -1467,9 +1469,7 @@ body.keyboard-focused .dropdown-content li:focus {
     will-change: top, opacity;
     overflow-y: auto;
     overflow-x: hidden;
-
-    
-   }
+  }
 
    .search_flaxtoo{
     display: flex;
@@ -1482,25 +1482,17 @@ body.keyboard-focused .dropdown-content li:focus {
       display: flex;
       flex-direction: column;
       margin: 0 auto;
-      /* margin-top: 50px; */
       min-height: 100%;
-       align-items: center;    
-       justify-content: center;
-       max-width: 800px; 
-        padding: 30px 0px; 
-      /* min-height: 100px; */
-      /* border: #000 solid 1px; */
-      /* padding-top: 20px; */
-      /* padding: 0px 0px; */
-    
-    
+      align-items: center;    
+      justify-content: center;
+      max-width: 800px; 
+      padding: 30px 0px; 
   }
 
   .modal_search_box{
     width: 100%;  
     padding: 20px;
     background-image: url(../logoimg/Гостинка.jpg); 
-    /* background-color: #fff; */
     border-radius: 8px;
   }
 
@@ -1549,7 +1541,6 @@ body.keyboard-focused .dropdown-content li:focus {
      top: 0px; 
   }
   
-
   .search_close-flex{
     width: 100%; 
     display: flex;
@@ -1563,8 +1554,7 @@ body.keyboard-focused .dropdown-content li:focus {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-
-    }
+   }
 
   .close_but{
     text-align:left;
@@ -1577,7 +1567,7 @@ body.keyboard-focused .dropdown-content li:focus {
   }
   /* Модальное окно Where end*/
   .why{
-    margin-top: -90px;
+     padding-top: 50px;
   }
 }
 
@@ -1615,8 +1605,7 @@ body.keyboard-focused .dropdown-content li:focus {
     .header_enter {
      display: none;
     }
-  
-  }
+}
  @media screen and (max-width: 700px){
     .banner_img {
          min-height: 300px;
@@ -1638,13 +1627,14 @@ body.keyboard-focused .dropdown-content li:focus {
       margin: 35px auto 0px;
       width: 170px;
     }
+    .why-h1 {
+      font-size: 25px;
+    }
     .advantages-grid {
       display: grid;
       grid-template-columns: repeat(1, 1fr);
       grid-template-rows: repeat(4, 1fr);
       gap: 10px;
-      /* justify-items: center; */
-      /* align-items: center; */
     }
   }
   
@@ -1674,22 +1664,15 @@ body.keyboard-focused .dropdown-content li:focus {
 }
   .modal_search_flaxtoo{
     max-width: 100%; 
-    /* align-items: center; */
   }
 
   .modal_search_box{
-    /* max-width: 800px;  */
     padding: 0px;
-    /* background-color: rgba(19, 80, 120, 0.3); */
     border-radius: 8px;
   }
+ 
   .why-h1 {
     font-size: 22px;
-  
-  }
-  .why-h3{
-    font-size: 18px;
-      margin-top: 4px;
   }
 }
 
