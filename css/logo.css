@@ -1437,7 +1437,7 @@ body.keyboard-focused .dropdown-content li:focus {
   width: 350px;
   min-height: 430px;
   margin-right: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   padding: 10px;
 }
 .offers-item:last-child {
@@ -1793,7 +1793,7 @@ body.keyboard-focused .dropdown-content li:focus {
       width: 270px;
       min-height: 430px;
       margin-right: 0px;
-      margin-bottom: 10px;
+      /* margin-bottom: 30px; */
       padding: 0px 10px 10px ;
     }
     .offers-box-details {
