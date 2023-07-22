@@ -1419,7 +1419,7 @@ body.keyboard-focused .dropdown-content li:focus {
 .offers {
   max-width: 1170px;
   min-height: 560px;
-  padding-top: 40px;
+  padding: 40px 5px 0px;
   margin: 0 auto;
 }
 .offers-h1 {
@@ -1428,13 +1428,14 @@ body.keyboard-focused .dropdown-content li:focus {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center; 
   max-width: 1170px;
   min-height: 450px;
   margin-top: 50px;
 }
 .offers-item {
-  width: 370px;
-  height: 430px;
+  width: 350px;
+  min-height: 430px;
   margin-right: 10px;
   margin-bottom: 10px;
   padding: 10px;
@@ -1504,9 +1505,6 @@ body.keyboard-focused .dropdown-content li:focus {
   justify-content: space-between;
   align-items: center;
   margin-right: 15px;
-
- 
-
 }
 .offers-details-item:last-child{
   margin-right: 0px;
@@ -1790,6 +1788,28 @@ body.keyboard-focused .dropdown-content li:focus {
   .why-h1 {
     font-size: 22px;
   }
+    /* offers */
+    .offers-item {
+      width: 270px;
+      min-height: 430px;
+      margin-right: 0px;
+      margin-bottom: 10px;
+      padding: 0px 10px 10px ;
+    }
+    .offers-box-details {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 270px;
+      margin-top: 15px;
+    }
+    .offers-details-item{
+      margin-bottom: 5px;
+    }
+    .offers-details-item:last-child{
+      margin-bottom: 0;
+    }
+      /* offers end */
 }
 
 @media screen and (max-width: 400px){
