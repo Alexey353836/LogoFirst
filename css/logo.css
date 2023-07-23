@@ -1443,7 +1443,7 @@ body.keyboard-focused .dropdown-content li:focus {
 }
 .offers-item:last-child {
   margin-right: 0px;
-  margin-bottom: 0px;
+  margin-bottom: px;
 }
 .offers-box1-img {
   background-image: url('../logoimg/luxor11.jpg');
@@ -1461,10 +1461,11 @@ body.keyboard-focused .dropdown-content li:focus {
   background-size: cover;
 }
 .offers-flex-img {
-  display: flex;
-  justify-content: space-between;
+   display: flex; 
+   justify-content: space-between; 
 }
 .ilustration-left {
+
 }
 .ilustration-right {
 }
@@ -1473,6 +1474,7 @@ body.keyboard-focused .dropdown-content li:focus {
 }
 .offers-h2{
   font-size: 20px;
+  line-height: 30px;
 }
 .offers-h2:hover{
   background-color: var(--color_main-hover);
@@ -1528,6 +1530,9 @@ body.keyboard-focused .dropdown-content li:focus {
 .offers-ditails-img{
 
 }
+.offers-ditails-img:active{
+  color: #10309c;
+}
 .ditails-h5{
   color: #858585;
   font-size: 16px;
@@ -1535,6 +1540,29 @@ body.keyboard-focused .dropdown-content li:focus {
   margin-left: 10px;
   text-align: left;
 }
+
+.rating {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+   width: 65px;
+  height: 34px;
+  background-color: #fff;
+  border-radius: 10px;
+
+}
+.star-yellow {
+  width: 16px;
+  height: 16px;
+}
+.text-h5 {
+}
+.rating-h5 {
+  
+}
+
+
+
 /* Offers Общие настройки для классов */
 .offers-box1-img ,.offers-box2-img ,.offers-box3-img {
   width: 100%;
