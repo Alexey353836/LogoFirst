@@ -1474,6 +1474,12 @@ body.keyboard-focused .dropdown-content li:focus {
 .offers-h2{
   font-size: 20px;
 }
+.offers-h2:hover{
+  background-color: var(--color_main-hover);
+}
+.offers-h2:active{
+  background-color: var(--color_main-active);
+}
 .apartment{
   text-decoration: underline;
 }
