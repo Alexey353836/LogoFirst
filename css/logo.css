@@ -64,6 +64,7 @@ body{
     --color_main: #8ccef5;
     --color_main-hover:rgba(22, 146, 235, 0.2);
     --color_cecond-hover: rgba(158, 206, 240); 
+    --color_therd-hover: #0a3fec;
     --color_main-focus:rgba(158, 206, 240);
     --color_main-active: rgba(241, 94, 94, 0.2); 
     --color-main-background:  rgba(158, 206, 240, 0.8); 
@@ -1443,7 +1444,6 @@ body.keyboard-focused .dropdown-content li:focus {
 }
 .offers-item:last-child {
   margin-right: 0px;
-  margin-bottom: px;
 }
 .offers-box1-img {
   background-image: url('../logoimg/luxor11.jpg');
@@ -1464,23 +1464,51 @@ body.keyboard-focused .dropdown-content li:focus {
    display: flex; 
    justify-content: space-between; 
 }
-.ilustration-left {
 
-}
-.ilustration-right {
-}
 .offers-box-head {
   margin-top: 15px;
+}
+.offers-flex-text-icon{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 330px;
+}
+.like{
+  display: inline-flex;
+}
+.offers-details-favorite-border{
+  color: var(--color_accent);
+}
+.offers-details-favorite-border:hover{
+  background-color: transparent;/*Прозрачній*/
+  color: var(--color_therd-hover);
+}
+.offers-details-favorite-border:active{
+  color: var(--color_main-active);
+}
+.offers-details-favorite{
+  color:  #0a3fec;
+  display: none;
+}
+.offers-details-favorite:hover{
+  background-color: transparent;/*Прозрачній*/
+  color: var(--color_therd-hover);
+}
+offers-details-favorite:active{
+  color: var(--color_main-active);
 }
 .offers-h2{
   font-size: 20px;
   line-height: 30px;
+  margin-top: 25px;
 }
 .offers-h2:hover{
-  background-color: var(--color_main-hover);
+  color: var(--color_therd-hover);
 }
+
 .offers-h2:active{
-  background-color: var(--color_main-active);
+  color: var(--color_main-active);
 }
 .apartment{
   text-decoration: underline;
@@ -1527,12 +1555,7 @@ body.keyboard-focused .dropdown-content li:focus {
 .offers-details-item:last-child{
   margin-right: 0px;
 }
-.offers-ditails-img{
 
-}
-.offers-ditails-img:active{
-  color: #10309c;
-}
 .ditails-h5{
   color: #858585;
   font-size: 16px;
@@ -1549,16 +1572,10 @@ body.keyboard-focused .dropdown-content li:focus {
   height: 34px;
   background-color: #fff;
   border-radius: 10px;
-
 }
 .star-yellow {
   width: 16px;
   height: 16px;
-}
-.text-h5 {
-}
-.rating-h5 {
-  
 }
 
 
@@ -1834,11 +1851,14 @@ body.keyboard-focused .dropdown-content li:focus {
   }
     /* offers */
     .offers-item {
-      width: 270px;
+      width: 290px;
       min-height: 430px;
       margin-right: 0px;
       /* margin-bottom: 30px; */
       padding: 0px 10px 10px ;
+    }
+    .offers-flex-text-icon{
+      width: 270px;
     }
     .offers-box-details {
       display: flex;
