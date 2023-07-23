@@ -86,6 +86,7 @@ body{
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
+    line-height: 22px;
 }
 .text-h3{
   color: #333;
@@ -1351,7 +1352,7 @@ body.keyboard-focused .dropdown-content li:focus {
 .modal_footer_where:hover{
   background-color: var(--color_cecond-hover);
 }
-.header_logo:focus,.material-icons:focus,menu-h5:focus, .search_sel:focus, .search_erase_clean:focus,
+.header_logo:focus,.material-icons:focus,.menu-h5:focus, .search_sel:focus, .search_erase_clean:focus,
 .search_erase_search:focus,.modal_footer_where:focus,.sidenav li > a:focus{
   background-color: var(--color_main-focus);
 }
@@ -1445,13 +1446,19 @@ body.keyboard-focused .dropdown-content li:focus {
   margin-bottom: 0px;
 }
 .offers-box1-img {
-  background-image: url('../logoimg/offers-1.jpg');
+  background-image: url('../logoimg/luxor11.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .offers-box2-img {
-  background-image: url('../logoimg/offers-2.jpg');
+  background-image: url('../logoimg/Kazka.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .offers-box3-img {
-  background-image: url('../logoimg/offers-3.jpg');
+  background-image: url('../logoimg/Lviv.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .offers-flex-img {
   display: flex;
@@ -1467,9 +1474,12 @@ body.keyboard-focused .dropdown-content li:focus {
 .offers-h2{
   font-size: 20px;
 }
+.apartment{
+  text-decoration: underline;
+}
 .offers-h5{
   color: #858585;
-  margin-top: 5px;
+  margin-top: 8px;
   text-align: left;
 }
 .offers-h4{
