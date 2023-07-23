@@ -1501,7 +1501,7 @@ offers-details-favorite:active{
 .offers-h2{
   font-size: 20px;
   line-height: 30px;
-  margin-top: 25px;
+  margin-top: 5px;
 }
 .offers-h2:hover{
   color: var(--color_therd-hover);
