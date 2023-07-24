@@ -64,7 +64,7 @@
             <div class="container_second">
                 <!-- head-->
                 <div class="header_rel">
-                    <div class="header_fix">
+                    <div id="header_fix" class="header_fix">
                         <div class="header_head">
                             <!-- header_left -->
                             <div class="header_left">
@@ -300,8 +300,7 @@
                                 <a href="#!"><i class="material-icons offers-details-favorite">favorite</i></a>
                             </div>
                         </div>
-                         <a class="waves-effect waves-light btn modal-trigger" href="#modal2">Modal</a> 
-                        <a class=" modal-trigger apartment" href="#modal2"><h2 class="text-h2 offers-h2"> Luxor Inn & Suites</h2></a>
+                        <a class="apartment" href="#popup1"><h2 class="text-h2 offers-h2"> Luxor Inn & Suites</h2></a>
                         <h5 class="text-h5 offers-h5">Standard Double Room</h5>
                         <h4 class="text-h4 offers-h4">October 28 — November 1</h4>
                     </div>
@@ -343,7 +342,7 @@
                                 <a href="#!"><i class="material-icons offers-details-favorite">favorite</i></a>
                              </div>
                         </div>
-                        <a class="apartment" href="#!"><h2 class="text-h2 offers-h2">Wooden cottage "Fairytale"</h2></a>
+                        <a class="apartment" href="#popup2"><h2 class="text-h2 offers-h2">Wooden cottage "Fairytale"</h2></a>
                         <h5 class="text-h5 offers-h5">2 Bedroom Combined Lodge</h5>
                         <h4 class="text-h4 offers-h4">August 1 - August 31</h4>
                     </div>
@@ -386,7 +385,7 @@
                             </div>
                         </div>
                          <!-- <a class="waves-effect waves-light btn modal-trigger" href="#modal">Modal</a> -->
-                        <a class="apartment" href="#!"><h2 class="text-h2 offers-h2">Suites at Pidmurna st. 20</h2></a>
+                        <a class="apartment" href="#popup3"><h2 class="text-h2 offers-h2">Suites at Pidmurna st. 20</h2></a>
                         <h5 class="text-h5 offers-h5">2 beds (1 sofa bed, 1 large double bed)</h5>
                         <h4 class="text-h4 offers-h4">Now</h4>
                     </div>
@@ -524,41 +523,64 @@
         <li><a href="ul.html">Ukrainian</a></li>
         <li><a href="index.html">Russian</a></li>
     </ul>
-        <!-- Dropdown Trigger end -->
-      
-    <!-- Modal-1 ofers -->
-    <!-- <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a> -->
-    <div id="modal2" class="modal">
-        <div class="modal-content">
-          <h4>Modal Header 1</h4>
-          <p>A bunch of text</p>
-        </div>
-        <div class="modal-footer">
-          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
-        </div>
-     <!-- Modal-1 ofers  end--> 
+ <!-- Dropdown Trigger end -->
 
-       <!-- Modal-2 ofers -->
-       <div id="modal3" class="modal">
-        <div class="modal-content">
-          <h4>Modal Header 2</h4>
-          <p>A bunch of text</p>
+ <!--ofers popup1 -->
+   <div  id="popup1" class="popup">
+        <a href="#header_fix" class="popup_area"></a>
+        <div class="popup-body">
+            <div class="popup-content">
+                <a href="#header_fix" class="popup-close">x</a>
+                <div class="popup-title">Это модальное окно №1</div>
+                <div class="popup-text">Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Quod fuga laudantium optio nisi voluptatum at impedit, tenetur beatae,
+                    ipsum tempore delectus animi earum similique rerum odit fugit rem labore velit
+                    perspiciatis
+                    qui architecto aliquid laboriosam. Alias, magnam tenetur! Eligendi voluptate officia,
+                    sed ut laudantium similique maxime error architecto perferendis fuga libero at fugiat,
+                </div>
+            </div>
         </div>
-        <div class="modal-footer">
-          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
-        </div>
-     <!-- Modal-1 ofers  end--> 
+    </div>
+ <!--ofers popup1  end--> 
 
-       <!-- Modal-3 ofers -->
-       <div id="modal1" class="modal">
-        <div class="modal-content">
-          <h4>Modal Header</h4>
-          <p>A bunch of text</p>
+  <!--ofers popup2 -->
+  <div  id="popup2" class="popup">
+    <a href="#header_fix" class="popup_area"></a>
+    <div class="popup-body">
+        <div class="popup-content">
+            <a href="#header_fix" class="popup-close">x</a>
+            <div class="popup-title">Это модальное окно №2</div>
+            <div class="popup-text">Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Quod fuga laudantium optio nisi voluptatum at impedit, tenetur beatae,
+                ipsum tempore delectus animi earum similique rerum odit fugit rem labore velit
+                perspiciatis
+                qui architecto aliquid laboriosam. Alias, magnam tenetur! Eligendi voluptate officia,
+                sed ut laudantium similique maxime error architecto perferendis fuga libero at fugiat,
+            </div>
         </div>
-        <div class="modal-footer">
-          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+</div>
+<!--ofers popup1  end--> 
+
+ <!--ofers popup3 -->
+ <div  id="popup3" class="popup">
+    <a href="#header_fix" class="popup_area"></a>
+    <div class="popup-body">
+        <div class="popup-content">
+            <a href="#header_fix" class="popup-close">x</a>
+            <div class="popup-title">Это модальное окно №3</div>
+            <div class="popup-text">Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Quod fuga laudantium optio nisi voluptatum at impedit, tenetur beatae,
+                ipsum tempore delectus animi earum similique rerum odit fugit rem labore velit
+                perspiciatis
+                qui architecto aliquid laboriosam. Alias, magnam tenetur! Eligendi voluptate officia,
+                sed ut laudantium similique maxime error architecto perferendis fuga libero at fugiat,
+            </div>
         </div>
-     <!-- Modal-1 ofers  end--> 
+    </div>
+</div>
+<!--ofers popup1  end--> 
 
 <!-- JS -->
     <script type="text/javascript" src="./js/materialize.min.js"></script> 
