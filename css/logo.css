@@ -1578,8 +1578,6 @@ offers-details-favorite:active{
   height: 16px;
 }
 
-
-
 /* Offers Общие настройки для классов */
 .offers-box1-img ,.offers-box2-img ,.offers-box3-img {
   width: 100%;
@@ -1590,7 +1588,21 @@ offers-details-favorite:active{
 /*  Offers Общие настройки для классов end */
 /* Special offers end */
 
-/* Popup */
+/* Настройка скрола */
+body::-webkit-scrollbar{
+  width: 7px;
+}
+body::-webkit-scrollbar-thumb{
+  background-color: #daebf7;
+  border-radius: 5px;
+  border: #bfc9eb solid 2px;
+}
+body::-webkit-scrollbar-thumb:hover{
+  background-color: #4aa6e7;
+}
+/* Настройка скрола end */
+
+/* offers pupap */
 .popup {
   position: fixed;
   width: 100%;
@@ -1600,18 +1612,32 @@ offers-details-favorite:active{
   left: 0;
   opacity: 0; 
   visibility: hidden; 
-   overflow-y: auto; 
-   overflow-x: hidden; 
-   transition: all 1s ease 0s; 
-   z-index: 1; 
+  overflow-y: auto; 
+  overflow-x: hidden;
+  transition: all 1s ease 0s; 
+  z-index: 1; 
+}
+.popup::-webkit-scrollbar{
+  width: 10px;
+}
+.popup::-webkit-scrollbar-track{
+  background-color: #bfc9eb;
+}
+.popup::-webkit-scrollbar-thumb{
+  background-color: var(--color_accent);
+  border-radius: 5px;
+  border:  #bfc9eb solid 2px;
+}
+.popup::-webkit-scrollbar-thumb:hover{
+  background-color: var(--color_therd-hover)
 }
 .popup:target{
   opacity: 1;
   visibility: visible;
 }
 .popup:target .popup-content{
-  /* transform: translate(0px, 0px); */
-   transform: perspective(600px) translate(0px, 0%) rotate(0deg); 
+/* transform: translate(0px, 0px); */
+  transform: perspective(600px) translate(0px, 0%) rotate(0deg); 
   opacity: 1; 
 }
 .popup_area{
@@ -1634,12 +1660,12 @@ offers-details-favorite:active{
   position: relative;
   background-color: #fff;
   color: #000;
-  max-width: 800px;
+  max-width: 900px;
   padding: 30px;
   opacity: 0;
-   /* transform: translate(0%, -100%); */ 
-   transition: all 0.8s ease 0s; 
-   transform: perspective(600px) translate(0px, -100%) rotatex(45deg); 
+  /* transform: translate(0%, -100%); */ 
+  transition: all 0.8s ease 0s; 
+  transform: perspective(600px) translate(0px, -100%) rotatex(45deg); 
 }
 .popup-close {
   position: absolute;
@@ -1655,7 +1681,6 @@ offers-details-favorite:active{
 }
 .popup-text {
 }
-
 /* Popup end */
 
 /* media */
