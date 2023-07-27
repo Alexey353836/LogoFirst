@@ -1618,7 +1618,7 @@ body::-webkit-scrollbar-thumb:hover{
   z-index: 1; 
 }
 .popup::-webkit-scrollbar{
-  width: 10px;
+  width: 12px;
 }
 .popup::-webkit-scrollbar-track{
   background-color: #bfc9eb;
