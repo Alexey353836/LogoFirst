@@ -1722,9 +1722,8 @@ body::-webkit-scrollbar-thumb:hover{
   border-radius: 10px;
   border: solid 1px rgb(56, 61, 10);
   padding: 5px;
-  margin-left: px;
   margin-top: 15px;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
   display: none;
 }
 .popup-box-information{
@@ -1739,21 +1738,7 @@ body::-webkit-scrollbar-thumb:hover{
   width: ;
   margin-top: 10px;
 }
-/*
-.img-inspection{
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  max-width: 450px;
-  max-height: 130px;
-}*//*
-.popap-img{
-  max-width: 200px;
-  height: 50px;
-  margin-right: 10px;
-  margin-bottom: 10px;
-}*/
+
 .popup-text-information{
   width: 100%;
   text-align: left;
@@ -2013,11 +1998,9 @@ body::-webkit-scrollbar-thumb:hover{
   /* offers popup */
   .popup-content {
     max-width: 700px;
+    max-height: 500px;
     padding: 20px;
   }
-  .img-inspection{
-   /* max-height: 250px; */
-   }
    .popap-img{
     margin-top: 20px;
   }
@@ -2061,7 +2044,6 @@ body::-webkit-scrollbar-thumb:hover{
   /* offers popup */
   .popup-content {
     width: 98%;
-    /* max-width: 500px; */
     height: ;
     padding: 10px;
   }
@@ -2069,7 +2051,7 @@ body::-webkit-scrollbar-thumb:hover{
    /* height: 190px; */
    }
    .popap-img{
-    margin-top: 70px;
+    margin-top: 20px;
   /* offers popup end */
 }
  @media screen and (max-width: 700px){
@@ -2105,7 +2087,6 @@ body::-webkit-scrollbar-thumb:hover{
       /* offers popup */
   .popup-content {
     width: 98%;
-    /* max-width: 400px; */
     height: px;
     padding: 10px;
   }
@@ -2115,11 +2096,8 @@ body::-webkit-scrollbar-thumb:hover{
   .moo-1{
     display: block;
   }
-  .img-inspection{
-   /* height: 150px; */
-   }
    .popap-img{
-    margin-top: 80px;
+    margin-top: 20px;
  }
    /* offers popup end */
 }
@@ -2191,28 +2169,27 @@ body::-webkit-scrollbar-thumb:hover{
   }
   .popup-content {
     width: 98%;
-    /* max-width: 340px; */
-    height: px;
-    /* padding: 10px; */
+    max-height: 450px;
     padding-top: 65px;
     padding-left: 10px;
     padding-right: 10px;
+    padding-bottom: 65px;
   }
   .popup-close {
     right: 15px;
     top:15px;
    }
   .popup-title {
-    font-size: 23opup1px;
+    font-size: 23px;
   }
   .moo-1{
     display: block;
   }
   .img-inspection{
-   /* height: 150px; */
+   /* max-height: 150px;  */
    }
    .popap-img{
-    margin-top: 80x;
+    margin-top: 0px;
  }
    /* offers popup end */
 }
@@ -2226,7 +2203,7 @@ body::-webkit-scrollbar-thumb:hover{
 @media screen and (max-width: 350px){
    /* offers popup */
   .popup-content {
-    /* max-width: 250px;  */
+      max-height: 380px;   
   }
  /* offers popup end */
 }
