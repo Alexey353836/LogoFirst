@@ -2188,12 +2188,12 @@ body::-webkit-scrollbar-thumb:hover{
     padding: 0px 0px;
   }
   .popup-content {
-    max-width: 240px;
+    max-width: 340px;
     height: px;
     /* padding: 10px; */
     padding-top: 65px;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .popup-close {
     right: 15px;
@@ -2219,6 +2219,13 @@ body::-webkit-scrollbar-thumb:hover{
     max-width: 300px;
     font-size: 28px;
   }
+}
+@media screen and (max-width: 350px){
+   /* offers popup */
+  .popup-content {
+    max-width: 250px; 
+  }
+ /* offers popup end */
 }
 
 /* media end */
