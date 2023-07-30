@@ -1665,6 +1665,10 @@ body::-webkit-scrollbar-thumb:hover{
   width: 20px;
   height: 20px;
 }
+.close:hover{
+  background-color: var(--color-moo-background-hover);
+  border-radius: 2px;
+}
 .popup-header-flex{
   display: flex;
   align-items: center;
@@ -1924,6 +1928,14 @@ body::-webkit-scrollbar-thumb:hover{
       grid-template-rows: repeat(4, 1fr);
       gap: 10px;
     }
+     /* offers popup */
+  .popup-photo{
+    grid-template-columns: repeat(2, 3fr);
+    gap: 30px;
+    justify-items: center; 
+    align-items: center;
+  }
+  /* offers popup end */
 }
   
 @media only screen and (min-width: 601px){
@@ -1987,6 +1999,14 @@ body::-webkit-scrollbar-thumb:hover{
     margin-bottom: 0;
   }
     /* offers end */
+     /* offers popup */
+  .popup-photo{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    justify-items: center; 
+    align-items: center;
+  }
+  /* offers popup end */
 }
 
 @media screen and (max-width: 400px){
