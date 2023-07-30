@@ -23,5 +23,9 @@ document.addEventListener('DOMContentLoaded', function() {
   var instances = M.Carousel.init(elems);
 });
 
+var instance = M.Carousel.init({
+  fullWidth: true,
+  indicators: true
+});
 
         
