@@ -1597,15 +1597,6 @@ offers-details-favorite:active{
 }
 .reviews-items {
   height: 500px;
-  /* display: grid; */
-  /* grid-template-columns: repeat(3, 1fr); */
-  /* gap: 10px; */
-  /* justify-items: center; */
-  /* align-items: center; */
-  /* padding: 10px; */
-  /* width: 100%; */
-}
-.reviews-h1{
 }
 .reviews-item{
   width: 70%;
