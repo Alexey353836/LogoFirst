@@ -1458,7 +1458,7 @@ body.keyboard-focused .dropdown-content li:focus {
   background-size: cover;
 }
 .offers-box3-img {
-  background-image: url('../logoimg/Lviv.webp');
+  background-image: url('../logoimg/kuss-1webp.webp');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1504,13 +1504,6 @@ offers-details-favorite:active{
   font-size: 20px;
   line-height: 30px;
   margin-top: 5px;
-}
-.offers-h2:hover{
-  color: var(--color_therd-hover);
-}
-
-.offers-h2:active{
-  color: var(--color_main-active);
 }
 .apartment{
   text-decoration: underline;
@@ -1652,52 +1645,32 @@ body::-webkit-scrollbar-thumb:hover{
 .popup-body {
   min-height: 100%;
   display: flex;
-  align-items: ;
   justify-content: center ;
-  color: #fff;
-  padding: px px;
-   transition: all 0.8s ease 0s;
+  padding: 10px 10px;
+  transition: all 0.8s ease 0s;
 }
 .popup-content {
   position: relative;
-  background-color: #fff;
+  background-color: transparent;/*Прозрачній*/
   color: #000;
   width: 900px;
-  height: 200px;
+  height: 60px;
   padding: 10px;
   opacity: 0;
   /* transform: translate(0%, -100%); */ 
   transition: all 0.8s ease 0s; 
   transform: perspective(600px) translate(0px, -100%) rotatex(45deg); 
 }
-.popup-close {
-  position: absolute;
-  right: 15px;
-  top: 22px;
-  font-size: 30px;
-  color: #000;
-  text-decoration: none;
-}
 .close{
   width: 20px;
   height: 20px;
-}
-.popup-title {
- text-align: left;
-}
-.popup-h2 {
-  font-size: 20px;
-  line-height: 30px;
-  margin-top: 5px;
 }
 .popup-header-flex{
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-}
-.popup-text-main{
-  margin: 0px 0px 20px 0px;
+  margin-bottom: 50px;
 }
 .moo{
   width: 150px;
@@ -1706,137 +1679,29 @@ body::-webkit-scrollbar-thumb:hover{
   border-radius: 10px;
   border: solid 1px rgb(56, 61, 10);
   padding: 5px;
-  margin-left: 10px;
-  margin-top: 30px;
-  display: none;
 }
 .moo:hover{
   background-color: var(--color-moo-background-hover);
 }
 .moo-h5{
-  color:#000;
+  color: #fff;
   text-align: center;
 }
-.moo-1{
-  width: 150px;
-  height: 30px;
-  background-color: var(--color-moo-background);
-  border-radius: 10px;
-  border: solid 1px rgb(56, 61, 10);
-  padding: 5px;
-  margin-top: 15px;
-  margin-bottom: 0px;
-  display: block;
+.popup-photo{
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-items: center;
+  align-items: center;
+  margin: 0 auto;
 }
-.img-inspection{
-
-}
-.popap-img{
+.popup-img{
   border: #fff solid 1px;
   border-radius: 10px;
- 
-}
-.popup-text-information{
-  width: 100%;
-  text-align: left;
-  line-height: 25px;
+  width: 240px;
 }
 /* Popup end */
-
-/* Карусель Материалайз */
-.carousel {
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  height: 400px; 
-  -webkit-perspective: 500px;
-          perspective: 500px;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  -webkit-transform-origin: 0% 50%;
-          transform-origin: 0% 50%;
-}
-.carousel.carousel-slider {
-  top: 0;
-  left: 0;
-}
-
-.carousel.carousel-slider .carousel-fixed-item {
-  position: absolute; 
-  left: 0;
-  right: 0;
-  bottom: 20px;
-  z-index: 1;
-}
-
-.carousel.carousel-slider .carousel-fixed-item.with-indicators {
-  bottom: 68px;
-}
-
-.carousel.carousel-slider .carousel-item {
-  width: 100%;
-  height: 100%;
-  min-height: 400px;
-  position: absolute; 
-  top: 0;
-  left: 0;
-}
-
-.carousel.carousel-slider .carousel-item h2 {
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 32px;
-}
-
-.carousel.carousel-slider .carousel-item p {
-  font-size: 15px;
-}
-
-.carousel .carousel-item {
-  visibility: hidden;
-  width: 200px;
-  height: 200px;
- position: absolute; 
-  top: 0;
-  left: 0;
-}
-
-.carousel .carousel-item > img {
-  width: 100%;
-}
-
-.carousel .indicators {
-  position: absolute; 
-  text-align: center;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: 0;
-}
-
-.carousel .indicators .indicator-item {
-  display: inline-block; 
-  position: relative;
-  cursor: pointer;
-  height: 8px;
-  width: 8px;
-  margin: 24px 4px;
-  background-color: rgba(255, 255, 255, 0.5);
-  -webkit-transition: background-color .3s;
-  transition: background-color .3s;
-  border-radius: 50%;
-}
-
-.carousel .indicators .indicator-item.active {
-  background-color: #fff;
-}
-
-.carousel.scrolling .carousel-item .materialboxed,
-.carousel .carousel-item:not(.active) .materialboxed {
-  pointer-events: none;
-}
-
-/* Карусель Материалайз end */
 
 /* media */
 @media screen and (max-width: 1200px) {
@@ -1992,17 +1857,6 @@ body::-webkit-scrollbar-thumb:hover{
   .why{
      padding-top: 50px;
   }
-
-  /* offers popup */
-  .popup-content {
-    /* max-width: 700px; */
-    /* max-height: 500px; */
-    /* padding: 20px; */
-  }
-   .popap-img{
-    /* margin-top: 20px; */
-  }
-  /* offers popup end */
 }
 
 @media only screen and (min-width: 993px) {
@@ -2039,15 +1893,6 @@ body::-webkit-scrollbar-thumb:hover{
     .header_enter {
      display: none;
     }
-
-  /* offers popup */
-  .popup-content {
-    /* width: 98%; */
-   }
-   .popap-img{
-    /* margin-top: 20px; */
-   }
-  /* offers popup end */
 }
  @media screen and (max-width: 700px){
     .banner_img {
@@ -2079,19 +1924,6 @@ body::-webkit-scrollbar-thumb:hover{
       grid-template-rows: repeat(4, 1fr);
       gap: 10px;
     }
-
-      /* offers popup */
-  .popup-content {
-    /* width: 98%; */
-    /* padding: 10px; */
-  }
-  .moo-1{
-    /* display: block; */
-  }
-   .popap-img{
-    /* margin-top: 20px; */
- }
-   /* offers popup end */
 }
   
 @media only screen and (min-width: 601px){
@@ -2130,58 +1962,31 @@ body::-webkit-scrollbar-thumb:hover{
   .why-h1 {
     font-size: 22px;
   }
-    /* offers */
-    .offers-item {
-      width: 290px;
-      min-height: 430px;
-      margin-right: 0px;
-      /* margin-bottom: 30px; */
-      padding: 0px 10px 10px ;
-    }
-    .offers-flex-text-icon{
-      width: 270px;
-    }
-    .offers-box-details {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      width: 270px;
-      margin-top: 15px;
-    }
-    .offers-details-item{
-      margin-bottom: 5px;
-    }
-    .offers-details-item:last-child{
-      margin-bottom: 0;
-    }
-      /* offers end */
-
-  /* offers popup */
-  .popup-body {
-    /* padding: 0px 0px; */
+  /* offers */
+  .offers-item {
+    width: 290px;
+    min-height: 430px;
+    margin-right: 0px;
+    /* margin-bottom: 30px; */
+    padding: 0px 10px 10px ;
   }
-  .popup-content {
-    /* width: 98%; */
-    /* max-height: 450px; */
-    /* padding-top: 65px; */
-    /* padding-left: 10px; */
-    /* padding-right: 10px; */
-    /* padding-bottom: 65px; */
+  .offers-flex-text-icon{
+    width: 270px;
   }
-  .popup-close {
-     right: 15px; 
-     top:15px; 
-   }
-  .popup-title {
-    font-size: 23px;
+  .offers-box-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 270px;
+    margin-top: 15px;
   }
-  .moo-1{
-    /* display: block; */
+  .offers-details-item{
+    margin-bottom: 5px;
   }
-   .popap-img{
-    /* margin-top: 0px; */
- }
-   /* offers popup end */
+  .offers-details-item:last-child{
+    margin-bottom: 0;
+  }
+    /* offers end */
 }
 
 @media screen and (max-width: 400px){
@@ -2190,63 +1995,4 @@ body::-webkit-scrollbar-thumb:hover{
     font-size: 28px;
   }
 }
-@media screen and (max-width: 350px){
-   /* offers popup */
-  .popup-content {
-      max-height: 380px;   
-  }
- /* offers popup end */
-}
-
 /* media end */
-
-/*
-
-     <!-- popup2 -->
-     <div  id="popup2" class="popup">
-        <a href="#header_fix" class="popup_area"></a>
-        <div class="popup-body">
-            <div class="popup-content">
-                <a href="#header_fix" class="popup-close">
-                    <img src="./logoimg/close.png" alt="" class="close">
-                </a>
-                <div class="popup-header-flex">
-                    <div class="popup-text-main">
-                        <div class=" text-h1 popup-title">Деревянный коттедж "Сказка"</div>
-                        <div class="">
-                            <h2 class="text-h2 popup-h2 popup-text">Яремче</h2>
-                            <!-- <h2 class="text-h2 popup-h2 popup-text">Горская 1а</h2>  -->
-                        </div>
-                        <a href="#header_fix" class="moo-1">
-                            <h5 class="text-h5 moo-h5">Узнать больше</h5>
-                        </a>
-                    </div>
-                    <a href="#header_fix" class="moo">
-                        <h5 class="text-h5 moo-h5">Узнать больше</h5>
-                    </a>
-                </div>
-               <!-- Карусель -->
-                <div class="carousel carousel-slider img-inspection">
-                        <div class="carousel-fixed-item "> 
-                        </div>
-                    <div class="carousel-item " href="#one!">
-                        <img class="popap-img" src="./logoimg/Kazka.webp" alt="Photo">
-                    </div>
-                    <div class="carousel-item" href="#two!">
-                        <img class="popap-img" src="./logoimg/Fairytale-1.jpg" alt="Photo">
-                    </div>
-                    <div class="carousel-item" href="#three!">
-                        <img class="popap-img" src="./logoimg/Fairytale-2.jpg" alt="Photo">
-                    </div>
-                    <div class="carousel-item" href="#four!">
-                        <img class="popap-img" src="./logoimg/Fairytale-3.jpg" alt="Photo">
-                    </div>
-                    <div class="carousel-item" href="#five!">
-                        <img class="popap-img" src="./logoimg/Fairytale-4.jpg" alt="Photo">
-                    </div>
-                </div>
-                <!-- Карусель end -->
-            </div>
-        </div>
-    </div>
-    <!--ofers popup2  end--> 
