@@ -2128,12 +2128,13 @@ body::-webkit-scrollbar-thumb:hover{
     align-items: center;
   }
   /* offers popup end */
+  /*posts*/
   .posts-item {
     width: 270px;
     margin-right: 5px;
     margin-bottom: 30px;
   }
-  
+  /*posts end*/
 }
   
 @media only screen and (min-width: 601px){
@@ -2205,11 +2206,13 @@ body::-webkit-scrollbar-thumb:hover{
     align-items: center;
   }
   /* offers popup end */
+  /*posts*/
   .posts-item {
     width: 300px;
-   margin-right: 0px;
-   margin-bottom: 30px;
+     margin-right: 0px;
+    margin-bottom: 30px;
   }
+  /*posts end*/
 }
 
 @media screen and (max-width: 400px){
