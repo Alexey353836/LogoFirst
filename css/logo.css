@@ -1617,17 +1617,19 @@ offers-details-favorite:active{
   text-align: left;
   max-width: 450px;
   min-height: 140px;
+  color: #000;
 }
 .reviews-h6{
   font-size: 12px;
   text-align: left;
-  color: var(--color_text);
+  color: #000;
   height: 30px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 .revievs-span{
   font-weight: 600;
+  color: #000;
 }
 /* Reviews end */
 
