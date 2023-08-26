@@ -1753,7 +1753,19 @@ line-height: normal;
 .posts-item:last-child{
   margin-right: 0px;
 }
-.posts-img {
+.scale-img{
+  transform: scale(1, 1);
+  transition: all 0.6s ease 0s;
+}
+.scale-img:hover{
+  transform: scale(1.2, 1.2);
+}
+.skew-img{
+  transform: skew(10deg, 10deg);
+  transition: all 0.8s ease 0s;
+}
+.skew-img:hover{
+  transform: skew(0deg, 0deg);
 }
 .posts-text {
   margin-top: 25px;
