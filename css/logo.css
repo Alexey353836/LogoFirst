@@ -128,7 +128,45 @@ line-height: normal;
 }
 .text-p-min{
 }
+/*transform*/
+.contant-translate{
+  transition: all 0.6s ease 0s;
+}
+.contant-translate:active{
+  transform: translate(0px, 10px);
+}
+.contant-scale{
+  transform: scale(1, 1);
+  transition: all 0.6s ease 0s;
+}
+.contant-scale:hover{
+  transform: scale(1.1, 1.1);
+}
+.contant-scale:active{
+  transform: scale(0.8, 0.8);
+}
+.contant-skew{
+  transform: skew(10deg, 10deg);
+  transition: all 0.8s ease 0s;
+}
+.contant-skew:hover{
+  transform: skew(0deg, 0deg);
+}
+.contant-skew:active{
+  transform: skew(10deg, 10deg);
+}
+.content-perspective3d{
+  transition: all 0.5s ease 0s;
+  transform:  perspective(40px) rotateX(-1deg);
 
+}
+.content-perspective3d:hover{
+  transform:  perspective(200px) rotateX(2deg);
+}
+.content-perspective3d:active{
+  transform:  perspective(10px) rotateX(-1deg);
+}
+/*transform end*/
 /*Настройка end*/
 /* Header */
 
@@ -271,6 +309,18 @@ line-height: normal;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    animation-name: animatetop;
+    animation-duration: 1.6s;
+}
+@keyframes animatetop {
+  from {
+      margin-top: 250px;
+      opacity: 0.1;
+  }
+  to{
+      margin-top: 0;
+      opacity: 1;
+  }
 }
 
 /* baner end */
@@ -1354,19 +1404,19 @@ body.keyboard-focused .dropdown-content li:focus {
 .search_erase_search,.search_buttontoo,.modal_footer_where{
   background-color: var(--color-main-background);
 }
-.header_logo:hover, .material-icons:hover,.menu-h5:hover,.sidenav li > a:hover{
+.sidenav li > a:hover{
   background-color: var(--color_main-hover);
 }
 .search_sel:hover,.search_erase_clean:hover,.search_erase_search:hover,
 .modal_footer_where:hover{
   background-color: var(--color_cecond-hover);
 }
-.header_logo:focus,.material-icons:focus,.menu-h5:focus, .search_sel:focus, .search_erase_clean:focus,
+.search_sel:focus, .search_erase_clean:focus,
 .search_erase_search:focus,.modal_footer_where:focus,.sidenav li > a:focus{
   background-color: var(--color_main-focus);
 }
 
-.header_logo:active,.material-icons:active, .menu-h5:active, .search_sel:active,.search_erase_clean:active,
+.search_sel:active,.search_erase_clean:active,
 .search_erase_search:active,.modal_footer_where:active,.sidenav li > a:active{
   background-color: var(--color_main-active);
 }
@@ -1759,13 +1809,6 @@ line-height: normal;
 }
 .scale-img:hover{
   transform: scale(1.2, 1.2);
-}
-.skew-img{
-  transform: skew(10deg, 10deg);
-  transition: all 0.8s ease 0s;
-}
-.skew-img:hover{
-  transform: skew(0deg, 0deg);
 }
 .posts-text {
   margin-top: 25px;
