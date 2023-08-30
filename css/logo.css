@@ -310,7 +310,7 @@ line-height: normal;
     font-weight: 700;
     line-height: normal;
     animation-name: animatetop;
-    animation-duration: 1.6s;
+    animation-duration: 2s;
 }
 @keyframes animatetop {
   from {
