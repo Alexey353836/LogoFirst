@@ -1829,6 +1829,45 @@ margin-top: 10px;
  margin-top: 22px;
 }
 
+/* Futer */
+.futer {
+  height: 300px;
+  background-color: #133a50;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.futer-text {
+  text-align: center;
+}
+.header_logo-p {
+  margin-bottom: 25px;
+}
+.futer-h2 {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 2px;
+}
+.futer-h2-first{
+  margin-bottom: 25px;
+}
+
+/* Futer end */
+
+/* Last */
+.last{
+  width: 100%;
+  height: 1px;
+}
+/* Last end*/
+
 /*Photo*/
 .box{
   position: fixed;
