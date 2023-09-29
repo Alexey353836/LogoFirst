@@ -165,8 +165,6 @@ const modalControler3 = ({modal3, btnOpen3, btnClose3, time = 800}) => {
   scrollController. disabledScroll();
   };
   
- 
-  
   buttonElems3.forEach(btn => {
       btn.addEventListener('click', openModal3);
   });
@@ -186,6 +184,114 @@ const modalControler3 = ({modal3, btnOpen3, btnClose3, time = 800}) => {
   
   
   // Popup_toknowmo - 3 end
+
+  
+// Photo JS
+function photo () {
+  // const
+      const photoController = ({openPhoto, closePhoto, fullScreen, imgScale}) => {
+          //   const itemButton = document.querySelector('.item-button');
+          const itemButtons = document.querySelectorAll(openPhoto);//.item-button
+          const fullScreens = document.querySelector(fullScreen);//.full-screen
+          const black = document.querySelector(closePhoto); //.black
+          const scale = document.querySelector(imgScale);//.scale
+  
+          const minPhoto = event => {
+              const target = event.target;
+  
+              if(target === black) {
+                  //  fullScreenFirst.style.cssText = ``; 
+                  scale.style.cssText = `transition: 0.5s;`;
+                  black.style.cssText = ``;
+                  scrollController. enabledScroll();
+                  
+                  setTimeout(() => {
+                      fullScreens.style.cssText = ``; 
+                  }, 500);
+              }
+          };
+  
+  
+          const bigPhoto = () => {
+              fullScreens.style.cssText = `
+              position: fixed;
+              width: 100%;
+              height: 100%;
+              z-index: 3;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              left: 0;
+              top: 0;
+              `;
+          
+              scale.style.cssText = `
+              width: 60%;
+              transition: 0.5s;
+          }
+              `;
+              black.style.cssText = `
+                  position: fixed;
+                  width: 100%;
+                  height: 100%;
+                  left: 0;
+                  top: 0;
+                  z-index: 4;
+              `;
+              scrollController. disabledScroll();
+          };
+          
+          
+          // Click
+          itemButtons.forEach(btn => {
+              btn.addEventListener('click', bigPhoto);
+          })
+  
+          black.addEventListener('click', minPhoto);
+      };
+  
+  
+  // photoController
+      photoController ({
+          openPhoto:'.item-button-1',
+          closePhoto:'.black',
+          fullScreen:'.full-screen-1',
+          imgScale: '.scale-1'
+      });
+      photoController ({
+          openPhoto:'.item-button-2',
+          closePhoto:'.black',
+          fullScreen:'.full-screen-2',
+          imgScale: '.scale-2'
+      });
+      photoController ({
+          openPhoto:'.item-button-3',
+          closePhoto:'.black',
+          fullScreen:'.full-screen-3',
+          imgScale: '.scale-3'
+      });
+      photoController ({
+          openPhoto:'.item-button-4',
+          closePhoto:'.black',
+          fullScreen:'.full-screen-4',
+          imgScale: '.scale-4'
+      });
+      photoController ({
+          openPhoto:'.item-button-5',
+          closePhoto:'.black',
+          fullScreen:'.full-screen-5',
+          imgScale: '.scale-5'
+      });
+      photoController ({
+          openPhoto:'.item-button-6',
+          closePhoto:'.black',
+          fullScreen:'.full-screen-6',
+          imgScale: '.scale-6'
+      });
+  }
+  photo ();
+  // Photo JS end
+    
         
 
         
