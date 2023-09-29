@@ -2127,8 +2127,10 @@ body::-webkit-scrollbar-thumb:hover{
 .scale {
   width: 350px;
   border-radius: 20px;
+  cursor: pointer;
 }
 .black{
+  cursor: pointer;
   /*
   position: fixed;
   width: 100%;
