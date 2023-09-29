@@ -2500,7 +2500,7 @@ body::-webkit-scrollbar-thumb:hover{
   }
   .scale {
     width: 270px;
-    border-radius: 10px;
+    border-radius: 20px;
   }
 }
 /* media end */
