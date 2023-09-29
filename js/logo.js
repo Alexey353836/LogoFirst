@@ -55,7 +55,7 @@ const scrollController = {
 
 
 //Popup_toknowmo
-const modalControler = ({modal, btnOpen, btnClose, btnCloselll, time = 800}) => {
+const modalControler = ({modal, btnOpen, btnClose, btnCloselll, time = 500}) => {
   const buttonElems = document.querySelectorAll(btnOpen);
   const modalElem = document.querySelector(modal);
   
@@ -75,7 +75,7 @@ const modalControler = ({modal, btnOpen, btnClose, btnCloselll, time = 800}) => 
           setTimeout(() => {
               modalElem.style.visibility = 'hidden';
               scrollController. enabledScroll();
-          },800)
+          },500)
       }
   }
 
@@ -114,7 +114,7 @@ const modalControler = ({modal, btnOpen, btnClose, btnCloselll, time = 800}) => 
       btnOpen: '.section_button1',
       btnClose: '.closes',
       btnCloselll:'closeslll',
-      time: 800
+      time: 500
   });
   
   modalControler({
@@ -122,7 +122,7 @@ const modalControler = ({modal, btnOpen, btnClose, btnCloselll, time = 800}) => 
       btnOpen: '.section_button2',
       btnClose: '.closes',
       btnCloselll:'.closeslll',
-       time: 800
+       time: 500
   });
   
   
@@ -130,7 +130,7 @@ const modalControler = ({modal, btnOpen, btnClose, btnCloselll, time = 800}) => 
 
 
   //Popup_toknowmo - 3
-const modalControler3 = ({modal3, btnOpen3, btnClose3, time = 800}) => {
+const modalControler3 = ({modal3, btnOpen3, btnClose3, time = 500}) => {
   const buttonElems3 = document.querySelectorAll(btnOpen3);
   const modalElem3 = document.querySelector(modal3);
   
@@ -150,7 +150,7 @@ const modalControler3 = ({modal3, btnOpen3, btnClose3, time = 800}) => {
           setTimeout(() => {
               modalElem3.style.visibility = 'hidden';
                scrollController. enabledScroll();
-          },800)
+          },500)
       }
      
   }
@@ -207,7 +207,7 @@ function photo () {
                   
                   setTimeout(() => {
                       fullScreens.style.cssText = ``; 
-                  }, 500);
+                  }, 300);
               }
           };
   
@@ -220,13 +220,13 @@ function photo () {
               z-index: 3;
               display: flex;
               align-items: center;
-              justify-content: center;
+               justify-content: center;
               left: 0;
               top: 0;
               `;
           
               scale.style.cssText = `
-              width: 60%;
+              width: 80%;
               transition: 0.5s;
           }
               `;
@@ -251,43 +251,83 @@ function photo () {
       };
   
   
-  // photoController
+  // photoController-1
       photoController ({
           openPhoto:'.item-button-1',
-          closePhoto:'.black',
+          closePhoto:'.black-1',
           fullScreen:'.full-screen-1',
           imgScale: '.scale-1'
       });
       photoController ({
           openPhoto:'.item-button-2',
-          closePhoto:'.black',
+          closePhoto:'.black-1',
           fullScreen:'.full-screen-2',
           imgScale: '.scale-2'
       });
       photoController ({
           openPhoto:'.item-button-3',
-          closePhoto:'.black',
+          closePhoto:'.black-1',
           fullScreen:'.full-screen-3',
           imgScale: '.scale-3'
       });
       photoController ({
           openPhoto:'.item-button-4',
-          closePhoto:'.black',
+          closePhoto:'.black-1',
           fullScreen:'.full-screen-4',
           imgScale: '.scale-4'
       });
       photoController ({
           openPhoto:'.item-button-5',
-          closePhoto:'.black',
+          closePhoto:'.black-1',
           fullScreen:'.full-screen-5',
           imgScale: '.scale-5'
       });
       photoController ({
           openPhoto:'.item-button-6',
-          closePhoto:'.black',
+          closePhoto:'.black-1',
           fullScreen:'.full-screen-6',
           imgScale: '.scale-6'
       });
+      // photoController-1 end
+
+      // photoController-2
+      photoController ({
+        openPhoto:'.item-button-1-2',
+        closePhoto:'.black-2',
+        fullScreen:'.full-screen-1-2',
+        imgScale: '.scale-1-2'
+    });
+    photoController ({
+        openPhoto:'.item-button-2-2',
+        closePhoto:'.black-2',
+        fullScreen:'.full-screen-2-2',
+        imgScale: '.scale-2-2'
+    });
+    photoController ({
+        openPhoto:'.item-button-3-2',
+        closePhoto:'.black-2',
+        fullScreen:'.full-screen-3-2',
+        imgScale: '.scale-3-2'
+    });
+    photoController ({
+        openPhoto:'.item-button-4-2',
+        closePhoto:'.black-2',
+        fullScreen:'.full-screen-4-2',
+        imgScale: '.scale-4-2'
+    });
+    photoController ({
+        openPhoto:'.item-button-5-2',
+        closePhoto:'.black-2',
+        fullScreen:'.full-screen-5-2',
+        imgScale: '.scale-5-2'
+    });
+    photoController ({
+        openPhoto:'.item-button-6-2',
+        closePhoto:'.black-2',
+        fullScreen:'.full-screen-6-2',
+        imgScale: '.scale-6-2'
+    });
+     // photoController-2 end
   }
   photo ();
   // Photo JS end
