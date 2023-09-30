@@ -230,7 +230,6 @@ function photo () {
               }
           };
   
-  
           const bigPhoto = () => {
               fullScreens.style.cssText = `
               position: fixed;
@@ -246,10 +245,10 @@ function photo () {
           
               scale.style.cssText = `
               width: 80%;
-              height: 60%;
+              height: 500px;
               transition: 0.5s;
-          }
               `;
+
               black.style.cssText = `
                   position: fixed;
                   width: 100%;
@@ -258,7 +257,6 @@ function photo () {
                   top: 0;
                   z-index: 4;
               `;
-            //   scrollController. disabledScroll();
             photoDisabledScroll(); 
           };
           
