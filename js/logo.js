@@ -240,7 +240,7 @@ function photo () {
         };
         const photoEnabledScroll = () => { 
             popupToknowmoContent.style.overflow = '';
-            popupToknowmoContent.style.paddingRight = ``;
+            popupToknowmoContent.style.paddingRight = '';
         };
         //scroll end
   
