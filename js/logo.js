@@ -180,21 +180,39 @@ const modalControler3 = ({modal3, btnOpen3, btnClose3, time = 500}) => {
       btnClose3: '.closes3',
       time: 800
   });
-  
-  
-  
-  // Popup_toknowmo - 3 end
+// Popup_toknowmo - 3 end
 
-  
+
 // Photo JS
+ //scroll
+const photoDisabledScroll = () => {
+const popupToknowmoContent = document.querySelector('.popup_toknowmo-content');
+    popupToknowmoContent.style.overflow = 'hidden';
+};
+const photoEnabledScroll = () => { 
+    popupToknowmoContent.style.overflow = '';
+};
+ //scroll end
+// popups_toknowmoo
 function photo () {
   // const
-      const photoController = ({openPhoto, closePhoto, fullScreen, imgScale}) => {
+      const photoController = ({openPhoto, closePhoto, fullScreen, imgScale, toknowmocСontentЫcroll}) => {
           //   const itemButton = document.querySelector('.item-button');
           const itemButtons = document.querySelectorAll(openPhoto);//.item-button
           const fullScreens = document.querySelector(fullScreen);//.full-screen
           const black = document.querySelector(closePhoto); //.black
           const scale = document.querySelector(imgScale);//.scale
+
+          //scroll
+        const popupToknowmoContent = document.querySelector(toknowmocСontentЫcroll);//.popup_toknowmo-content'
+
+        const photoDisabledScroll = () => { 
+        popupToknowmoContent.style.overflow = 'hidden';
+        };
+        const photoEnabledScroll = () => { 
+            popupToknowmoContent.style.overflow = '';
+        };
+        //scroll end
   
           const minPhoto = event => {
               const target = event.target;
@@ -203,11 +221,12 @@ function photo () {
                   //  fullScreenFirst.style.cssText = ``; 
                   scale.style.cssText = `transition: 0.5s;`;
                   black.style.cssText = ``;
-                  scrollController. enabledScroll();
-                  
+                //   scrollController. enabledScroll();
+                photoEnabledScroll (); 
+
                   setTimeout(() => {
                       fullScreens.style.cssText = ``; 
-                  }, 300);
+                  }, 500);
               }
           };
   
@@ -220,13 +239,14 @@ function photo () {
               z-index: 3;
               display: flex;
               align-items: center;
-               justify-content: center;
+              justify-content: center;
               left: 0;
               top: 0;
               `;
           
               scale.style.cssText = `
               width: 80%;
+              height: 60%;
               transition: 0.5s;
           }
               `;
@@ -238,7 +258,8 @@ function photo () {
                   top: 0;
                   z-index: 4;
               `;
-              scrollController. disabledScroll();
+            //   scrollController. disabledScroll();
+            photoDisabledScroll(); 
           };
           
           
@@ -256,37 +277,43 @@ function photo () {
           openPhoto:'.item-button-1',
           closePhoto:'.black-1',
           fullScreen:'.full-screen-1',
-          imgScale: '.scale-1'
+          imgScale: '.scale-1',
+          toknowmocСontentЫcroll: '.popup_toknowmo-content-1'
       });
       photoController ({
           openPhoto:'.item-button-2',
           closePhoto:'.black-1',
           fullScreen:'.full-screen-2',
-          imgScale: '.scale-2'
+          imgScale: '.scale-2',
+          toknowmocСontentЫcroll: '.popup_toknowmo-content-1'
       });
       photoController ({
           openPhoto:'.item-button-3',
           closePhoto:'.black-1',
           fullScreen:'.full-screen-3',
-          imgScale: '.scale-3'
+          imgScale: '.scale-3',
+          toknowmocСontentЫcroll: '.popup_toknowmo-content-1'
       });
       photoController ({
           openPhoto:'.item-button-4',
           closePhoto:'.black-1',
           fullScreen:'.full-screen-4',
-          imgScale: '.scale-4'
+          imgScale: '.scale-4',
+          toknowmocСontentЫcroll: '.popup_toknowmo-content-1'
       });
       photoController ({
           openPhoto:'.item-button-5',
           closePhoto:'.black-1',
           fullScreen:'.full-screen-5',
-          imgScale: '.scale-5'
+          imgScale: '.scale-5',
+          toknowmocСontentЫcroll: '.popup_toknowmo-content-1'
       });
       photoController ({
           openPhoto:'.item-button-6',
           closePhoto:'.black-1',
           fullScreen:'.full-screen-6',
-          imgScale: '.scale-6'
+          imgScale: '.scale-6',
+          toknowmocСontentЫcroll: '.popup_toknowmo-content-1'
       });
       // photoController-1 end
 
@@ -295,37 +322,43 @@ function photo () {
         openPhoto:'.item-button-1-2',
         closePhoto:'.black-2',
         fullScreen:'.full-screen-1-2',
-        imgScale: '.scale-1-2'
+        imgScale: '.scale-1-2',
+        toknowmocСontentЫcroll: '.popup_toknowmo-content-2'
     });
     photoController ({
         openPhoto:'.item-button-2-2',
         closePhoto:'.black-2',
         fullScreen:'.full-screen-2-2',
-        imgScale: '.scale-2-2'
+        imgScale: '.scale-2-2',
+        toknowmocСontentЫcroll: '.popup_toknowmo-content-2'
     });
     photoController ({
         openPhoto:'.item-button-3-2',
         closePhoto:'.black-2',
         fullScreen:'.full-screen-3-2',
-        imgScale: '.scale-3-2'
+        imgScale: '.scale-3-2',
+        toknowmocСontentЫcroll: '.popup_toknowmo-content-2'
     });
     photoController ({
         openPhoto:'.item-button-4-2',
         closePhoto:'.black-2',
         fullScreen:'.full-screen-4-2',
-        imgScale: '.scale-4-2'
+        imgScale: '.scale-4-2',
+        toknowmocСontentЫcroll: '.popup_toknowmo-content-2'
     });
     photoController ({
         openPhoto:'.item-button-5-2',
         closePhoto:'.black-2',
         fullScreen:'.full-screen-5-2',
-        imgScale: '.scale-5-2'
+        imgScale: '.scale-5-2',
+        toknowmocСontentЫcroll: '.popup_toknowmo-content-2'
     });
     photoController ({
         openPhoto:'.item-button-6-2',
         closePhoto:'.black-2',
         fullScreen:'.full-screen-6-2',
-        imgScale: '.scale-6-2'
+        imgScale: '.scale-6-2',
+        toknowmocСontentЫcroll: '.popup_toknowmo-content-2'
     });
      // photoController-2 end
   }
