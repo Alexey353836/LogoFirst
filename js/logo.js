@@ -184,15 +184,41 @@ const modalControler3 = ({modal3, btnOpen3, btnClose3, time = 500}) => {
 
 
 // Photo JS
+/*
  //scroll
+ const popupToknowmoContent = document.querySelector('.popup_toknowmo-content');
+ 
 const photoDisabledScroll = () => {
-const popupToknowmoContent = document.querySelector('.popup_toknowmo-content');
+
     popupToknowmoContent.style.overflow = 'hidden';
 };
 const photoEnabledScroll = () => { 
     popupToknowmoContent.style.overflow = '';
 };
  //scroll end
+ */
+/*
+ //scroll
+const scrollControllerPhoto = {
+    scrollPosition: 0,
+    disabledScroll() {
+        scrollControllerPhoto.scrollPosition = window.scrollY;
+        popupToknowmoContent.style.cssText = `
+        overflow: hidden;
+        top:-${popupToknowmoContent.scrollPosition}px;
+        left: 0;
+        padding-right: ${(window.innerWidth -popupToknowmoContent.offsetWidth)}px;
+         `;
+        document.documentElement.style.scrollBehavior = 'unset';
+    },
+    enabledScroll() {
+        document.popupToknowmoContent.style.cssText = ``;
+        // window.scroll({top: scrollControllerPhoto.scrollPosition})
+        document.documentElement.style.scrollBehavior = '';
+    },
+  }
+  //scroll end
+  */
 // popups_toknowmoo
 function photo () {
   // const
@@ -207,10 +233,14 @@ function photo () {
         const popupToknowmoContent = document.querySelector(toknowmocСontentЫcroll);//.popup_toknowmo-content'
 
         const photoDisabledScroll = () => { 
-        popupToknowmoContent.style.overflow = 'hidden';
+        popupToknowmoContent.style.cssText = `
+        overflow: hidden;
+        padding-right:15px; 
+         `;
         };
         const photoEnabledScroll = () => { 
             popupToknowmoContent.style.overflow = '';
+            popupToknowmoContent.style.paddingRight = ``;
         };
         //scroll end
   
@@ -256,7 +286,8 @@ function photo () {
                   top: 0;
                   z-index: 4;
               `;
-            photoDisabledScroll(); 
+             photoDisabledScroll(); 
+            //scrollControllerPhoto.disabledScroll();
           };
           
           

@@ -2029,7 +2029,7 @@ body::-webkit-scrollbar-thumb:hover{
 
 /* popup to know moo */
 .popups_toknowmoo {
-
+ 
 }
 .popup_toknowmoo  {
   position: fixed;
@@ -2041,6 +2041,7 @@ body::-webkit-scrollbar-thumb:hover{
   z-index: 2;
    display: none; 
    transition: 0.8s ;
+  
 }
 .popup_toknowmoo-body {
   display: flex;
