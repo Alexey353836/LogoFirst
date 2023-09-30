@@ -222,7 +222,7 @@ const scrollControllerPhoto = {
 // popups_toknowmoo
 function photo () {
   // const
-      const photoController = ({openPhoto, closePhoto, fullScreen, imgScale, toknowmocСontentЫcroll}) => {
+      const photoController = ({openPhoto, closePhoto, fullScreen, imgScale, popupToknowmoContentScroll}) => {
           //   const itemButton = document.querySelector('.item-button');
           const itemButtons = document.querySelectorAll(openPhoto);//.item-button
           const fullScreens = document.querySelector(fullScreen);//.full-screen
@@ -230,13 +230,16 @@ function photo () {
           const scale = document.querySelector(imgScale);//.scale
 
           //scroll
-        const popupToknowmoContent = document.querySelector(toknowmocСontentЫcroll);//.popup_toknowmo-content'
+        const popupToknowmoContent = document.querySelector(popupToknowmoContentScroll);//.popup_toknowmo-content'
 
         const photoDisabledScroll = () => { 
         popupToknowmoContent.style.cssText = `
         overflow: hidden;
-        padding-right:15px; 
+        top:-${popupToknowmoContent.scrollPosition}px;
+        left: 0;
+        padding-right: ${(window.innerWidth -popupToknowmoContent.offsetWidth)}px;
          `;
+        
         };
         const photoEnabledScroll = () => { 
             popupToknowmoContent.style.overflow = '';
@@ -306,42 +309,42 @@ function photo () {
           closePhoto:'.black-1',
           fullScreen:'.full-screen-1',
           imgScale: '.scale-1',
-          toknowmocСontentЫcroll: '.popup_toknowmo-content-1'
+          popupToknowmoContentScroll: '.popup_toknowmo-content-1'
       });
       photoController ({
           openPhoto:'.item-button-2',
           closePhoto:'.black-1',
           fullScreen:'.full-screen-2',
           imgScale: '.scale-2',
-          toknowmocСontentЫcroll: '.popup_toknowmo-content-1'
+          popupToknowmoContentScroll: '.popup_toknowmo-content-1'
       });
       photoController ({
           openPhoto:'.item-button-3',
           closePhoto:'.black-1',
           fullScreen:'.full-screen-3',
           imgScale: '.scale-3',
-          toknowmocСontentЫcroll: '.popup_toknowmo-content-1'
+          popupToknowmoContentScroll: '.popup_toknowmo-content-1'
       });
       photoController ({
           openPhoto:'.item-button-4',
           closePhoto:'.black-1',
           fullScreen:'.full-screen-4',
           imgScale: '.scale-4',
-          toknowmocСontentЫcroll: '.popup_toknowmo-content-1'
+          popupToknowmoContentScroll: '.popup_toknowmo-content-1'
       });
       photoController ({
           openPhoto:'.item-button-5',
           closePhoto:'.black-1',
           fullScreen:'.full-screen-5',
           imgScale: '.scale-5',
-          toknowmocСontentЫcroll: '.popup_toknowmo-content-1'
+          popupToknowmoContentScroll: '.popup_toknowmo-content-1'
       });
       photoController ({
           openPhoto:'.item-button-6',
           closePhoto:'.black-1',
           fullScreen:'.full-screen-6',
           imgScale: '.scale-6',
-          toknowmocСontentЫcroll: '.popup_toknowmo-content-1'
+          popupToknowmoContentScroll: '.popup_toknowmo-content-1'
       });
       // photoController-1 end
 
@@ -351,42 +354,42 @@ function photo () {
         closePhoto:'.black-2',
         fullScreen:'.full-screen-1-2',
         imgScale: '.scale-1-2',
-        toknowmocСontentЫcroll: '.popup_toknowmo-content-2'
+        popupToknowmoContentScroll: '.popup_toknowmo-content-2'
     });
     photoController ({
         openPhoto:'.item-button-2-2',
         closePhoto:'.black-2',
         fullScreen:'.full-screen-2-2',
         imgScale: '.scale-2-2',
-        toknowmocСontentЫcroll: '.popup_toknowmo-content-2'
+        popupToknowmoContentScroll: '.popup_toknowmo-content-2'
     });
     photoController ({
         openPhoto:'.item-button-3-2',
         closePhoto:'.black-2',
         fullScreen:'.full-screen-3-2',
         imgScale: '.scale-3-2',
-        toknowmocСontentЫcroll: '.popup_toknowmo-content-2'
+        popupToknowmoContentScroll: '.popup_toknowmo-content-2'
     });
     photoController ({
         openPhoto:'.item-button-4-2',
         closePhoto:'.black-2',
         fullScreen:'.full-screen-4-2',
         imgScale: '.scale-4-2',
-        toknowmocСontentЫcroll: '.popup_toknowmo-content-2'
+        popupToknowmoContentScroll: '.popup_toknowmo-content-2'
     });
     photoController ({
         openPhoto:'.item-button-5-2',
         closePhoto:'.black-2',
         fullScreen:'.full-screen-5-2',
         imgScale: '.scale-5-2',
-        toknowmocСontentЫcroll: '.popup_toknowmo-content-2'
+        popupToknowmoContentScroll: '.popup_toknowmo-content-2'
     });
     photoController ({
         openPhoto:'.item-button-6-2',
         closePhoto:'.black-2',
         fullScreen:'.full-screen-6-2',
         imgScale: '.scale-6-2',
-        toknowmocСontentЫcroll: '.popup_toknowmo-content-2'
+        popupToknowmoContentScroll: '.popup_toknowmo-content-2'
     });
      // photoController-2 end
   }
