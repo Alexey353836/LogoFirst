@@ -2102,7 +2102,7 @@ body::-webkit-scrollbar-thumb:hover{
 }
 .item-button {
    width: 350px; 
-   height: 250px;
+   /* height: 250px; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2126,7 +2126,7 @@ body::-webkit-scrollbar-thumb:hover{
 }
 .scale {
   width: 350px;
-  height: 200px; 
+  /* height: 200px;  */
   border-radius: 20px;
   cursor: pointer;
   margin: 10px;
@@ -2166,11 +2166,11 @@ body::-webkit-scrollbar-thumb:hover{
   }
   .item-button {
     width: 320px;
-    height: 200px;
+    /* height: 200px; */
   }
   .scale {
     width: 300px;
-    height: 180px;
+    /* height: 180px; */
   }
   /* Photo JS end*/
 }
@@ -2419,11 +2419,11 @@ body::-webkit-scrollbar-thumb:hover{
     /* Photo JS */
     .item-button {
       width: 280px;
-      height: 180px;
+      /* height: 180px; */
     }
     .scale {
       width: 260px;
-      height: 160px;
+      /* height: 160px; */
     }
     /* Photo JS end*/
 }
@@ -2521,11 +2521,11 @@ body::-webkit-scrollbar-thumb:hover{
    /* Photo JS */
   .item-button {
     width: 270px;
-    height: 180px;
+    /* height: 180px; */
   }
   .scale {
     width: 270px;
-    height: 160px;
+    /* height: 160px; */
   }
 }
 

@@ -245,7 +245,6 @@ function photo () {
           
               scale.style.cssText = `
               width: 80%;
-              height: 500px;
               transition: 0.5s;
               `;
 
