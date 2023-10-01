@@ -71,10 +71,11 @@ const modalControler = ({modal, btnOpen, btnClose, btnCloselll, time = 500}) => 
       const target = event.target;
       if (target === modalElem || target.closest(btnClose)) {
          modalElem.style.opacity = 0;
-        
+         scrollController. enabledScroll();
+         
           setTimeout(() => {
               modalElem.style.visibility = 'hidden';
-              scrollController. enabledScroll();
+            //   scrollController. enabledScroll();
           },500)
       }
   }
