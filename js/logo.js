@@ -71,7 +71,7 @@ const modalControler = ({modal, btnOpen, btnClose, btnCloselll, time = 500}) => 
       const target = event.target;
       if (target === modalElem || target.closest(btnClose)) {
          modalElem.style.opacity = 0;
-         scrollController. enabledScroll();
+          scrollController. enabledScroll();
          
           setTimeout(() => {
               modalElem.style.visibility = 'hidden';
@@ -147,10 +147,11 @@ const modalControler3 = ({modal3, btnOpen3, btnClose3, time = 500}) => {
       const target3 = event.target;
       if (target3 === modalElem3 || target3.closest(btnClose3)) {
          modalElem3.style.opacity = 0;
-        
+
+         scrollController. enabledScroll();
           setTimeout(() => {
               modalElem3.style.visibility = 'hidden';
-               scrollController. enabledScroll();
+            //   scrollController. enabledScroll();
           },500)
       }
      
@@ -201,12 +202,12 @@ function photo () {
                 scrollControllerPhoto.scrollPositions = window.scrollY;
                 popupToknowmoContent.style.cssText = `
                overflow: hidden;
-                top: -${scrollControllerPhoto.scrollPositions}px;
+                 top: -${scrollControllerPhoto.scrollPositions}px;
                 left: 0:
                  widht: 100vw;
                  height: 100vw;
                 //  padding-right: 14px;
-                padding-right: ${(window.innerWidth - document.body.popupToknowmoContent.offsetWidth)}px;
+                 padding-right: 15px;
                `;
                document.documentElement.style.scrollBehavior = 'unset';// Выключить плавный скрол
                 },
