@@ -205,14 +205,15 @@ function photo () {
                 left: 0:
                  widht: 100vw;
                  height: 100vw;
-                 padding-right: 15px;
+                //  padding-right: 14px;
+                padding-right: ${(window.innerWidth - document.body.popupToknowmoContent.offsetWidth)}px;
                `;
                document.documentElement.style.scrollBehavior = 'unset';// Выключить плавный скрол
                 },
                 enabledScrollPhoto() {
                     popupToknowmoContent.style.cssText = ``;
-                window.scroll({top:scrollControllerPhoto.scrollPositions})
-                document.documentElement.style.scrollBehavior = '';// Включить плавный скрол
+                    window.scroll({top:scrollControllerPhoto.scrollPositions})
+                    document.documentElement.style.scrollBehavior = '';// Включить плавный скрол
                 },
             }
             //scrollPhoto end
