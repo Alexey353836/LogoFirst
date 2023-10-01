@@ -197,23 +197,23 @@ function photo () {
         //scrollPhoto
         const popupToknowmoContent = document.querySelector(popupToknowmoContentScroll);//.popup_toknowmo-content'
         const scrollControllerPhoto = {
-              scrollPositions: 0,
+              // scrollPositions: 0,
             disabledScrollPhoto() {
-                scrollControllerPhoto.scrollPositions = window.scrollY;
+                 scrollControllerPhoto.scrollPositions = window.scrollY;
                 popupToknowmoContent.style.cssText = `
-               overflow: hidden;
-                 top: -${scrollControllerPhoto.scrollPositions}px;
+                 overflow: hidden;
+                top: -${scrollControllerPhoto.scrollPositions}px;
+                // top: 0;
                 left: 0:
                  widht: 100vw;
-                 height: 100vw;
-                //  padding-right: 14px;
+                // height: 100vw; Появляется прыжок вверх
                  padding-right: 15px;
                `;
                document.documentElement.style.scrollBehavior = 'unset';// Выключить плавный скрол
                 },
                 enabledScrollPhoto() {
                     popupToknowmoContent.style.cssText = ``;
-                    window.scroll({top:scrollControllerPhoto.scrollPositions})
+                     window.scroll({top:scrollControllerPhoto.scrollPositions})
                     document.documentElement.style.scrollBehavior = '';// Включить плавный скрол
                 },
             }
@@ -316,6 +316,27 @@ function photo () {
           imgScale: '.scale-6',
           popupToknowmoContentScroll: '.popup_toknowmo-content-1'
       });
+      photoController ({
+        openPhoto:'.item-button-7',
+        closePhoto:'.black-1',
+        fullScreen:'.full-screen-7',
+        imgScale: '.scale-7',
+        popupToknowmoContentScroll: '.popup_toknowmo-content-1'
+    });
+    photoController ({
+      openPhoto:'.item-button-8',
+      closePhoto:'.black-1',
+      fullScreen:'.full-screen-8',
+      imgScale: '.scale-8',
+      popupToknowmoContentScroll: '.popup_toknowmo-content-1'
+  });
+  photoController ({
+    openPhoto:'.item-button-9',
+    closePhoto:'.black-1',
+    fullScreen:'.full-screen-9',
+    imgScale: '.scale-9',
+    popupToknowmoContentScroll: '.popup_toknowmo-content-1'
+});
       // photoController-1 end
 
       // photoController-2
