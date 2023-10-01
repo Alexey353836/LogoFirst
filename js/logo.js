@@ -47,7 +47,7 @@ const scrollController = {
   },
   enabledScroll() {
       document.body.style.cssText = ``;
-      // window.scroll({top: scrollController.scrollPosition})
+        window.scroll({top: scrollController.scrollPosition})
       document.documentElement.style.scrollBehavior = '';
   },
 }
@@ -172,8 +172,7 @@ const modalControler3 = ({modal3, btnOpen3, btnClose3, time = 500}) => {
   modalElem3 .addEventListener('click', closeModal3);
   
   }
-  
-  
+   
   modalControler3({
       modal3:'.modal3',
       btnOpen3: '.section_button3',
@@ -184,81 +183,50 @@ const modalControler3 = ({modal3, btnOpen3, btnClose3, time = 500}) => {
 
 
 // Photo JS
-/*
- //scroll
- const popupToknowmoContent = document.querySelector('.popup_toknowmo-content');
- 
-const photoDisabledScroll = () => {
-
-    popupToknowmoContent.style.overflow = 'hidden';
-};
-const photoEnabledScroll = () => { 
-    popupToknowmoContent.style.overflow = '';
-};
- //scroll end
- */
-/*
- //scroll
-const scrollControllerPhoto = {
-    scrollPosition: 0,
-    disabledScroll() {
-        scrollControllerPhoto.scrollPosition = window.scrollY;
-        popupToknowmoContent.style.cssText = `
-        overflow: hidden;
-        top:-${popupToknowmoContent.scrollPosition}px;
-        left: 0;
-        padding-right: ${(window.innerWidth -popupToknowmoContent.offsetWidth)}px;
-         `;
-        document.documentElement.style.scrollBehavior = 'unset';
-    },
-    enabledScroll() {
-        document.popupToknowmoContent.style.cssText = ``;
-        // window.scroll({top: scrollControllerPhoto.scrollPosition})
-        document.documentElement.style.scrollBehavior = '';
-    },
-  }
-  //scroll end
-  */
-// popups_toknowmoo
 function photo () {
   // const
       const photoController = ({openPhoto, closePhoto, fullScreen, imgScale, popupToknowmoContentScroll}) => {
-          //   const itemButton = document.querySelector('.item-button');
+          
           const itemButtons = document.querySelectorAll(openPhoto);//.item-button
           const fullScreens = document.querySelector(fullScreen);//.full-screen
           const black = document.querySelector(closePhoto); //.black
           const scale = document.querySelector(imgScale);//.scale
 
-          //scroll
+        //scrollPhoto
         const popupToknowmoContent = document.querySelector(popupToknowmoContentScroll);//.popup_toknowmo-content'
+        const scrollControllerPhoto = {
+              scrollPositions: 0,
+            disabledScrollPhoto() {
+                scrollControllerPhoto.scrollPositions = window.scrollY;
+                popupToknowmoContent.style.cssText = `
+               overflow: hidden;
+                top: -${scrollControllerPhoto.scrollPositions}px;
+                left: 0:
+                 widht: 100vw;
+                 height: 100vw;
+                 padding-right: 15px;
+               `;
+               document.documentElement.style.scrollBehavior = 'unset';// Выключить плавный скрол
+                },
+                enabledScrollPhoto() {
+                    popupToknowmoContent.style.cssText = ``;
+                window.scroll({top:scrollControllerPhoto.scrollPositions})
+                document.documentElement.style.scrollBehavior = '';// Включить плавный скрол
+                },
+            }
+            //scrollPhoto end
 
-        const photoDisabledScroll = () => { 
-        popupToknowmoContent.style.cssText = `
-        overflow: hidden;
-        top:-${popupToknowmoContent.scrollPosition}px;
-        left: 0;
-        padding-right: ${(window.innerWidth -popupToknowmoContent.offsetWidth)}px;
-         `;
-        
-        };
-        const photoEnabledScroll = () => { 
-            popupToknowmoContent.style.overflow = '';
-            popupToknowmoContent.style.paddingRight = '';
-        };
-        //scroll end
-  
           const minPhoto = event => {
               const target = event.target;
   
               if(target === black) {
-                  //  fullScreenFirst.style.cssText = ``; 
+    
                   scale.style.cssText = `transition: 0.5s;`;
                   black.style.cssText = ``;
-                //   scrollController. enabledScroll();
-                photoEnabledScroll (); 
 
                   setTimeout(() => {
                       fullScreens.style.cssText = ``; 
+                      scrollControllerPhoto.enabledScrollPhoto();
                   }, 500);
               }
           };
@@ -289,8 +257,7 @@ function photo () {
                   top: 0;
                   z-index: 4;
               `;
-             photoDisabledScroll(); 
-            //scrollControllerPhoto.disabledScroll();
+              scrollControllerPhoto.disabledScrollPhoto();
           };
           
           
