@@ -203,10 +203,9 @@ function photo () {
                 popupToknowmoContent.style.cssText = `
                  overflow: hidden;
                 top: -${scrollControllerPhoto.scrollPositions}px;
-                // top: 0;
                 left: 0:
                  widht: 100vw;
-                // height: 100vw; Появляется прыжок вверх
+                /* height: 100vw; Появляется прыжок вверх*/
                  padding-right: 15px;
                `;
                document.documentElement.style.scrollBehavior = 'unset';// Выключить плавный скрол
