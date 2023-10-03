@@ -206,7 +206,7 @@ function photo () {
                  left: 0:
                  widht: 100vw;
                 /* height: 100vw; Появляется прыжок вверх*/
-                 padding-right: 15px;
+                 padding-right: 16px;
                `;
                document.documentElement.style.scrollBehavior = 'unset';// Выключить плавный скрол
                 },
