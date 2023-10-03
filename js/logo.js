@@ -197,13 +197,13 @@ function photo () {
         //scrollPhoto
         const popupToknowmoContent = document.querySelector(popupToknowmoContentScroll);//.popup_toknowmo-content'
         const scrollControllerPhoto = {
-              // scrollPositions: 0,
+               scrollPositions: 0,
             disabledScrollPhoto() {
-                 scrollControllerPhoto.scrollPositions = window.scrollY;
+                scrollControllerPhoto.scrollPositions = window.scrollY;
                 popupToknowmoContent.style.cssText = `
                  overflow: hidden;
-                top: -${scrollControllerPhoto.scrollPositions}px;
-                left: 0:
+                top: -${scrollControllerPhoto.scrollPositions}2px;
+                 left: 0:
                  widht: 100vw;
                 /* height: 100vw; Появляется прыжок вверх*/
                  padding-right: 15px;
