@@ -1920,6 +1920,7 @@ body::-webkit-scrollbar-thumb:hover{
 }
 /* Настройка скрола end */
 
+
 /* offers pupap */
 .popup{
   position: fixed;
@@ -1929,12 +1930,13 @@ body::-webkit-scrollbar-thumb:hover{
   top: 0;
   left: 0;
   opacity: 0; 
-  visibility: hidden; 
+   visibility: hidden;  
   overflow-y: auto; 
   overflow-x: hidden;
   transition: all 1s ease 0s; 
   z-index: 1; 
 }
+
 .popup::-webkit-scrollbar{
   width: 12px;
 }
@@ -1947,15 +1949,18 @@ body::-webkit-scrollbar-thumb:hover{
   border:  #bfc9eb solid 2px;
 }
 .popup::-webkit-scrollbar-thumb:hover{
-  background-color: var(--color_therd-hover)
+  background-color: var(--color_therd-hover)ж
 }
-.popup:target{
+.popup.open{
   opacity: 1;
   visibility: visible;
 }
-.popup:target .popup-content{
-/* transform: translate(0px, 0px); */
-  transform: perspective(600px) translate(0px, 0%) rotate(0deg); 
+.popup.closed{
+  opacity: 0;
+  visibility: hidden;
+}
+.popup.open .popup-content{
+  transform: perspective(600px) translate(0px, 0%) rotate(0deg);  
   opacity: 1; 
 }
 .popup_area{
@@ -1964,10 +1969,12 @@ body::-webkit-scrollbar-thumb:hover{
   height: 100%;
   top: 0;
   left: 0;
+  /* background-color: #a4ec0a; */
 }
 .popup-body {
   min-height: 100%;
   display: flex;
+  align-items: center;
   justify-content: center ;
   padding: 10px 10px;
   transition: all 0.8s ease 0s;
@@ -1976,21 +1983,17 @@ body::-webkit-scrollbar-thumb:hover{
   position: relative;
   background-color: transparent;/*Прозрачній*/
   color: #000;
-  width: 900px;
-  height: 60px;
+  max-width: 900px;
+  /* height: 600px; */
   padding: 10px;
-  opacity: 0;
-  /* transform: translate(0%, -100%); */ 
+  opacity: 1;
+  /* transform: translate(0%, -100%);   */
   transition: all 0.8s ease 0s; 
-  transform: perspective(600px) translate(0px, -100%) rotatex(45deg); 
+   transform: perspective(600px) translate(0px, -100%) rotatex(45deg);
 }
 .close{
   width: 20px;
   height: 20px;
-}
-.close:hover{
-  background-color: var(--color-moo-background-hover);
-  border-radius: 2px;
 }
 .popup-header-flex{
   display: flex;
@@ -2002,13 +2005,10 @@ body::-webkit-scrollbar-thumb:hover{
 .moo{
   width: 150px;
   height: 30px;
-  background-color: var(--color-moo-background);
+  background-color: #34533c;
   border-radius: 10px;
-  border: solid 1px rgb(56, 61, 10);
+   border: solid 1px #fff; 
   padding: 5px;
-}
-.moo:hover{
-  background-color: var(--color-moo-background-hover);
 }
 .moo-h5{
   color: #fff;
@@ -2017,7 +2017,7 @@ body::-webkit-scrollbar-thumb:hover{
 .popup-photo{
   max-width: 800px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 2fr);
   gap: 30px;
   justify-items: center;
   align-items: center;
@@ -2027,8 +2027,18 @@ body::-webkit-scrollbar-thumb:hover{
   border: #fff solid 1px;
   border-radius: 10px;
   width: 240px;
+  border: #000 solid 2px;
 }
 /* Popup end */
+
+
+
+
+
+
+
+
+
 
 
 

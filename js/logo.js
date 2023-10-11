@@ -54,6 +54,55 @@ const scrollController = {
 //scroll end
 
 
+// Popup offers
+const popupLinks = document.querySelectorAll('.popup-link');
+const popup = document.querySelectorAll('.popup');
+
+let curentPopup;
+let unlock = true;
+
+if (popupLinks.length > 0) {
+  for (let index = 0; index < popupLinks.length; index++) {
+    const popupLink = popupLinks [index];
+    popupLink.addEventListener('click', function (e) {
+      const popupName = popupLink.getAttribute('href').replace('#', '');
+       curentPopup = document.getElementById(popupName);
+      popupOpen(curentPopup);
+      e.preventDefault();
+    });
+  }
+}
+
+function popupOpen (curentPopup) {
+   if (curentPopup && unlock) {
+       curentPopup.classList.add('open');
+       scrollController. disabledScroll();
+   }
+  }
+
+let closePopup = document.querySelectorAll('.close-popup');
+// console.log(closePopup);
+  for (let index = 0; index < closePopup.length; index++) {
+      const closePopups = closePopup[index];
+      // console.log(closePopups);
+      closePopups.addEventListener('click', delit);
+  }
+
+   function delit () {
+    curentPopup.classList.remove('open');
+    setTimeout(() => {
+      scrollController. enabledScroll();
+    },500)
+   }
+
+//Popup offers end
+
+
+
+
+
+
+
 //Popup_toknowmo
 const modalControler = ({modal, btnOpen, btnClose, btnCloselll, time = 500}) => {
   const buttonElems = document.querySelectorAll(btnOpen);
