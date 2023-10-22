@@ -1981,12 +1981,12 @@ body::-webkit-scrollbar-thumb:hover{
 }
 .popup-content {
   position: relative;
-  /*background-color: transparent;*//*Прозрачній*/
+ /*background-color: transparent;*//*Прозрачній*/
   background-color: #2d3a8d;
   color: #000;
   border-radius: 10px;
-  max-width: 1200px;
-  max-height: 900px;
+  max-width: 2000px;
+  max-height: 2000px;
   padding: 20px;
   opacity: 1;
   /* transform: translate(0%, -100%);*/
@@ -2027,8 +2027,8 @@ body::-webkit-scrollbar-thumb:hover{
 }
 .popup-img{
   border-radius: 10px;
-  max-width: 270px;
-  max-height: 270px;
+  max-width: 250px;
+  max-height: 250px;
   border: #000 solid 2px;
   transition: all 0.8s ease; 
 }
@@ -2036,6 +2036,8 @@ body::-webkit-scrollbar-thumb:hover{
 
 /* popup photo */
 .popup-item {
+  width: 250px;
+  height: 250px;
   padding: 0px; 
   margin: 20px;
 }
@@ -2071,7 +2073,10 @@ body::-webkit-scrollbar-thumb:hover{
  }
 
 .full-img{
-  width: 100%;
+   /* width: 100%;  */
+   /* height: 100%; */
+  max-width: 1000px;
+   max-height: 600px; 
   border: #fff solid 1px;
   border-radius: 10px;
   border: #fff solid 1px;

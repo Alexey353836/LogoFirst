@@ -142,11 +142,10 @@ function fullBack () {
   // console.log(imgPlus);
  
   setTimeout(() => {
-   
     imgPluss.classList.remove('full-img');
-  },300)
-  
-   imgPluss.classList.add('popup-img');
+  },0)
+  imgPluss.classList.add('popup-img');
+   
   }
 }
 // Full photo end
