@@ -42,6 +42,7 @@ const scrollController = {
       top:-${scrollController.scrollPosition}px;
       left: 0;
       padding-right: ${(window.innerWidth - document.body.offsetWidth)}px;
+      // padding-right: 9px;
        `;
       document.documentElement.style.scrollBehavior = 'unset';
   },
@@ -98,7 +99,57 @@ let closePopup = document.querySelectorAll('.close-popup');
 //Popup offers end
 
 
+// Full photo
+let full = document.querySelectorAll('.full');
+let img = document.querySelectorAll('.popup-img');
+let black = document.querySelector('.black');
+let itemPlus = document.querySelectorAll('.item-plus');
+let imgPlus = document.querySelectorAll('.img-plus');
+// console.log(full);
+// console.log(img);
 
+for(let index = 0; index < imgPlus.length; index++) {
+    let imgPluss = imgPlus[index];
+  // console.log(imgPlus);
+  imgPluss.addEventListener('click', function () {
+    imgPluss.classList.add('full-img');
+    imgPluss.classList.remove('popup-img');
+  });
+}
+
+for (let index = 0; index < itemPlus.length; index++) {
+   let itemPluss = itemPlus[index];
+  // console.log(itemPlus);
+  itemPluss.addEventListener('click', function () {
+    itemPluss.classList.add('full');
+     black.style.visibility  = 'visible';
+  });
+}
+
+ black.addEventListener('click', fullBack);
+
+function fullBack () {
+  for (let index = 0; index < itemPlus.length; index++) {
+    let itemPluss = itemPlus[index];
+   // console.log(itemPlus);
+   black.style.visibility  = 'hidden';
+   setTimeout(() => {
+     itemPluss.classList.remove('full');
+   },800)
+    }
+  for(let index = 0; index < imgPlus.length; index++) {
+    let imgPluss = imgPlus[index];
+  // console.log(imgPlus);
+ 
+  setTimeout(() => {
+   
+    imgPluss.classList.remove('full-img');
+  },300)
+  
+   imgPluss.classList.add('popup-img');
+  }
+}
+// Full photo end
 
 
 
