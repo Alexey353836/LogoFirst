@@ -133,10 +133,10 @@ function fullBack () {
   for (let index = 0; index < itemPlus.length; index++) {
     let itemPluss = itemPlus[index];
    // console.log(itemPlus);
-   blackPhoto.style.visibility  = 'hidden';
+   itemPluss.classList.remove('full');
    setTimeout(() => {
-     itemPluss.classList.remove('full');
-   },0)
+    blackPhoto.style.visibility  = 'hidden';
+   },1100)
     }
   for(let index = 0; index < imgPlus.length; index++) {
     let imgPluss = imgPlus[index];
