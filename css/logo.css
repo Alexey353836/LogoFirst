@@ -2073,7 +2073,7 @@ z-index: 1;
   display: block; 
   margin: 0 auto;
   top: 50%;
-  transform: translateY(-14%);   
+  transform: translateY(-16%);   
 }
 
 
@@ -2111,13 +2111,7 @@ z-index: 1;
     max-height: 100px;
   }
   .full-img{
-    transition: 0.8s;
-    scale: 3;  
-    z-index: 1;
-    display: block; 
-    margin: 0 auto;
-    top: 50%;
-    transform: translateY(-14%);   
+    scale: 3;   
   }
 }
 
