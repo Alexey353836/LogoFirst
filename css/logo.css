@@ -1976,7 +1976,6 @@ body::-webkit-scrollbar-thumb:hover{
   width: 100%;
   display: flex;
   top: 0px;
-  /* align-items: center; */
   justify-content: center ;
   padding: 10px 10px;
   transition: all 0.8s ease 0s;
@@ -1985,12 +1984,11 @@ body::-webkit-scrollbar-thumb:hover{
 .popup-content {
   position: relative;
  /*background-color: transparent;*//*Прозрачній*/
-   background-color: #2d3a8d; 
-   top: 20px;
+  background-color: #2d3a8d; 
+  top: 0px;
   color: #000;
   border-radius: 10px;
   max-width: 1200px;
-   /* max-height: 2000px;  */
   padding: 20px;
   opacity: 1;
   /* transform: translate(0%, -100%);*/
@@ -2006,14 +2004,13 @@ body::-webkit-scrollbar-thumb:hover{
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  margin-bottom: 50px;
 }
 .moo{
   width: 150px;
   height: 30px;
   background-color: #34533c;
   border-radius: 10px;
-   border: solid 1px #fff; 
+  border: solid 1px #fff; 
   padding: 5px;
 }
 .moo-h5{
@@ -2027,7 +2024,7 @@ body::-webkit-scrollbar-thumb:hover{
   gap: 30px;
   justify-items: center;
   align-items: center;
-  margin: 20px auto;
+  margin: 25px auto 20px;
 }
 .popup-img{
   border-radius: 5px;
