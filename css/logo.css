@@ -2112,7 +2112,7 @@ z-index: 1;
   }
   .full-img{
     transition: 0.8s;
-    scale: 3.5;  
+    scale: 3;  
     z-index: 1;
     display: block; 
     margin: 0 auto;
