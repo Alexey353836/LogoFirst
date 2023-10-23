@@ -2077,7 +2077,7 @@ z-index: 1;
   display: block; 
   margin: 0 auto;
   top: 50%;
-  transform: translateY(-16%);   
+  /* transform: translateY(-16%);    */
 }
 
 
