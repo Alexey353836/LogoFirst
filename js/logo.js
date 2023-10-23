@@ -141,15 +141,13 @@ function fullBack () {
   for(let index = 0; index < imgPlus.length; index++) {
     let imgPluss = imgPlus[index];
   // console.log(imgPlus);
- 
-  setTimeout(() => {
+ setTimeout(() => {
     imgPluss.classList.remove('zindex');
   },800)
   setTimeout(() => {
     imgPluss.classList.remove('full-img');
   },0)
   //  imgPluss.classList.add('popup-img');
-   
   }
 }
 // Full photo end
