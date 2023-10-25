@@ -1993,7 +1993,7 @@ body::-webkit-scrollbar-thumb:hover{
   opacity: 1;
   /* transform: translate(0%, -100%);*/
   transition: all 0.8s ease 0s; 
-   transform: perspective(600px) translate(0px, -100%) rotatex(45deg);
+  transform: perspective(600px) translate(0px, -100%) rotatex(45deg);
 }
 .close{
   width: 20px;

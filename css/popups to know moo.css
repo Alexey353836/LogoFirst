@@ -10,25 +10,63 @@
    background-color: rgb(0, 0, 0, 0.8); 
   left: 0;
   top: 0;
+  opacity: 0; 
+  visibility: hidden;  
+ overflow-y: auto; 
+ overflow-x: hidden;
+ transition: all 1.2s ease 0s; 
+ z-index: 1; 
+  /*
   z-index: 2;
-   display: none; 
-   transition: 0.8s ;
-  
+  display: none; 
+  transition: 0.8s ; 
+  */ 
+}
+.popup_toknowmoo::-webkit-scrollbar{
+  width: 12px;
+}
+.popup_toknowmoo::-webkit-scrollbar-track{
+  background-color: #bfc9eb;
+}
+.popup_toknowmoo::-webkit-scrollbar-thumb{
+  background-color: var(--color_accent);
+  border-radius: 5px;
+  border:  #bfc9eb solid 2px;
+}
+.popup_toknowmoo::-webkit-scrollbar-thumb:hover{
+  background-color: var(--color_therd-hover)ж
+}
+.popup_toknowmoo.open-to-know-moo{
+  opacity: 1;
+  visibility: visible;
+}
+.popup_toknowmoo.open-to-know-moo .popup_toknowmo-content{
+  transform: perspective(600px) translate(0px, 0%) rotate(0deg);  
+  opacity: 1; 
 }
 .popup_toknowmoo-body {
+  min-height: 100%;
   display: flex;
-  /* align-items: center; */
- justify-content: center; 
-  width: 100%;
-   height: 100%;
+  align-items: center;
+  justify-content: center ;
+  padding: 10px 10px;
+  transition: all 1.2s ease 0s;
 }
 .popup_toknowmo-content {
-  width: 1200px;
+  position: relative;
+  background-color: transparent;/*Прозрачній*/
+  color: #000;
+  max-width: 1200px;
   min-height:100px;
-   background-color: #B6E0EE; 
-   overflow-x: hidden; 
-    overflow-y: auto;  
-  z-index: 2;
+  background-color: #B6E0EE; 
+  overflow-x: hidden; 
+  overflow-y: auto;  
+  padding: 10px;
+  opacity: 1;
+  /* transform: translate(0%, -100%);   */
+  transition: all 1.2s ease 0s; 
+  transform: perspective(600px) translate(0px, -100%) rotatex(45deg);
+  z-index: 1;
 }
 .popup_toknowmoo-header {
    background-color: #bbc9f1;
@@ -119,7 +157,7 @@
   .reservation-button:hover {
     background-color: #262EF5F0;
   }
-   /*Buttons popup end*/
+ /*Buttons popup end*/
 
 
 /* Photo JS */
@@ -127,7 +165,6 @@
   max-width: 934px;
   min-height: 200px;
   margin: 42px auto 0px;
-   /* background-color: rgb(66, 66, 243);     */
   display: grid;
   grid-template-columns: repeat(3, 2fr);
   gap: 20px;
@@ -137,52 +174,31 @@
   border-radius: 10px;
 }
 .item-button {
-   width: 250px; 
-    height: 150px; 
+  width: 250px; 
+  height: 150px; 
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background-color: #2bbbad; */
 }
 .full-screen{
-  /*
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  left: 0;
-  top: 0;
-  */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .scale {
   width: 250px;
-  /* height: 200px;  */
   border-radius: 10px;
   cursor: pointer;
   margin: 10px;
   border: #000 solid 1px;
 }
-.black{
-  cursor: pointer;
-  /*
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  background-color: #000; 
-  z-index: ;
-  */
-}
 /* Photo JS end*/
 
+
+
+
 /* Variant information */
+/*
 .variant-information {
   margin: 58px auto 0px;
   justify-content: center;
@@ -194,15 +210,13 @@
   padding: 30px 20px;
 }
 .variant-information-text {
-  /* margin-top: 31px; */
-  /* margin-bottom: 31px; */
   text-align: center;
 }
 .variant-information-h2 {
   color: #AEDAF3;
   font-size: 24px;
   font-weight: 700;
-  line-height: 0%; /* 0px */
+  line-height: 0%; 
   letter-spacing: 3.24px;
 }
 .variant-information-card {
@@ -215,15 +229,10 @@
   margin-top: 30px;
 }
 .variant-information-card-column1 {
-  /* width: 560px; */
-   /* border: #000 solid 1px; */
   min-width: 50px;
   min-height: 50px;
 }
 .variant-information-card-column1-1 {
-  /* width: 520px; */
-  /* height: 80px; */
-   /* border: #000 solid 1px; */
   display: flex;
   align-items: center;
   padding: 20px 30px;
@@ -233,14 +242,11 @@
 .variant-information-card-h3 {
   color: #000;
   font-weight: 600;
-  line-height: 0%; /* 0px */
+  line-height: 0%;
   letter-spacing: 2.7px;
   text-align: left;
 }
 .variant-information-card-column1-2 {
-  /* width: 520px; */
-  /* height: 310px; */
-  /* border: #000 solid 1px; */
   padding: 20px 30px;
   min-width: 10px;
   min-height: 10px;
@@ -254,7 +260,7 @@
   color: #000;
   font-size: 16px;
   font-weight: 600;
-  line-height: 169%; /* 27.04px */
+  line-height: 169%;
   letter-spacing: 2.16px;
 }
 .variant-information-card-column2 {
@@ -276,7 +282,6 @@
   min-height: 10px;
 }
 .variant-information-card-column3 {
-   /* border: #000 solid 1px; */
   min-width: 50px;
   min-height: 50px;
 }
@@ -292,6 +297,7 @@
   min-width: 10px;
   min-height: 10px;
 }
+*/
 /* Variant information end */
 
 
