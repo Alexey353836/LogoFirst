@@ -180,8 +180,7 @@ popupOffers ();
 // Popups to know moo
 function popupsToKnowMoo() {
   const popupLinksToKnowMoo = document.querySelectorAll('.popup-link-to-know-moo');
-  // console.log(popupLinksToKnowMoo);
-  const popup = document.querySelectorAll('.popup');
+  // console.log(popupLinksToKnowMoo)
 
   let curentPopupToKnowMoo;
   let unlock = true;
@@ -198,13 +197,13 @@ function popupsToKnowMoo() {
     }
   }
 
+
   function popupOpenToKnowMoo (curentPopupToKnowMoo) {
     if (curentPopupToKnowMoo && unlock) {
       setTimeout(() => {
         curentPopupToKnowMoo.classList.add('open-to-know-moo');
-          scrollController. disabledScroll();
+         scrollController. disabledScroll();
       },800)
-      // curentPopupToKnowMoo.classList.add('open-to-know-moo');
         
     }
    }
@@ -213,7 +212,7 @@ function popupsToKnowMoo() {
 //  console.log( closePopupsToKnowMoo);
   for (let index = 0; index <  closePopupsToKnowMoo.length; index++) {
       const  closePopupToKnowMoo =  closePopupsToKnowMoo[index];
-      //  console.log(closePopupToKnowMoo);
+        // console.log(closePopupToKnowMoo);
        closePopupToKnowMoo.addEventListener('click', delit);
   }
 
