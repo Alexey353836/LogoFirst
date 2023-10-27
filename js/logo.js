@@ -102,10 +102,8 @@ function popupOpen (curentPopup) {
   }
 
 let closePopup = document.querySelectorAll('.close-popup');
-// console.log(closePopup);
   for (let index = 0; index < closePopup.length; index++) {
       const closePopups = closePopup[index];
-      // console.log(closePopups);
       closePopups.addEventListener('click', delit);
   }
 
@@ -123,8 +121,7 @@ let img = document.querySelectorAll('.popup-img');
 let blackPhoto = document.querySelector('.black-photo');
 let itemPlus = document.querySelectorAll('.item-plus');
 let imgPlus = document.querySelectorAll('.img-plus');
-// console.log(full);
-// console.log(img);
+
 
 for (let index = 0; index < itemPlus.length; index++) {
   let itemPluss = itemPlus[index];
@@ -137,11 +134,9 @@ for (let index = 0; index < itemPlus.length; index++) {
 
 for(let index = 0; index < imgPlus.length; index++) {
     let imgPluss = imgPlus[index];
-  // console.log(imgPlus);
   imgPluss.addEventListener('click', function () {
     imgPluss.classList.add('full-img');
     imgPluss.classList.add('zindex');
-    // imgPluss.classList.remove('popup-img');
   });
 }
 
@@ -197,30 +192,27 @@ function popupsToKnowMoo() {
     }
   }
 
-
-  function popupOpenToKnowMoo (curentPopupToKnowMoo) {
+function popupOpenToKnowMoo (curentPopupToKnowMoo) {
     if (curentPopupToKnowMoo && unlock) {
       setTimeout(() => {
         curentPopupToKnowMoo.classList.add('open-to-know-moo');
          scrollController. disabledScroll();
       },800)
-        
     }
    }
 
    let closePopupsToKnowMoo = document.querySelectorAll('.close-popup-to-know-moo');
-//  console.log( closePopupsToKnowMoo);
-  for (let index = 0; index <  closePopupsToKnowMoo.length; index++) {
-      const  closePopupToKnowMoo =  closePopupsToKnowMoo[index];
-        // console.log(closePopupToKnowMoo);
-       closePopupToKnowMoo.addEventListener('click', delit);
-  }
-
-   function delit () {
-    curentPopupToKnowMoo.classList.remove('open-to-know-moo');
+    for (let index = 0; index <  closePopupsToKnowMoo.length; index++) {
+        const  closePopupToKnowMoo =  closePopupsToKnowMoo[index];
+        closePopupToKnowMoo.addEventListener('click', delit);
+    }
+  function delit () {
+    setTimeout(() => {
+      curentPopupToKnowMoo.classList.remove('open-to-know-moo');
+   },150)
     setTimeout(() => {
        scrollController. enabledScroll();
-    },1200)
+    },1350)
    }
 }
 popupsToKnowMoo();
