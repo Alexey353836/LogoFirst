@@ -1,3 +1,5 @@
+"use strict";
+/*
 document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.sidenav');
     var instances = M.Sidenav.init(elems);
@@ -7,9 +9,9 @@ document.addEventListener('DOMContentLoaded', function() {
     var instances = M.Modal.init(elems);
   });
 
+*/
 
-
-
+/*
 
   // Выпадающее меню
   document.addEventListener('DOMContentLoaded', function() {
@@ -17,9 +19,9 @@ document.addEventListener('DOMContentLoaded', function() {
     var instances = M.Dropdown.init(elems);
   });
  // Выпадающее меню end
+*/
 
-
-
+/*
 
   // Material Box
 document.addEventListener('DOMContentLoaded', function() {
@@ -28,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 // Material Box end
 
-
+*/
 
 
 /*
@@ -140,7 +142,7 @@ for(let index = 0; index < imgPlus.length; index++) {
   });
 }
 
- blackPhoto.addEventListener('click', fullBack);
+  blackPhoto.addEventListener('click', fullBack);
 
 function fullBack () {
   for (let index = 0; index < itemPlus.length; index++) {

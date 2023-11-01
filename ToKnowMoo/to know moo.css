@@ -24,7 +24,7 @@ html{
   --color_therd-hover: #0a3fec;
   --color_main-focus:rgba(158, 206, 240);
   --color_main-active: rgba(241, 94, 94, 0.2); 
-  --color-main-background:  rgba(158, 206, 240, 0.8); 
+  --color-main-background: rgba(158, 206, 240, 0.8); 
   --color-moo-background:rgb(43, 187, 156, 0.5);
   --color-moo-background-hover:rgb(43, 187, 156, 0.8);
 }
@@ -110,38 +110,42 @@ line-height: normal;
   background-color: var(--color_therd-hover)ж
 }
 .toknowmoo-container{
- max-width: 1200px;
-   background-color: #000; 
-   margin: 0 auto;
+  max-width: 1200px;
+  /* background-color: #000; */
+   margin: 0 auto;  
 }
 .toknowmoo{
   /* background-color: #0F7106; */
+  /* padding: 30px; */
+  
 }
 
 .toknowmo-content {
   position: relative;
   color: #000;
-  max-width: 1200px;
+  max-width: 1200px; 
   width: 100%;
   background-color: #B6E0EE; 
   border-radius: 10px;
   overflow-x: hidden; 
   overflow-y: auto;  
-  padding:30px;
+   padding: 30px 0px;  
 }
 
 /*Header*/
 .toknowmoo-header {
   background-color: #bbc9f1; 
+  /* padding: 30px; */
 }
 .header_logo-p-toknowmoo{
-  font-size: 35px;
+  font-size: 18px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   position: absolute;
   top: 8px;
+  left: 10px
 }
 .header_logo_first-toknowmoo{
   color: var(--color_accent);
@@ -149,23 +153,18 @@ line-height: normal;
 .header_logo_second-toknowmoo{
   color: var(--color_interaction);
 }
-@media screen and (max-width: 1060px){
-
- }
  @media screen and (max-width: 400px){
   .toknowmo-content {
     padding: 5px;
   }
   .header_logo-p-toknowmoo{
-    font-size: 20px;
-    left: 5px;
+    font-size: 14px;
   }
 }
 
 /* Name and addres*/
 .name-addres-toknowmoo {
-  /* margin-top: 50px; */
-  margin: 0 auto;
+  margin: 20px auto;
   max-width: 500px;
   max-height: 500px;
 }
@@ -192,23 +191,21 @@ line-height: normal;
   max-height: 500px;
 }
 
- @media screen and (max-width: 800px){
-  .name-addres-toknowmoo {
-    margin-top: 50px;
-  }
- }
  @media screen and (max-width: 600px){
   .name-addres-h1-toknowmoo {
     font-size: 25px;
     letter-spacing: 2px;
+    margin-bottom: 0px;
   }
   .name-addres-h3-toknowmoo {
     font-size: 18px;
     letter-spacing: 1px;
-    margin-top: 30px;
   }
  }
  @media screen and (max-width: 400px){
+  .name-addres-toknowmoo {
+     margin-top: 40px; 
+  }
   .name-addres-h1-toknowmoo {
     font-size: 18px;
     letter-spacing: 1px;
@@ -222,11 +219,12 @@ line-height: normal;
 /* Name and addres end*/
 
 /*Buttons popup*/
- .tonowmoo-information-buttons {
+ .toknowmoo-information-buttons {
   max-width: 800px;
-  margin: 50px auto 0px;
+  margin: 10px auto 0px;
   display: flex;
   justify-content: space-between;
+  padding: 0px 10px;
 }
 .favorites-button, .reviews-button, .reservation-button {
   width: 180px;
@@ -235,6 +233,7 @@ line-height: normal;
   box-shadow: #000 0px 5px 10px;
   border: #000 solid 1px;
   cursor: pointer;
+  margin: 10px;
 }
 .text_toknowmoo-h5-buttons{
   color: #FFF;
@@ -260,8 +259,9 @@ line-height: normal;
   background-color: #262EF5F0;
 }
 @media screen and (max-width: 800px){
-  .popup_tonowmoo-information-buttons {
-    margin: 30px auto 0px;
+  .toknowmoo-information-buttons{
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .favorites-button, .reviews-button, .reservation-button {
     width: 160px;
@@ -274,19 +274,19 @@ line-height: normal;
   }
 }
 @media screen and (max-width: 600px){
-  .popup_tonowmoo-information-buttons{
-    flex-direction: column;
-    align-items: center;
-  }
-  .favorites-button, .reviews-button, .reservation-button {
-    margin-bottom: 15px;
-  }
   .favorites-button, .reviews-button, .reservation-button {
     width: 150px;
     height: 26px;
+    margin-bottom: 15px;
   }
   .text_toknowmoo-h5-buttons{
     font-size: 10px;
+  }
+}
+@media screen and (max-width: 400px){
+  .favorites-button, .reviews-button, .reservation-button {
+    width: 140px;
+    height: 24px;
   }
 }
 /*Buttons popup end*/
