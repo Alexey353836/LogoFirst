@@ -72,10 +72,6 @@ const scrollController = {
 //scroll end
 
 
-
-
-
-
 function popupOffers () {
 // Popup offers
 const popupLinks = document.querySelectorAll('.popup-link');
@@ -171,9 +167,7 @@ function fullBack () {
 popupOffers ();
 
 
-
-
-
+/*
 // Popups to know moo
 function popupsToKnowMoo() {
   const popupLinksToKnowMoo = document.querySelectorAll('.popup-link-to-know-moo');
@@ -219,4 +213,4 @@ function popupOpenToKnowMoo (curentPopupToKnowMoo) {
 }
 popupsToKnowMoo();
 // Popups to know moo end
-
+*/

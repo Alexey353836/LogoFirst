@@ -295,6 +295,45 @@ line-height: normal;
 
 .popup_tonowmoo-information {
 }
+/* slider */
+.slider {
+  width: 80%; 
+  margin: 20px auto;
+  overflow: hidden; 
+  border-radius: 10px;
+}
+.slider-line {
+ display: flex;
+ transition: all ease 1s;
+ left: 0;
+}
+.img{
+   width: 100%; 
+   min-height:100px ; 
+}
+.buttons{
+ display: flex;
+ justify-content: space-around;
+}
+.slider-start, .slider-previous, .slider-next{
+ background-color: rgb(7, 195, 41, 0.2);
+ width: 70px;
+ height: 25px;
+ border-radius: 5px;
+ color: #000;
+ font-weight: 700;
+}
+.slider-start,.slider-previous{
+ background-color:rgb(44, 239, 80, .5);
+}
+.green{
+ background-color: rgb(44, 239, 80);
+ cursor: pointer;
+}
+/* slider end */
+
+
+
 .popup_toknoqmoo-footer {
 }
 /* popup to know moo end */
