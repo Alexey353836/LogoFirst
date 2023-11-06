@@ -1,13 +1,10 @@
-// "use strict";
-
-
 
 //scroll
 // Фиксированный обьект
 const headerFix = document.querySelector('.header_fix');
 // Фиксированный обьект end
 const scrollController = {
-  scrollPosition: 0,
+   scrollPosition: 0,
   disabledScroll() {
       scrollController.scrollPosition = window.scrollY;
       headerFix.style.cssText = `
@@ -20,13 +17,12 @@ const scrollController = {
       padding-right: ${(window.innerWidth - document.body.offsetWidth)}px;
       // padding-right: 9px;
        `;
-      document.documentElement.style.scrollBehavior = 'unset';
-   
+      // document.documentElement.style.scrollBehavior = 'unset';
   },
   enabledScroll() {
       document.body.style.cssText = ``;
-        window.scroll({top: scrollController.scrollPosition})
-      document.documentElement.style.scrollBehavior = '';
+      window.scroll({top: scrollController.scrollPosition});
+    //  document.documentElement.style.scrollBehavior = '';
     },
 }
 //scroll end
