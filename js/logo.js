@@ -1,4 +1,4 @@
-"use strict";
+// "use strict";
 //scroll
 const scrollController = {
   scrollPosition: 0,
