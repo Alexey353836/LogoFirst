@@ -180,8 +180,8 @@ line-height: normal;
 }
 .header_fix{
     position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
     max-width: 1064px;
     width: 100%;
     z-index: 1;
@@ -1926,7 +1926,8 @@ body::-webkit-scrollbar-thumb:hover{
   position: fixed;
   width: 100%;
   height: 100%;
-  background-color: rgb(0, 0, 0, 0.8);
+ /* background-color: transparent;*//*Прозрачній*/
+  background-color: rgb(0, 0, 0, .7); 
   top: 0;
   left: 0;
   opacity: 0; 
@@ -1972,24 +1973,27 @@ body::-webkit-scrollbar-thumb:hover{
   /* background-color: #a4ec0a; */
 }
 .popup-body {
-  min-height: 100%;
+  width: 100%;
   display: flex;
-  align-items: center;
+  top: 0px;
   justify-content: center ;
   padding: 10px 10px;
   transition: all 0.8s ease 0s;
+  /* background-color: #000; */
 }
 .popup-content {
   position: relative;
-  background-color: transparent;/*Прозрачній*/
+ /*background-color: transparent;*//*Прозрачній*/
+  background-color: #2d3a8d; 
+  top: 0px;
   color: #000;
-  max-width: 900px;
-  /* height: 600px; */
-  padding: 10px;
+  border-radius: 10px;
+  max-width: 1200px;
+  padding: 20px;
   opacity: 1;
-  /* transform: translate(0%, -100%);   */
+  /* transform: translate(0%, -100%);*/
   transition: all 0.8s ease 0s; 
-   transform: perspective(600px) translate(0px, -100%) rotatex(45deg);
+  transform: perspective(600px) translate(0px, -100%) rotatex(45deg);
 }
 .close{
   width: 20px;
@@ -2000,14 +2004,13 @@ body::-webkit-scrollbar-thumb:hover{
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  margin-bottom: 50px;
 }
 .moo{
   width: 150px;
   height: 30px;
   background-color: #34533c;
   border-radius: 10px;
-   border: solid 1px #fff; 
+  border: solid 1px #fff; 
   padding: 5px;
 }
 .moo-h5{
@@ -2015,21 +2018,111 @@ body::-webkit-scrollbar-thumb:hover{
   text-align: center;
 }
 .popup-photo{
-  max-width: 800px;
+  max-width: 1200px;
   display: grid;
   grid-template-columns: repeat(3, 2fr);
   gap: 30px;
   justify-items: center;
   align-items: center;
-  margin: 0 auto;
+  margin: 25px auto 20px;
 }
 .popup-img{
-  border: #fff solid 1px;
-  border-radius: 10px;
-  width: 240px;
-  border: #000 solid 2px;
+  border-radius: 5px;
+  max-width: 200px;
+  max-height: 200px;
+  border: #000 solid 1px; 
+  transition: all 0.8s ease; 
+}
+
+.zindex{
+position: relative;
+z-index: 1;
 }
 /* Popup end */
+
+/* popup photo */
+.popup-item {
+   max-width: 200px; 
+   max-height: 200px;   
+}
+
+.black-photo{
+  position: fixed;
+  width: 100%;
+  height: 100%; 
+  left: 0;
+  top: 0;
+  z-index: 1;
+  visibility: hidden;
+  cursor: pointer; 
+}
+
+.full{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  /* background-color: #000; */
+ }
+
+.full-img{
+  transition: 0.8s;
+  scale: 3;  
+  z-index: 1;
+  display: block; 
+  margin: 0 auto;
+  top: 50%;
+  /* transform: translateY(-16%);    */
+}
+
+
+@media screen and (max-width: 800px){
+  .popup-content {
+      padding: 10px;
+    }
+  .popup-photo{
+    gap: 20px;
+  }
+.popup-item {
+    max-width: 150px; 
+    max-height: 150px;   
+ }
+.popup-img{
+    max-width: 150px;
+    max-height: 150px;
+  }
+}
+
+@media screen and (max-width: 600px){
+   
+}
+
+@media screen and (max-width: 500px){
+  .popup-photo{
+    gap: 10px;
+  }
+  .popup-item {
+    max-width: 100px; 
+    max-height: 100px;   
+  }
+  .popup-img{
+    max-width: 100px;
+    max-height: 100px;
+  }
+  .full-img{
+    scale: 3;   
+  }
+}
+
+@media screen and (max-width: 300px){
+  .popup-img{
+    max-width: 70px;
+    max-height: 70px;
+  }
+}
+/* popup photo end */
 
 
 
@@ -2272,14 +2365,7 @@ body::-webkit-scrollbar-thumb:hover{
       grid-template-rows: repeat(4, 1fr);
       gap: 10px;
     }
-     /* offers popup */
-  .popup-photo{
-    grid-template-columns: repeat(2, 3fr);
-    gap: 30px;
-    justify-items: center; 
-    align-items: center;
-  }
-  /* offers popup end */
+
   /*posts*/
   .posts-item {
     width: 270px;
@@ -2356,14 +2442,6 @@ body::-webkit-scrollbar-thumb:hover{
     margin-bottom: 0;
   }
     /* offers end */
-     /* offers popup */
-  .popup-photo{
-    grid-template-columns: repeat(1, 1fr);
-    gap: 30px;
-    justify-items: center; 
-    align-items: center;
-  }
-  /* offers popup end */
   /*posts*/
   .posts-item {
     width: 300px;
