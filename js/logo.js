@@ -1,9 +1,18 @@
 // "use strict";
+
+
+
 //scroll
+// Фиксированный обьект
+const headerFix = document.querySelector('.header_fix');
+// Фиксированный обьект end
 const scrollController = {
   scrollPosition: 0,
   disabledScroll() {
       scrollController.scrollPosition = window.scrollY;
+      headerFix.style.cssText = `
+      padding-right: ${(window.innerWidth - document.body.offsetWidth)}px;
+    `;
       document.body.style.cssText = `
       overflow: hidden;
       top:-${scrollController.scrollPosition}px;
@@ -12,18 +21,19 @@ const scrollController = {
       // padding-right: 9px;
        `;
       document.documentElement.style.scrollBehavior = 'unset';
+   
   },
   enabledScroll() {
       document.body.style.cssText = ``;
         window.scroll({top: scrollController.scrollPosition})
       document.documentElement.style.scrollBehavior = '';
-  },
+    },
 }
 //scroll end
 
 
 
-/*
+
 // Menu burger
 const burgerButton = document.querySelector('.burger-button');
 const burgerNavClass = document.querySelector('.burger-nav-class');
@@ -40,14 +50,21 @@ burgerButton.addEventListener('click', burgeropen);
 function  burgeropen () {
     burgerNavClass.classList.add('burger-open');
     burgerUserView.classList.add('burger-open');
+    setTimeout(() => {
+      scrollController. disabledScroll();
+   },0)
 }
 
 function burgerclose () {
     burgerNavClass.classList.remove('burger-open');
     burgerUserView.classList.remove('burger-open');
+    setTimeout(() => {
+      scrollController. enabledScroll();
+      headerFix.style.cssText = ``;
+    },500)
 }
 // Menu burger end
-*/
+
 
 
 
