@@ -193,7 +193,7 @@ line-height: normal;
 }
 .burger-user-view {
   position: relative;
-  max-width:300px;
+  max-width:250px;
   height: 100%;
   background-color: #fff;
   transform: translate(-400px);
@@ -204,7 +204,7 @@ line-height: normal;
   overflow-y: auto;
 }
 .burger-user-view.burger-open{
-  transform: translate(10px);
+  transform: translate(0px);
   transition: all 0.5s;
 }
 .burger-close-full{
@@ -227,7 +227,7 @@ line-height: normal;
   font-size: 20px;
   font-weight: 600;
   text-decoration: none;
-  padding: 10px;
+  padding: 10px 20px;
   cursor: pointer; 
   /* background-color: rgb(51, 51, 51, .3); */
 }
