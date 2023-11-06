@@ -204,7 +204,7 @@ line-height: normal;
   overflow-y: auto;
 }
 .burger-user-view.burger-open{
-  transform: translate(0px);
+  transform: translate(-2px);
   transition: all 0.5s;
 }
 .burger-close-full{
