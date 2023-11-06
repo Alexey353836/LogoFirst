@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var elems = document.querySelectorAll('.materialboxed');
   var instances = M.Materialbox.init(elems);
 });
-
+/*
 // Карусель
 document.addEventListener('DOMContentLoaded', function() {
   var elems = document.querySelectorAll('.carousel');
@@ -29,7 +29,7 @@ var instance = M.Carousel.init({
   indicators: true
 });
 
-
+*/
 
 
 //scroll
