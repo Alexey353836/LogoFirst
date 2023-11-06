@@ -1,53 +1,4 @@
 "use strict";
-/*
-document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.sidenav');
-    var instances = M.Sidenav.init(elems);
-  });
-  document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.modal');
-    var instances = M.Modal.init(elems);
-  });
-
-*/
-
-/*
-
-  // Выпадающее меню
-  document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.dropdown-trigger');
-    var instances = M.Dropdown.init(elems);
-  });
- // Выпадающее меню end
-*/
-
-/*
-
-  // Material Box
-document.addEventListener('DOMContentLoaded', function() {
-  var elems = document.querySelectorAll('.materialboxed');
-  var instances = M.Materialbox.init(elems);
-});
-// Material Box end
-
-*/
-
-
-/*
-// Карусель
-document.addEventListener('DOMContentLoaded', function() {
-  var elems = document.querySelectorAll('.carousel');
-  var instances = M.Carousel.init(elems);
-});
-
-var instance = M.Carousel.init({
-  fullWidth: true,
-  indicators: true
-});
-// Карусель end
-*/
-
-
 
 //scroll
 const scrollController = {
@@ -70,6 +21,35 @@ const scrollController = {
   },
 }
 //scroll end
+
+
+
+/*
+// Menu burger
+const burgerButton = document.querySelector('.burger-button');
+const burgerNavClass = document.querySelector('.burger-nav-class');
+const burgerUserView = document.querySelector('.burger-user-view');
+const burgerCloses = document.querySelectorAll('.burger-close');
+
+for(let index = 0; index < burgerCloses.length; index++) {
+    let burgerClose = burgerCloses[index]; 
+    burgerClose.addEventListener('click', burgerclose);
+}
+
+burgerButton.addEventListener('click', burgeropen);
+
+function  burgeropen () {
+    burgerNavClass.classList.add('burger-open');
+    burgerUserView.classList.add('burger-open');
+}
+
+function burgerclose () {
+    burgerNavClass.classList.remove('burger-open');
+    burgerUserView.classList.remove('burger-open');
+}
+// Menu burger end
+*/
+
 
 
 function popupOffers () {
