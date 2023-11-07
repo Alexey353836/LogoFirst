@@ -96,7 +96,7 @@
 .favorites-button, .reviews-button, .reservation-button {
   width: 160px;
   height: 25px;
-  border-radius: 10px;
+  border-radius: 5px;
   box-shadow: #000 0px 5px 10px;
   border: #000 solid 1px;
   cursor: pointer;
@@ -168,14 +168,14 @@
 }
 /* slider */
 .slider {
-  width: 80%; 
+  max-width: 80%; 
   margin: 20px auto;
   overflow: hidden; 
   border-radius: 10px;
 }
 .slider-line {
  display: flex;
- transition: all ease 1s;
+ transition: all 0.9s;
  left: 0;
 }
 .img{
@@ -187,18 +187,28 @@
  justify-content: space-around;
 }
 .slider-start, .slider-previous, .slider-next{
- background-color: rgb(7, 195, 41, 0.2);
- width: 70px;
+ /* background-color: rgb(7, 195, 41, 0.2); */
+ width: 100px;
  height: 25px;
  border-radius: 5px;
  color: #000;
  font-weight: 700;
+ box-shadow: #000 0px 5px 10px;
+ border: #000 solid 1px;
+ cursor: context-menu;
 }
-.slider-start,.slider-previous{
- background-color:rgb(44, 239, 80, .5);
+.slider-start{
+  background-color:var(--color_accent);
 }
+.slider-previous{
+  background-color:var(--color_dot);
+}
+.slider-next{
+  background-color:var(--color_interaction);
+}
+
 .green{
- background-color: rgb(44, 239, 80);
+ /* background-color: rgb(44, 239, 80); */
  cursor: pointer;
 }
 /* slider end */
