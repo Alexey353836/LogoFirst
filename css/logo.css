@@ -285,7 +285,7 @@ background-color: rgb(51, 51, 51, .3);
     /* left: 50%; */
     /* transform: translateX(-50%); */
     max-width: 1064px;
-    width: 100%;
+     width: 98%; 
     z-index: 1;
 }
 .header_head {
@@ -299,20 +299,20 @@ background-color: rgb(51, 51, 51, .3);
 .header_left {
     display: flex;
     align-items: center;
-    /* height: 50px; */
+    margin-left: 15px;
 }
 .header_burger_logo{
-    display: flex;
-    /* align-items: center; */
-    margin-top: 17px;
+    /* display: flex; */
+     margin-top: 15px; 
 }
 .header_burger {
     display: none;
     color:var(--color_text);
     margin-right: 10px;
+    
 }
 .header_burger_line {
-    margin-right: 20px;
+    margin-bottom: 5px;
 }
 .header_burger_item {
     display: block;
@@ -364,7 +364,8 @@ background-color: rgb(51, 51, 51, .3);
   text-decoration: underline;
 }
 .header_right {
-   display: flex;
+    display: flex; 
+    margin-right: 20px;
 }
 .header_menu_right {
     display: flex;
