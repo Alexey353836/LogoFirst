@@ -156,7 +156,7 @@ function fullBack () {
 // Full photo end
 //Popup offers end
 }
-popupOffers ();
+popupOffers();
 
 
 /*
