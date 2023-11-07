@@ -139,14 +139,14 @@ function fullBack () {
    itemPluss.classList.remove('full');
    setTimeout(() => {
     blackPhoto.style.visibility  = 'hidden';
-   },1100)
+   },500)
     }
   for(let index = 0; index < imgPlus.length; index++) {
     let imgPluss = imgPlus[index];
   // console.log(imgPlus);
  setTimeout(() => {
     imgPluss.classList.remove('zindex');
-  },800)
+  },500)
   setTimeout(() => {
     imgPluss.classList.remove('full-img');
   },0)

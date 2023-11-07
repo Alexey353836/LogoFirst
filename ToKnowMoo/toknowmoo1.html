@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
      <!-- MONSERAT для этого проэкта -->
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,73 +12,107 @@
          href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans&family=Oswald:wght@400;500;700&display=swap"
          rel="stylesheet">
 
-    <title>To know noo 1</title>
+    <title>Luxor and Suites</title>
     <link rel="stylesheet" href="../css/to know moo.css">
     <link rel="stylesheet" href="../css/logo.css">
 </head>
 <body>
-      <!-- header-->
-      <Header class="header">
-        <div class="container_second">
-            <!-- head-->
-            <div class="header_rel">
-                <div id="header_fix" class="header_fix">
-                    <div class="header_head">
-                        <!-- header_left -->
-                        <div class="header_left">
-                            <div class="header_burger_logo">
-                                <div class="header_logo">
-                                    <a href="#">
-                                        <p class="header_logo-p contant-scale">
-                                            <span class="header_logo_first">Your</span><span
-                                                class="header_logo_second">.logo</span>
-                                        </p>
-                                    </a>
+    <!-- Menu burger -->
+    <div id="burger-nav" class="burger-nav-class">
+        <div class="burger-close-full burger-close"></div>
+        <div class="burger-user-view">
+
+             <ul class="burger-ul">
+                <li class="">
+                    <div class="burger-user-view-background">
+                        <p class="header_logo-p-burger">
+                            <span class="header_logo_first">Your</span><span class="header_logo_second">.logo</span>
+                        </p>
+                        <img class="burger-user-view-circle" src="./logoimg/old.avif" alt="">
+                    </div>
+                
+                </li>
+                <!-- links of burger menue -->
+                <li class="burger-li a-burger burger-close">Закрыть</li>
+                <li class="burger-delimiter"></li>
+                <li class="burger-li"><a class="a-burger" href="../index.html">Главная</a></li>
+                <li class="burger-li"><a class="a-burger" href="#">Горящие</a></li>
+                <li class="burger-li"><a class="a-burger" href="#">Блог</a></li>
+                <li class="burger-li"><a class="a-burger" href="#">О нас</a></li>
+                <li class="burger-li"><a class="a-burger" href="#">Контакты</a></li>
+                <li class="burger-li"><a class="a-burger" href="#">Язык</a></li>
+                <li class="burger-li"><a class="a-burger" href="#">Войти</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Menu burger end --> 
+
+    <div class="container">
+        <!-- header-->
+        <Header class="header">
+            <div class="container_second">
+                <!-- head-->
+                <div class="header_rel">
+                    <div id="header_fix" class="header_fix">
+                        <div class="header_head">
+                            <!-- header_left -->
+                            <div class="header_left">
+                                <div class="header_burger_logo">
+                                    <div class="header_logo">
+                                        <a href="#">
+                                            <p class="header_logo-p contant-scale">
+                                                <span class="header_logo_first">Your</span><span
+                                                    class="header_logo_second">.logo</span>
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="header_menu_left">
+                                    <a href="../index.html" class="text-h5 menu-h5 main contant-scale">Главная</a>
+                                    <a href="#!" class="text-h5 menu-h5 contant-scale">Блог</a>
+                                    <a href="#!" class="text-h5 menu-h5 contant-scale"> О нас</a>
+                                    <a href="#!" class="text-h5 menu-h5 contant-scale">Контакты</a>
+                                    <a href="#!" class="text-h5 menu-h5 contant-scale">Горящие предложения</a>
                                 </div>
                             </div>
-                            <div class="header_menu_left">
-                                <a href="../index.html" class="text-h5 menu-h5 main contant-scale">Главная</a>
-                                <a href="#!" class="text-h5 menu-h5 contant-scale">Блог</a>
-                                <a href="#!" class="text-h5 menu-h5 contant-scale"> О нас</a>
-                                <a href="#!" class="text-h5 menu-h5 contant-scale">Контакты</a>
-                                <a href="#!" class="text-h5 menu-h5 contant-scale">Горящие предложения</a>
-                            </div>
-                        </div>
-                        <!--  header_right -->
-                        <div class="header_right">
-                            <div class="header_menu_right">
-                                <div class="header_money">
-                                    <a href="#!"><i class=" header_money contant-scale"></i></a>
+                            <!--  header_right -->
+                            <div class="header_right">
+                                <div class="header_menu_right">
+                                    <div class="header_money">
+                                        <a href="#!"><i class="material-icons header_money contant-scale">attach_money</i></a>
+                                    </div>
+                                    <div class="header_language">
+                                        <a href="#"><i class="dropdown-trigger  material-icons header_language contant-scale "
+                                                data-target='dropdown1'>language</i></a>
+                                    </div>
                                 </div>
-                                <div class="header_language">
-                                    <a href="#"><i class="dropdown-trigger  header_language contant-scale "
-                                            data-target='dropdown1'></i></a>
+                                <div class="header_enter">
+                                    <a href="https://alexey353836.github.io/My-first-site/"><i
+                                            class="material-icons header_enter contant-scale">account_circle</i></a>
                                 </div>
-                            </div>
-                            <div class="header_enter">
-                                <a href="https://alexey353836.github.io/My-first-site/"><i
-                                        class=" header_enter contant-scale"></i></a>
-                            </div>
-                            <a href="#" class="header_burger sidenav-trigger" data-target="slide-out">
-                                <div class="header_burger_line contant-scale">
-                                    <div class="header_burger_item"></div>
-                                    <div class="header_burger_item"></div>
-                                    <div class="header_burger_item"></div>
+                                <!-- <a href="#header_fix" class="header_burger burger-button"> -->
+                                <div class="header_burger burger-button">  
+                                    <div class="header_burger_line contant-scale">
+                                        <div class="header_burger_item"></div>
+                                        <div class="header_burger_item"></div>
+                                        <div class="header_burger_item"></div>
+                                    </div>
                                 </div>
-                            </a>
+                                <!-- </a> -->
+                            </div>
                         </div>
                     </div>
                 </div>
+                <!-- head end -->
             </div>
-        </div>
-     </Header>
-            <!-- head end -->
-     <!-- Popup To know moo-1 -->
+        </Header>
+    </div>
+
+    <!-- To rnow moo -->
      <div class="container_second">
         <div class="toknowmoo">
             <div class="toknowmo-content">
              <!-- Header -->
-             
             <!-- Name and addres -->
                 <div class="name-addres-toknowmoo">
                     <h1 class="text-h1 name-addres-h1-toknowmoo">
@@ -130,7 +166,7 @@
             </div>
         </div>    
     </div>
-     <!-- Popup To know moo-1 end-->
+     <!-- To know moo end-->
     <script src="../js/logo.js"></script>
     <script src="../js/toknowmoo.js"></script>
 </body>
