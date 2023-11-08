@@ -164,15 +164,47 @@
  /* header to know moo end*/
 
 
-.popup_tonowmoo-information {
-}
+ /* tonowmoo-information */
+ .container_slider{
+    max-width: 1000px;
+    margin: 0 auto;
+ }
+.tonowmoo-information {}
 /* slider */
 .slider {
-  max-width: 80%; 
-  margin: 20px auto;
+   /* max-width: 80%;  */
+  margin: 20px auto 15px;
   overflow: hidden; 
   border-radius: 10px;
+  position: relative;
 }
+.slider-buttons{
+  position: absolute ;
+  z-index:10;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.slider-button-section-flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  margin-bottom: 5%;
+}
+.slider-button1, .slider-button2, .slider-button3, .slider-button4{
+  cursor: context-menu;
+  margin: 0px 20px; 
+  font-size: 60px; 
+  border-radius: 10%; 
+  background-color: rgb(255, 255, 255, .5);
+  color:rgb(62, 51, 21);
+  border: #000 solid 1px;
+ }
+ .slider-button4{
+  margin: 0px 0px; 
+ }
 .slider-line {
  display: flex;
  transition: all 0.9s;
@@ -181,39 +213,30 @@
 .img{
    width: 100%; 
    min-height:100px ; 
-}
-.buttons{
- display: flex;
- justify-content: space-around;
-}
-.slider-start, .slider-previous, .slider-next{
- /* background-color: rgb(7, 195, 41, 0.2); */
- width: 100px;
- height: 25px;
- border-radius: 5px;
- color: #000;
- font-weight: 700;
- box-shadow: #000 0px 5px 10px;
- border: #000 solid 1px;
- cursor: context-menu;
-}
-.slider-start{
-  background-color:var(--color_accent);
-}
-.slider-previous{
-  background-color:var(--color_dot);
-}
-.slider-next{
-  background-color:var(--color_interaction);
-}
-
+} 
 .green{
- /* background-color: rgb(44, 239, 80); */
  cursor: pointer;
 }
 /* slider end */
+/* tonowmoo-information */
+@media screen and (max-width: 900px){
 
-
+}
+@media screen and (max-width: 500px){
+  .slider-button1, .slider-button2, .slider-button3, .slider-button4{
+    font-size: 50px; 
+   }
+}
+@media screen and (max-width: 500px){
+  .slider {
+   margin: 20px auto 10px;
+ }
+  .slider-button1, .slider-button2, .slider-button3, .slider-button4{
+    font-size: 40px; 
+   }
+}
+/* slider end */
+/* tonowmoo-information */
 
 .popup_toknoqmoo-footer {
 }
