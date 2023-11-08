@@ -1,17 +1,15 @@
-"use strict";
+// "use strict";
 
-
-const images = document.querySelectorAll('.img');
+// To know moo slider
+ const sliderImg = document.querySelectorAll('.slider-img');
 let sliderStart = document.querySelector('.slider-start');
-let sliderRevious = document.querySelector('.slider-previous');
+let sliderReviouses = document.querySelectorAll('.slider-previous');
+let sliderRevious;
 let sliderLine = document.querySelector('.slider-line');
-let sliderNext = document.querySelector('.slider-next');
-let green = document.querySelector('.green');
+let sliderNexts = document.querySelectorAll('.slider-next'); 
+let sliderNext;
 let count = 0;
 let widths;
-
-// console.log(images);
-
 
 function init(){
      widths = document.querySelector('.slider').offsetWidth;// Посчитать длинну слайдера
@@ -19,52 +17,59 @@ function init(){
 } 
 init();
 
- window.addEventListener('resize', init);
+window.addEventListener('resize', init);
+
+ for(let index = 0; index < sliderNexts.length; index++) {
+      sliderNext = sliderNexts[index]; 
+     //  console.log(sliderNext);
+     sliderNext.addEventListener('click', next);
+     // console.log(sliderNext);
+}
+
+for(let index = 0; index < sliderReviouses.length; index++ ) {
+     sliderRevious = sliderReviouses[index];
+     // console.log(sliderRevious);
+     sliderRevious.addEventListener('click', function () {
+          if (count == 1){
+               sliderStart.classList.remove('buttons-color');
+          }
+          if (count == 1){
+                sliderRevious.classList.remove('buttons-color');
+          }
+          if (count > 0){
+               count--;
+          }
+     sliderNext.classList.add('buttons-color'); 
+     rollSlider();
+     });
+}
 
  document.querySelector('.slider-start').addEventListener('click', function () {
      count = 0;
      rollSlider();
-     sliderNext.classList.add('green');
-     sliderStart.classList.remove('green');
-     sliderRevious.classList.remove('green');
+     sliderNext.classList.add('buttons-color');
+     sliderStart.classList.remove('buttons-color');
+     sliderRevious.classList.remove('buttons-color');
 });
 
 function next () {
      count ++;
-     sliderStart.classList.add('green');
-     sliderRevious.classList.add('green');
-     
-     if (count === images.length){
+     sliderStart.classList.add('buttons-color');
+     sliderRevious.classList.add('buttons-color');
+     if (count === sliderImg.length){
           count --; 
-           sliderNext.classList.remove('green');
+            sliderNext.classList.remove('buttons-color');
      }
-     /*
      if (count > 4){
-           sliderNext.classList.remove('green');
+           sliderNext.classList.remove('buttons-color');
      }
-     */
      rollSlider();   
  };
-sliderNext.addEventListener('click', next);
-
-document.querySelector('.slider-previous').addEventListener('click', function () {
-     if (count == 1){
-          sliderStart.classList.remove('green');
-     }
-     if (count == 1){
-           sliderRevious.classList.remove('green');
-     }
-     if (count > 0){
-          count--;
-     }
-     sliderNext.classList.add('green'); 
-     rollSlider();
-});
 
 function rollSlider() {
      sliderLine.style.transform = 'translate(-'+count*widths+'px)';
  }
-
+// To know moo slider end
  
 
 
