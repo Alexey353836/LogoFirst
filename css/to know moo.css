@@ -225,6 +225,7 @@
   margin-top: -20px;
 }
 .slider-button3, .slider-button4, .slider-button5{
+  cursor: context-menu; 
   font-size: 30px;
   width: 150px;
   color:rgb(62, 51, 21, 0.2);

@@ -1,13 +1,11 @@
 // "use strict";
 
 // To know moo slider
- const sliderImg = document.querySelectorAll('.slider-img');
+let sliderImgs = document.querySelectorAll('.slider-img');
 let sliderStart = document.querySelector('.slider-start');
 let sliderReviouses = document.querySelectorAll('.slider-previous');
-let sliderRevious;
 let sliderLine = document.querySelector('.slider-line');
 let sliderNexts = document.querySelectorAll('.slider-next'); 
-let sliderNext;
 let count = 0;
 let widths;
 
@@ -18,53 +16,69 @@ function init(){
 init();
 
 window.addEventListener('resize', init);
-
+ 
  for(let index = 0; index < sliderNexts.length; index++) {
-      sliderNext = sliderNexts[index]; 
-     //  console.log(sliderNext);
+      let sliderNext = sliderNexts[index];
      sliderNext.addEventListener('click', next);
-     // console.log(sliderNext);
 }
 
 for(let index = 0; index < sliderReviouses.length; index++ ) {
-     sliderRevious = sliderReviouses[index];
+     let sliderRevious = sliderReviouses[index];
      // console.log(sliderRevious);
-     sliderRevious.addEventListener('click', function () {
-          if (count == 1){
-               sliderStart.classList.remove('buttons-color');
+     sliderRevious.addEventListener('click',revious);
+}
+
+function revious () {
+     if (count == 1){
+          sliderStart.classList.remove('buttons-color');
+     }
+     if (count == 1){
+          for(let index = 0; index < sliderReviouses.length; index++ ) {
+               let sliderRevious = sliderReviouses[index];
+               sliderRevious.classList.remove('buttons-color');
           }
-          if (count == 1){
-                sliderRevious.classList.remove('buttons-color');
-          }
-          if (count > 0){
-               count--;
-          }
-     sliderNext.classList.add('buttons-color'); 
+     }
+     if (count > 0){
+          count--;
+     }
+     for(let index = 0; index < sliderNexts.length; index++) {
+          let sliderNext = sliderNexts[index];
+          sliderNext.classList.add('buttons-color'); 
+     console.log(sliderNext);
      rollSlider();
-     });
+     }
 }
 
  document.querySelector('.slider-start').addEventListener('click', function () {
      count = 0;
      rollSlider();
-     sliderNext.classList.add('buttons-color');
+     for(let index = 0; index < sliderNexts.length; index++) {
+          let sliderNext = sliderNexts[index];
+          sliderNext.classList.add('buttons-color');
+     }
      sliderStart.classList.remove('buttons-color');
-     sliderRevious.classList.remove('buttons-color');
+     for(let index = 0; index < sliderReviouses.length; index++ ) {
+          let sliderRevious = sliderReviouses[index];
+          sliderRevious.classList.remove('buttons-color');
+     }
 });
 
 function next () {
      count ++;
      sliderStart.classList.add('buttons-color');
-     sliderRevious.classList.add('buttons-color');
-     if (count === sliderImg.length){
-          count --; 
-            sliderNext.classList.remove('buttons-color');
+     for(let index = 0; index < sliderReviouses.length; index++ ) {
+          let sliderRevious = sliderReviouses[index];
+          sliderRevious.classList.add('buttons-color');
      }
-     if (count > 4){
-           sliderNext.classList.remove('buttons-color');
+     if (count === sliderImgs.length){
+          count --; 
+          for(let index = 0; index < sliderNexts.length; index++) {
+               let sliderNext = sliderNexts[index];
+               sliderNext.classList.remove('buttons-color');   
+          }
      }
      rollSlider();   
- };
+ }
 
 function rollSlider() {
      sliderLine.style.transform = 'translate(-'+count*widths+'px)';
