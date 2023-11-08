@@ -199,7 +199,7 @@
   font-size: 60px; 
   border-radius: 10%; 
   background-color: rgb(255, 255, 255, .5);
-  color:rgb(62, 51, 21);
+  color: rgb(49, 41, 20, .5);
   border: #000 solid 1px;
  }
  .slider-button4{
@@ -216,6 +216,7 @@
 } 
 .green{
  cursor: pointer;
+ color:rgb(62, 51, 21);
 }
 /* slider end */
 /* tonowmoo-information */
