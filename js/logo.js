@@ -130,7 +130,7 @@ for(let index = 0; index < imgPlus.length; index++) {
   });
 }
 
-  blackPhoto.addEventListener('click', fullBack);
+blackPhoto.addEventListener('click', fullBack);
 
 function fullBack () {
   for (let index = 0; index < itemPlus.length; index++) {
