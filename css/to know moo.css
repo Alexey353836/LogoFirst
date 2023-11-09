@@ -363,7 +363,7 @@ body{
   font-weight: 600;
   letter-spacing: 2.7px;
   font-style: normal;
-  line-height: 20px;
+  line-height: 30px;
 }
 .text-h5_variant-information{
   font-family: Montserrat;
@@ -430,6 +430,8 @@ body{
   .text-h5_variant-information{
     font-size: 18px;
   }
+  .top_text-h5_variant-information{
+    margin-top: 5px;
 }
 @media screen and (max-width: 600px){
   .cart_variant-information>div:nth-child(4){
@@ -470,6 +472,7 @@ body{
   }
   .text-h4_variant-information{
     font-size: 16px;
+    line-height: 20px;
   }
   
   .text-h5_variant-information{
