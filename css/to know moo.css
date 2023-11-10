@@ -488,7 +488,7 @@ body{
     width: 100%;
     min-height: 200px;
     background-color: #fff;
-    margin: 60px auto;
+    margin: 50px auto;
   }
   .carts-rules {
     width: 100%;
@@ -542,9 +542,6 @@ body{
     letter-spacing: 2.43px;
   }
   @media screen and (max-width: 700px){
-    .rules {
-      margin: 60px auto 50px;
-    }
     .carts-rules {
       grid-template-columns: minmax(100px, auto) minmax(100px, auto); 
     }
