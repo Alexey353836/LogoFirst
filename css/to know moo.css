@@ -542,6 +542,9 @@ body{
     letter-spacing: 2.43px;
   }
   @media screen and (max-width: 700px){
+    .rules {
+      margin: 40px auto;
+    }
     .carts-rules {
       grid-template-columns: minmax(100px, auto) minmax(100px, auto); 
     }
@@ -574,9 +577,6 @@ body{
       }
   }
   @media screen and (max-width: 500px){
-    .rules {
-      margin: 50px auto 50px;
-    }
     .text-h2_rules {
       font-size: 20px;
       /* line-height: 0px; */
