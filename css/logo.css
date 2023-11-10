@@ -289,7 +289,7 @@ background-color: rgb(51, 51, 51, .3);
     /* transform: translateX(-50%); */
     max-width: 1064px;
      width: 98%; 
-    z-index: 1;
+    z-index: 2;
 }
 .header_head {
     display: flex;
