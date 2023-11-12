@@ -158,10 +158,12 @@ popupOffers();
 /* Reviews */
 const sliderLeft = document.querySelector('#slider-left');
 const sliderItems = sliderLeft.children;
+const revievsbtn = document.querySelector('.revievs-button')
 
 
 // Создаём масив
-Array.from(sliderItems).forEach(function (slide, index) {
+// Array.from(sliderItems).forEach(function (slide, index) {
+  Array.from(sliderItems).forEach(function (slide, index) {
 
     //Скрываем слайды кроме первого
     if(index !== 0) {

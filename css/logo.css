@@ -1341,6 +1341,7 @@ offers-details-favorite:active{
   border-radius: 20px;
    display: flex;
    overflow: hidden;
+   /* background-color: #0a3fec;  */
 }
 .none {
    display: none; 
@@ -1359,12 +1360,34 @@ offers-details-favorite:active{
 }
 .reviews-items {
  height: 380px; 
+ /* background-color: #233507; */
+  width: 100%; 
 }
 .reviews-item{
   width: 100%;
   min-height: 300px;
   margin-top: 25px;
   padding: 10px;
+}
+.reviews-block{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.revievs-button{
+  width: 100px;
+  max-height: 30px;
+  background-color: var(--color_dot);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  box-shadow: #000 0px 5px 10px;
+  border: #000 solid 1px;
+  cursor: pointer;
+}
+.reviews-h5-button{
+  color: #fff;
 }
 .reviews-img{
   width: 100px;
