@@ -28,8 +28,6 @@ const scrollController = {
 //scroll end
 
 
-
-
 // Menu burger
 const burgerButton = document.querySelector('.burger-button');
 const burgerNavClass = document.querySelector('.burger-nav-class');
@@ -60,8 +58,6 @@ function burgerclose () {
     },500)
 }
 // Menu burger end
-
-
 
 
 function popupOffers () {
@@ -157,3 +153,53 @@ function fullBack () {
 //Popup offers end
 }
 popupOffers();
+
+
+/* Reviews */
+const sliderLeft = document.querySelector('#slider-left');
+const sliderItems = sliderLeft.children;
+
+
+// Создаём масив
+Array.from(sliderItems).forEach(function (slide, index) {
+
+    //Скрываем слайды кроме первого
+    if(index !== 0) {
+        slide.classList.add('none');
+    }
+
+    //Добавить индексы, чтобы убирать hidden
+    slide.dataset.index = index;
+
+    // Добавляем data атрибут для первого / активного слайда.
+    sliderItems[0].setAttribute('data-active', '');
+
+    // Клик по слайдам
+    slide.addEventListener('click', function () {
+
+        // Скрыть текуший, следующий показать
+        slide.classList.remove('hiddenvisible');
+        setTimeout(() => {
+            slide.classList.add('none');
+         },300)
+          slide.removeAttribute('data-active');
+
+        //index следующего слайда
+        let nextSlideIndex;
+        if (index + 1 === sliderItems.length) {
+            nextSlideIndex = 0;
+        } else {
+            nextSlideIndex = index+1
+        }
+         const nextSlide = sliderLeft.querySelector(`[data-index="${nextSlideIndex}"]`);
+           
+        nextSlide.classList.remove('none');
+         
+         setTimeout(() => {
+            nextSlide.classList.add('hiddenvisible');
+         },0)
+         nextSlide.setAttribute('data-active', '');
+    });
+});
+
+/* Reviews end */
