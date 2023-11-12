@@ -159,7 +159,6 @@ popupOffers();
 const slider = document.querySelector('#slider');
 const sliderItems = slider.children;
 const btnNexts = document.querySelectorAll('.btn-next');
-const btnPrev = document.querySelector('#btnPrev');
 
 
 // Создаём масив
@@ -216,7 +215,7 @@ function sliderLeft () {
     currentSlide .classList.remove('hiddenvisible');
     setTimeout(() => {
       currentSlide.classList.add('none');
-    },300)
+    },500)
     currentSlide.removeAttribute('data-active');
 
     //Показать следующий
@@ -228,10 +227,15 @@ function sliderLeft () {
         nextSlideIndex = currentSlideIndex+1
     }
     const nextSlide = slider.querySelector(`[data-index="${nextSlideIndex}"]`);
-    nextSlide.classList.remove('none');
+    
     setTimeout(() => {
-      nextSlide.classList.add('hiddenvisible');
-   },0)
+      nextSlide.classList.remove('none');
+   },400)
+   setTimeout(() => {
+    nextSlide.classList.add('hiddenvisible');
+ },600)
+   
+  //  nextSlide.classList.add('hiddenvisible');
     nextSlide.setAttribute('data-active', '');
 }
 
