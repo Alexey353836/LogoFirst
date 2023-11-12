@@ -2074,7 +2074,7 @@ z-index: 1;
   /*Photo end*/
      /* reviews */
      .hiddenvisible{
-      transition: 1s;
+       transition: 0.4s; 
     }
     /* reviews end */
 }
@@ -2086,7 +2086,7 @@ z-index: 1;
   }
     /* reviews */
     .hiddenvisible{
-      transition: 0.8s;
+       transition: 0.2s; 
     }
     /* reviews end */
 }

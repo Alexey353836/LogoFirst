@@ -215,7 +215,7 @@ function sliderLeft () {
     currentSlide .classList.remove('hiddenvisible');
     setTimeout(() => {
       currentSlide.classList.add('none');
-    },500)
+    },400)
     currentSlide.removeAttribute('data-active');
 
     //Показать следующий
@@ -230,10 +230,10 @@ function sliderLeft () {
     
     setTimeout(() => {
       nextSlide.classList.remove('none');
-   },400)
+   },300)
    setTimeout(() => {
     nextSlide.classList.add('hiddenvisible');
- },600)
+ },500)
    
   //  nextSlide.classList.add('hiddenvisible');
     nextSlide.setAttribute('data-active', '');
