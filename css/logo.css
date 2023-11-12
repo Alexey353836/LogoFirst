@@ -1377,7 +1377,7 @@ offers-details-favorite:active{
 .revievs-button{
   width: 100px;
   max-height: 30px;
-  background-color: var(--color_dot);
+  background-color: rgba(100, 77, 14);
   border-radius: 5px;
   display: flex;
   justify-content: center;
