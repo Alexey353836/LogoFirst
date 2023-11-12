@@ -156,14 +156,14 @@ popupOffers();
 
 
 /* Reviews */
-const sliderLeft = document.querySelector('#slider-left');
-const sliderItems = sliderLeft.children;
-const revievsbtn = document.querySelector('.revievs-button')
+const slider = document.querySelector('#slider');
+const sliderItems = slider.children;
+const btnNexts = document.querySelectorAll('.btn-next');
+const btnPrev = document.querySelector('#btnPrev');
 
 
 // Создаём масив
-// Array.from(sliderItems).forEach(function (slide, index) {
-  Array.from(sliderItems).forEach(function (slide, index) {
+Array.from(sliderItems).forEach(function (slide, index) {
 
     //Скрываем слайды кроме первого
     if(index !== 0) {
@@ -175,33 +175,65 @@ const revievsbtn = document.querySelector('.revievs-button')
 
     // Добавляем data атрибут для первого / активного слайда.
     sliderItems[0].setAttribute('data-active', '');
+    /*
+     // Клик по слайдам
+     slide.addEventListener('click', function () {
 
-    // Клик по слайдам
-    slide.addEventListener('click', function () {
+      // Скрыть текуший, следующий показать
+      slide.classList.remove('hiddenvisible');
+      setTimeout(() => {
+        slide.classList.add('none');
+      },300)
+      slide.removeAttribute('data-active');
 
-        // Скрыть текуший, следующий показать
-        slide.classList.remove('hiddenvisible');
-        setTimeout(() => {
-            slide.classList.add('none');
-         },400)
-          slide.removeAttribute('data-active');
-
-        //index следующего слайда
-        let nextSlideIndex;
-        if (index + 1 === sliderItems.length) {
-            nextSlideIndex = 0;
-        } else {
-            nextSlideIndex = index+1
-        }
-         const nextSlide = sliderLeft.querySelector(`[data-index="${nextSlideIndex}"]`);
-           
-        nextSlide.classList.remove('none');
+      //index следующего слайда
+      let nextSlideIndex;
+      if (index + 1 === sliderItems.length) {
+          nextSlideIndex = 0;
+      } else {
+          nextSlideIndex = index+1
+      }
+       const nextSlide = slider.querySelector(`[data-index="${nextSlideIndex}"]`);
          
-         setTimeout(() => {
-            nextSlide.classList.add('hiddenvisible');
-         },0)
-         nextSlide.setAttribute('data-active', '');
-    });
+      nextSlide.classList.remove('none');
+      setTimeout(() => {
+        nextSlide.classList.add('hiddenvisible');
+     },0)
+       nextSlide.setAttribute('data-active', '');
+  });*/
 });
 
-/* Reviews end */
+// button next
+for(let index = 0; index < btnNexts.length; index++ ){
+  let btnNext = btnNexts[index];
+  btnNext.addEventListener('click',sliderLeft);
+}
+
+function sliderLeft () {
+    //Скрыть текущий
+    const currentSlide = slider.querySelector('[data-active]');
+    const currentSlideIndex = +currentSlide.dataset.index;
+    currentSlide .classList.remove('hiddenvisible');
+    setTimeout(() => {
+      currentSlide.classList.add('none');
+    },300)
+    currentSlide.removeAttribute('data-active');
+
+    //Показать следующий
+    //index следующего слайда
+    let nextSlideIndex;
+    if (currentSlideIndex + 1 === sliderItems.length) {
+        nextSlideIndex = 0;
+    } else {
+        nextSlideIndex = currentSlideIndex+1
+    }
+    const nextSlide = slider.querySelector(`[data-index="${nextSlideIndex}"]`);
+    nextSlide.classList.remove('none');
+    setTimeout(() => {
+      nextSlide.classList.add('hiddenvisible');
+   },0)
+    nextSlide.setAttribute('data-active', '');
+}
+
+
+

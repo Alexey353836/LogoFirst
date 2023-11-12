@@ -1347,16 +1347,12 @@ offers-details-favorite:active{
    display: none; 
 }
 .hidden{
-  opacity: 1;
-  scale: 1;
   transform: translate(1000px);
-  transition: 0.5s;
+  transition: 1s;
 }
 .hiddenvisible{
-  opacity: 1;
   transform: translate( 0px);
   transition: 1.5s;
-  scale: 1;
 }
 .reviews-items {
  height: 380px; 
@@ -1370,7 +1366,7 @@ offers-details-favorite:active{
   padding: 10px;
 }
 .reviews-block{
-  display: flex;
+  display: flex; 
   align-items: center;
   justify-content: space-between;
   padding-left: 20px;
