@@ -181,7 +181,7 @@ Array.from(sliderItems).forEach(function (slide, index) {
         slide.classList.remove('hiddenvisible');
         setTimeout(() => {
             slide.classList.add('none');
-         },300)
+         },400)
           slide.removeAttribute('data-active');
 
         //index следующего слайда

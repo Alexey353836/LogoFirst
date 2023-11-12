@@ -2051,6 +2051,11 @@ z-index: 1;
     width: 100%;
   }
   /*Photo end*/
+     /* reviews */
+     .hiddenvisible{
+      transition: 1s;
+    }
+    /* reviews end */
 }
 
 @media screen and (max-width: 400px){
@@ -2058,5 +2063,10 @@ z-index: 1;
     max-width: 300px;
     font-size: 28px;
   }
+    /* reviews */
+    .hiddenvisible{
+      transition: 0.8s;
+    }
+    /* reviews end */
 }
 /* media end */
