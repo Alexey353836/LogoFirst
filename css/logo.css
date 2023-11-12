@@ -2073,6 +2073,9 @@ z-index: 1;
   }
   /*Photo end*/
      /* reviews */
+     .hidden{
+      transition: 0.8s;
+    }
      .hiddenvisible{
        transition: 0.4s; 
     }
@@ -2085,6 +2088,9 @@ z-index: 1;
     font-size: 28px;
   }
     /* reviews */
+    .hidden{
+      transition: 1s;
+    }
     .hiddenvisible{
        transition: 0.2s; 
     }
