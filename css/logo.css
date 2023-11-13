@@ -2092,7 +2092,7 @@ z-index: 1;
       /* transition: 0.3s;  */
     }
     .hiddenvisible{
-        /* transition: 0.3s;   */
+         transition: 0.3s;   
     }
     /* reviews end */
 }
