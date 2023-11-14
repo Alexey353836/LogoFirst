@@ -133,6 +133,14 @@ line-height: normal;
 }
 .text-p-min{
 }
+/* Не выделять */
+.don-not-highlight{
+  /* Chrome */
+  user-select: none;
+  -webkit-user-select: none;
+  /* Firefox */
+  -moz-user-select: none;
+}
 /*transform*/
 .contant-translate{
   transition: all 0.6s ease 0s;
