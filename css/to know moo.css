@@ -281,11 +281,13 @@ body{
 }
 .slider-button3, .slider-button4, .slider-button5{
   cursor: context-menu; 
-  font-size: 30px;
   width: 150px;
   color:rgb(62, 51, 21, 0.2);
   margin: 20px;
   background-color: #FFFFFF; 
+}
+.material-symbols-outlined{
+   font-size: 50px; 
 }
 .slider-button-section-flex2 {
   display: flex;
@@ -300,6 +302,9 @@ body{
   .slider-button-section-flex2 {
     width: 300px;
   }
+  .material-symbols-outlined{
+    font-size: 40px; 
+ }
 }
 /* slider end */
 
