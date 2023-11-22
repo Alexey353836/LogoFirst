@@ -15,6 +15,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans&family=Oswald:wght@400;500;700&display=swap"
         rel="stylesheet">
+    
+        <!-- Иконки -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
     <!-- ПОДКЛЮЧЕНИЕ MATERIOALIZE CSS  -->
      <!-- <link type="text/css" rel="stylesheet" href="./css/materialize.css"  media="screen,projection">  -->
@@ -54,6 +57,21 @@
      </div>
      <!-- Menu burger end --> 
 
+    <!-- Language menu header  -->
+    <div class="modalLanguage closeLenguage" id="modalLanguage">
+        <div class="bodyLanguage">
+            <div class="contentLanguage" id="contentLanguage">
+                <ul id='' class=''>
+                    <li class="modalLanguage-h4"><a class="text-h4 modalLanguage-h5 closeLenguage" href="index.html">Русский</a></li>
+                    <li class="divider"></li>
+                    <li class="modalLanguage-h4"><a class="text-h4 modalLanguage-h5 closeLenguage"  href="ul.html">Украинский</a></li>
+                    <li class="modalLanguage-h4"><a class="text-h4 modalLanguage-h5 closeLenguage"  href="en.html">Английский</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+<!-- Language menu -->
+
     <div class="container">
         <!-- header-->
         <Header class="header">
@@ -88,10 +106,13 @@
                                     <div class="header_money">
                                         <a href="#!"><i class="material-icons header_money contant-scale">attach_money</i></a>
                                     </div>
-                                    <div class="header_language">
-                                        <a href="#"><i class="dropdown-trigger  material-icons header_language contant-scale "
-                                                data-target='dropdown1'>language</i></a>
-                                    </div>
+                                    
+                                    <button id="buttonLanguage" class="header_language contant-scale ">
+                                        <span class="material-symbols-outlined">
+                                            language
+                                        </span>
+                                    </button>
+                                    
                                 </div>
                                 <div class="header_enter">
                                     <a href="https://alexey353836.github.io/My-first-site/"><i
@@ -109,9 +130,13 @@
                             </div>
                         </div>
                     </div>
+
+                
+
                 </div>
                 <!-- head end -->
 
+         
                 <!-- banner -->
                 <div class="banner>
                     <a href=" #modal1"></a>
@@ -661,14 +686,6 @@
      </div>
         <!-- Mодальное окно where  -->
 
-    <!-- Dropdown Trigger -->
-        <ul id='dropdown1' class='dropdown-content'>
-        <li><a href="index.html">Русский</a></li>
-        <li class="divider" tabindex="-1"></li>
-        <li><a href="ul.html">Украинский</a></li>
-        <li><a href="en.html">Английский</a></li>
-    </ul>
-    <!-- Dropdown Trigger end -->
 
     <!-- offers popup1 -->
     <div  id="popup1" class="popup">

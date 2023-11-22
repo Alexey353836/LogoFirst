@@ -1,21 +1,21 @@
 
 //scroll
 // Фиксированный обьект
-const headerFix = document.querySelector('.header_fix');
+const headeHead = document.querySelector('.header_head');
 // Фиксированный обьект end
 const scrollController = {
    scrollPosition: 0,
   disabledScroll() {
       scrollController.scrollPosition = window.scrollY;
-      headerFix.style.cssText = `
-      padding-right: ${(window.innerWidth - document.body.offsetWidth)}px;
+      headeHead.style.cssText = `
+      // padding-right: ${(window.innerWidth - document.body.offsetWidth)}px;
+      // padding-right:8px;
     `;
       document.body.style.cssText = `
       overflow: hidden;
       top:-${scrollController.scrollPosition}px;
       left: 0;
       padding-right: ${(window.innerWidth - document.body.offsetWidth)}px;
-      // padding-right: 9px;
        `;
       // document.documentElement.style.scrollBehavior = 'unset';
   },
@@ -23,6 +23,8 @@ const scrollController = {
       document.body.style.cssText = ``;
       window.scroll({top: scrollController.scrollPosition});
     //  document.documentElement.style.scrollBehavior = '';
+    headeHead.style.cssText = ` `;
+    document.body.style.cssText = ``;
     },
 }
 //scroll end
@@ -58,6 +60,46 @@ function burgerclose () {
     },500)
 }
 // Menu burger end
+
+
+// Language menu header
+const buttonLanguage = document.querySelector('#buttonLanguage');
+const modalLanguage = document.querySelector('#modalLanguage');
+const contentLanguage = document.querySelector('#contentLanguage');
+ const closeLenguage = document.querySelectorAll('.closeLenguage');
+
+
+
+buttonLanguage.addEventListener('click', function () {
+  if(modalLanguage.classList.toggle('active')) {
+    contentLanguage.classList.toggle('active');
+    setTimeout(() => {
+       scrollController. disabledScroll();
+   },0)
+  }else {
+    contentLanguage.classList.toggle('active');
+    setTimeout(() => {
+     scrollController. enabledScroll();
+   },300)
+  }
+})
+
+contentLanguage.addEventListener('click', function(e) {
+  e.stopPropagation();
+})
+
+closeLenguage.forEach(function(i) {
+  i.addEventListener('click', function() {
+    modalLanguage.classList.remove('active');
+      contentLanguage.classList.remove('active');
+      setTimeout(() => {
+        scrollController. enabledScroll();
+     },300)
+    
+  })
+})
+
+// Language menu header end
 
 
 function popupOffers () {
